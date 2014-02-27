@@ -32,6 +32,17 @@
 		1A1EFD3818BEE7E0007A1634 /* GCHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD2A18BEE7E0007A1634 /* GCHero.m */; };
 		1A1EFD3918BEE7E0007A1634 /* GCMechanic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD2C18BEE7E0007A1634 /* GCMechanic.m */; };
 		1A1EFD3A18BEE7E0007A1634 /* GCQuest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD2E18BEE7E0007A1634 /* GCQuest.m */; };
+		1A1EFD8318BEECD2007A1634 /* NSManagedObject+ZORNCoreDataStackAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD7A18BEECD2007A1634 /* NSManagedObject+ZORNCoreDataStackAdditions.m */; };
+		1A1EFD8418BEECD2007A1634 /* NSManagedObjectContext+ZORNCoreDataStackAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD7C18BEECD2007A1634 /* NSManagedObjectContext+ZORNCoreDataStackAdditions.m */; };
+		1A1EFD8518BEECD2007A1634 /* NSObject+ZORNCoreDataStackAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD7E18BEECD2007A1634 /* NSObject+ZORNCoreDataStackAdditions.m */; };
+		1A1EFD8618BEECD2007A1634 /* ZORNCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD8018BEECD2007A1634 /* ZORNCoreDataStack.m */; };
+		1A1EFD8718BEECD2007A1634 /* ZORNCoreDataStackErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD8218BEECD2007A1634 /* ZORNCoreDataStackErrors.m */; };
+		1A1EFD8E18BEECF4007A1634 /* ZORNJsonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD8918BEECF4007A1634 /* ZORNJsonService.m */; };
+		1A1EFD8F18BEECF4007A1634 /* ZORNMappingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD8B18BEECF4007A1634 /* ZORNMappingService.m */; };
+		1A1EFD9018BEECF4007A1634 /* ZORNTwitterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD8D18BEECF4007A1634 /* ZORNTwitterService.m */; };
+		1A1EFD9418BEF046007A1634 /* GCGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9318BEF046007A1634 /* GCGlobal.m */; };
+		1A1EFD9818BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9718BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m */; };
+		1A1EFD9C18BEF179007A1634 /* GCCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9B18BEF179007A1634 /* GCCoreDataManager.m */; };
 		1AF010D618BEE19600D87FF6 /* MathSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF010D518BEE19600D87FF6 /* MathSpec.m */; };
 		710026F03BBE4153B262AF79 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979DD3D577A943E388CA4F71 /* libPods.a */; };
 		8FFB7B47C7C340299E6FA7C1 /* libPods-GoldCardsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F23FDD009F04A32A4FDB66A /* libPods-GoldCardsTests.a */; };
@@ -91,6 +102,29 @@
 		1A1EFD2C18BEE7E0007A1634 /* GCMechanic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCMechanic.m; path = Source/GCMechanic.m; sourceTree = "<group>"; };
 		1A1EFD2D18BEE7E0007A1634 /* GCQuest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCQuest.h; path = Source/GCQuest.h; sourceTree = "<group>"; };
 		1A1EFD2E18BEE7E0007A1634 /* GCQuest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCQuest.m; path = Source/GCQuest.m; sourceTree = "<group>"; };
+		1A1EFD7918BEECD2007A1634 /* NSManagedObject+ZORNCoreDataStackAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ZORNCoreDataStackAdditions.h"; sourceTree = "<group>"; };
+		1A1EFD7A18BEECD2007A1634 /* NSManagedObject+ZORNCoreDataStackAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+ZORNCoreDataStackAdditions.m"; sourceTree = "<group>"; };
+		1A1EFD7B18BEECD2007A1634 /* NSManagedObjectContext+ZORNCoreDataStackAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+ZORNCoreDataStackAdditions.h"; sourceTree = "<group>"; };
+		1A1EFD7C18BEECD2007A1634 /* NSManagedObjectContext+ZORNCoreDataStackAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+ZORNCoreDataStackAdditions.m"; sourceTree = "<group>"; };
+		1A1EFD7D18BEECD2007A1634 /* NSObject+ZORNCoreDataStackAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZORNCoreDataStackAdditions.h"; sourceTree = "<group>"; };
+		1A1EFD7E18BEECD2007A1634 /* NSObject+ZORNCoreDataStackAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZORNCoreDataStackAdditions.m"; sourceTree = "<group>"; };
+		1A1EFD7F18BEECD2007A1634 /* ZORNCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZORNCoreDataStack.h; sourceTree = "<group>"; };
+		1A1EFD8018BEECD2007A1634 /* ZORNCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZORNCoreDataStack.m; sourceTree = "<group>"; };
+		1A1EFD8118BEECD2007A1634 /* ZORNCoreDataStackErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZORNCoreDataStackErrors.h; sourceTree = "<group>"; };
+		1A1EFD8218BEECD2007A1634 /* ZORNCoreDataStackErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZORNCoreDataStackErrors.m; sourceTree = "<group>"; };
+		1A1EFD8818BEECF4007A1634 /* ZORNJsonService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZORNJsonService.h; path = Submodules/ZORNKit/ZORNKit/ZORNJsonService.h; sourceTree = SOURCE_ROOT; };
+		1A1EFD8918BEECF4007A1634 /* ZORNJsonService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZORNJsonService.m; path = Submodules/ZORNKit/ZORNKit/ZORNJsonService.m; sourceTree = SOURCE_ROOT; };
+		1A1EFD8A18BEECF4007A1634 /* ZORNMappingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZORNMappingService.h; path = Submodules/ZORNKit/ZORNKit/ZORNMappingService.h; sourceTree = SOURCE_ROOT; };
+		1A1EFD8B18BEECF4007A1634 /* ZORNMappingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZORNMappingService.m; path = Submodules/ZORNKit/ZORNKit/ZORNMappingService.m; sourceTree = SOURCE_ROOT; };
+		1A1EFD8C18BEECF4007A1634 /* ZORNTwitterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZORNTwitterService.h; path = Submodules/ZORNKit/ZORNKit/ZORNTwitterService.h; sourceTree = SOURCE_ROOT; };
+		1A1EFD8D18BEECF4007A1634 /* ZORNTwitterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZORNTwitterService.m; path = Submodules/ZORNKit/ZORNKit/ZORNTwitterService.m; sourceTree = SOURCE_ROOT; };
+		1A1EFD9218BEF046007A1634 /* GCGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCGlobal.h; path = Source/GCGlobal.h; sourceTree = "<group>"; };
+		1A1EFD9318BEF046007A1634 /* GCGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCGlobal.m; path = Source/GCGlobal.m; sourceTree = "<group>"; };
+		1A1EFD9618BEF0D4007A1634 /* NSURL+ZORNKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+ZORNKitAdditions.h"; path = "Submodules/ZORNKit/ZORNKit/Categories/NSURL+ZORNKitAdditions.h"; sourceTree = SOURCE_ROOT; };
+		1A1EFD9718BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+ZORNKitAdditions.m"; path = "Submodules/ZORNKit/ZORNKit/Categories/NSURL+ZORNKitAdditions.m"; sourceTree = SOURCE_ROOT; };
+		1A1EFD9A18BEF179007A1634 /* GCCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCCoreDataManager.h; path = Source/GCCoreDataManager.h; sourceTree = "<group>"; };
+		1A1EFD9B18BEF179007A1634 /* GCCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCCoreDataManager.m; path = Source/GCCoreDataManager.m; sourceTree = "<group>"; };
+		1A1EFD9D18BEF201007A1634 /* GCModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCModels.h; path = Source/GCModels.h; sourceTree = "<group>"; };
 		1AF010D518BEE19600D87FF6 /* MathSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSpec.m; sourceTree = "<group>"; };
 		2F23FDD009F04A32A4FDB66A /* libPods-GoldCardsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoldCardsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		979DD3D577A943E388CA4F71 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,12 +193,15 @@
 		1A1A7F4618BEDF9E00EE0388 /* GoldCards */ = {
 			isa = PBXGroup;
 			children = (
-				1A1EFD1218BEE713007A1634 /* Resources */,
-				1A1EFD0E18BEE212007A1634 /* Models */,
+				1A1EFD9218BEF046007A1634 /* GCGlobal.h */,
+				1A1EFD9318BEF046007A1634 /* GCGlobal.m */,
 				1A1A7F4F18BEDF9E00EE0388 /* AppDelegate.h */,
 				1A1A7F5018BEDF9E00EE0388 /* AppDelegate.m */,
+				1A1EFD0E18BEE212007A1634 /* Models */,
 				1A1A7F5218BEDF9E00EE0388 /* Images.xcassets */,
+				1A1EFD1218BEE713007A1634 /* Resources */,
 				1A1A7F4718BEDF9E00EE0388 /* Supporting Files */,
+				1A1EFD7618BEEC88007A1634 /* Submodules */,
 			);
 			path = GoldCards;
 			sourceTree = "<group>";
@@ -201,20 +238,9 @@
 		1A1EFD0E18BEE212007A1634 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1A1EFD1618BEE729007A1634 /* Machine */,
-				1A1EFD0F18BEE23F007A1634 /* GoldCardsSchema.xcdatamodeld */,
-				1A1EFD2318BEE7E0007A1634 /* GCAchievement.h */,
-				1A1EFD2418BEE7E0007A1634 /* GCAchievement.m */,
-				1A1EFD2518BEE7E0007A1634 /* GCCard.h */,
-				1A1EFD2618BEE7E0007A1634 /* GCCard.m */,
-				1A1EFD2718BEE7E0007A1634 /* GCEmote.h */,
-				1A1EFD2818BEE7E0007A1634 /* GCEmote.m */,
-				1A1EFD2918BEE7E0007A1634 /* GCHero.h */,
-				1A1EFD2A18BEE7E0007A1634 /* GCHero.m */,
-				1A1EFD2B18BEE7E0007A1634 /* GCMechanic.h */,
-				1A1EFD2C18BEE7E0007A1634 /* GCMechanic.m */,
-				1A1EFD2D18BEE7E0007A1634 /* GCQuest.h */,
-				1A1EFD2E18BEE7E0007A1634 /* GCQuest.m */,
+				1A1EFD9A18BEF179007A1634 /* GCCoreDataManager.h */,
+				1A1EFD9B18BEF179007A1634 /* GCCoreDataManager.m */,
+				1A1EFD9918BEF15B007A1634 /* CoreData */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -252,6 +278,86 @@
 				1A1EFD2218BEE7E0007A1634 /* _GCQuest.m */,
 			);
 			name = Machine;
+			sourceTree = "<group>";
+		};
+		1A1EFD7618BEEC88007A1634 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EFD7718BEEC95007A1634 /* ZORNKit */,
+			);
+			name = Submodules;
+			sourceTree = "<group>";
+		};
+		1A1EFD7718BEEC95007A1634 /* ZORNKit */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EFD9518BEF0B5007A1634 /* Categories */,
+				1A1EFD7818BEECD2007A1634 /* CoreData */,
+				1A1EFD8818BEECF4007A1634 /* ZORNJsonService.h */,
+				1A1EFD8918BEECF4007A1634 /* ZORNJsonService.m */,
+				1A1EFD8A18BEECF4007A1634 /* ZORNMappingService.h */,
+				1A1EFD8B18BEECF4007A1634 /* ZORNMappingService.m */,
+				1A1EFD8C18BEECF4007A1634 /* ZORNTwitterService.h */,
+				1A1EFD8D18BEECF4007A1634 /* ZORNTwitterService.m */,
+			);
+			name = ZORNKit;
+			sourceTree = "<group>";
+		};
+		1A1EFD7818BEECD2007A1634 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EFD7F18BEECD2007A1634 /* ZORNCoreDataStack.h */,
+				1A1EFD8018BEECD2007A1634 /* ZORNCoreDataStack.m */,
+				1A1EFD8118BEECD2007A1634 /* ZORNCoreDataStackErrors.h */,
+				1A1EFD8218BEECD2007A1634 /* ZORNCoreDataStackErrors.m */,
+				1A1EFD9118BEED11007A1634 /* Categories */,
+			);
+			name = CoreData;
+			path = Submodules/ZORNKit/ZORNKit/CoreData;
+			sourceTree = SOURCE_ROOT;
+		};
+		1A1EFD9118BEED11007A1634 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EFD7918BEECD2007A1634 /* NSManagedObject+ZORNCoreDataStackAdditions.h */,
+				1A1EFD7A18BEECD2007A1634 /* NSManagedObject+ZORNCoreDataStackAdditions.m */,
+				1A1EFD7B18BEECD2007A1634 /* NSManagedObjectContext+ZORNCoreDataStackAdditions.h */,
+				1A1EFD7C18BEECD2007A1634 /* NSManagedObjectContext+ZORNCoreDataStackAdditions.m */,
+				1A1EFD7D18BEECD2007A1634 /* NSObject+ZORNCoreDataStackAdditions.h */,
+				1A1EFD7E18BEECD2007A1634 /* NSObject+ZORNCoreDataStackAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		1A1EFD9518BEF0B5007A1634 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EFD9618BEF0D4007A1634 /* NSURL+ZORNKitAdditions.h */,
+				1A1EFD9718BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		1A1EFD9918BEF15B007A1634 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EFD9D18BEF201007A1634 /* GCModels.h */,
+				1A1EFD1618BEE729007A1634 /* Machine */,
+				1A1EFD0F18BEE23F007A1634 /* GoldCardsSchema.xcdatamodeld */,
+				1A1EFD2318BEE7E0007A1634 /* GCAchievement.h */,
+				1A1EFD2418BEE7E0007A1634 /* GCAchievement.m */,
+				1A1EFD2518BEE7E0007A1634 /* GCCard.h */,
+				1A1EFD2618BEE7E0007A1634 /* GCCard.m */,
+				1A1EFD2718BEE7E0007A1634 /* GCEmote.h */,
+				1A1EFD2818BEE7E0007A1634 /* GCEmote.m */,
+				1A1EFD2918BEE7E0007A1634 /* GCHero.h */,
+				1A1EFD2A18BEE7E0007A1634 /* GCHero.m */,
+				1A1EFD2B18BEE7E0007A1634 /* GCMechanic.h */,
+				1A1EFD2C18BEE7E0007A1634 /* GCMechanic.m */,
+				1A1EFD2D18BEE7E0007A1634 /* GCQuest.h */,
+				1A1EFD2E18BEE7E0007A1634 /* GCQuest.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1EFD3718BEE7E0007A1634 /* GCEmote.m in Sources */,
+				1A1EFD8E18BEECF4007A1634 /* ZORNJsonService.m in Sources */,
 				1A1EFD3618BEE7E0007A1634 /* GCCard.m in Sources */,
 				1A1EFD3818BEE7E0007A1634 /* GCHero.m in Sources */,
 				1A1A7F5118BEDF9E00EE0388 /* AppDelegate.m in Sources */,
@@ -425,13 +532,23 @@
 				1A1EFD2F18BEE7E0007A1634 /* _GCAchievement.m in Sources */,
 				1A1EFD3418BEE7E0007A1634 /* _GCQuest.m in Sources */,
 				1A1EFD3918BEE7E0007A1634 /* GCMechanic.m in Sources */,
+				1A1EFD8F18BEECF4007A1634 /* ZORNMappingService.m in Sources */,
+				1A1EFD8518BEECD2007A1634 /* NSObject+ZORNCoreDataStackAdditions.m in Sources */,
+				1A1EFD8318BEECD2007A1634 /* NSManagedObject+ZORNCoreDataStackAdditions.m in Sources */,
 				1A1EFD3018BEE7E0007A1634 /* _GCCard.m in Sources */,
 				1A1A7F4D18BEDF9E00EE0388 /* main.m in Sources */,
 				1A1EFD3118BEE7E0007A1634 /* _GCEmote.m in Sources */,
+				1A1EFD8618BEECD2007A1634 /* ZORNCoreDataStack.m in Sources */,
+				1A1EFD9418BEF046007A1634 /* GCGlobal.m in Sources */,
 				1A1EFD1118BEE23F007A1634 /* GoldCardsSchema.xcdatamodeld in Sources */,
+				1A1EFD9818BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m in Sources */,
 				1A1EFD3A18BEE7E0007A1634 /* GCQuest.m in Sources */,
+				1A1EFD9018BEECF4007A1634 /* ZORNTwitterService.m in Sources */,
 				1A1EFD3218BEE7E0007A1634 /* _GCHero.m in Sources */,
+				1A1EFD9C18BEF179007A1634 /* GCCoreDataManager.m in Sources */,
 				1A1EFD3518BEE7E0007A1634 /* GCAchievement.m in Sources */,
+				1A1EFD8418BEECD2007A1634 /* NSManagedObjectContext+ZORNCoreDataStackAdditions.m in Sources */,
+				1A1EFD8718BEECD2007A1634 /* ZORNCoreDataStackErrors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,49 +1,67 @@
-//
-//  AppDelegate.m
-//  GoldCards
-//
-//  Created by Michael Zornek on 2/26/14.
-//  Copyright (c) 2014 Michael Zornek. All rights reserved.
-//
-
 #import "AppDelegate.h"
+#import "ZORNCoreDataStack.h"
+#import "NSURL+ZORNKitAdditions.h"
+#import "GCCoreDataManager.h"
+
+@interface AppDelegate ()
+@property (strong) ZORNCoreDataStack *coreDataStack;
+@end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    [self setupCoreDataStack];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
+#pragma mark - Private
+
+- (void)setupCoreDataStack
 {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    if (self.coreDataStack) {
+        DDLogWarn(@"Tried to setupCoreDataStack when it was already built.");
+    }
+    
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"GoldCardsSchema" withExtension:@"momd"];
+    NSURL *persistentStoreURL = [[NSURL zorn_applicationDocumentsDirectory] URLByAppendingPathComponent:@"GoldCards.sqlite"];
+    
+    self.coreDataStack = [[ZORNCoreDataStack alloc] init];
+    self.coreDataStack.managedObjectModelURL = modelURL;
+    self.coreDataStack.persistentStoreURL = persistentStoreURL;
+    
+    NSError *error = nil;
+    if (![self.coreDataStack buildStackWithError:&error]) {
+        NSLog(@"error building core data stack: %@", error);
+        abort();
+    }
+    
+    // if this is a fresh db, make sure we import all the stuff
+    GCCoreDataManager *coreDateManager = [[GCCoreDataManager alloc] init];
+    coreDateManager.coreDataStack = self.coreDataStack;
+    if ([coreDateManager isStoreEmpty]) {
+        NSError *error = nil;
+        if (![coreDateManager initializeEmptyStore:&error]) {
+            DDLogError(@"initializeEmptyStore had error: %@", error);
+            DDLogError(@"skipping core data setup");
+            [self teardownCoreDataStack];
+        }
+    }
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
+- (void)teardownCoreDataStack
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    NSError *error = nil;
+    if (![self.coreDataStack tearDownStackWithError:&error]) {
+        NSLog(@"error tearing down core data stack: %@", error);
+        abort();
+    }
+    self.coreDataStack = nil;
 }
 
 @end
