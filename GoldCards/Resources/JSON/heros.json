@@ -1,0 +1,47 @@
+[
+	{
+		"remoteID" : 1,
+		"heroClass" : "Warrior",
+		"name" : "Garrosh Hellscream"
+	},
+	{
+		"remoteID" : 2,
+		"heroClass" : "Paladin",
+		"name" : "Uther Lightbringer"
+	},
+	{
+		"remoteID" : 3,
+		"heroClass" : "Hunter",
+		"name" : "Rexxar"
+	},
+	{
+		"remoteID" : 4,
+		"heroClass" : "Hunter",
+		"name" : "Valeera Sanguinar"
+	},
+	{
+		"remoteID" : 5,
+		"heroClass" : "Priest",
+		"name" : "Anduin Wrynn"
+	},
+	{
+		"remoteID" : 7,
+		"heroClass" : "Shaman",
+		"name" : "Thrall"
+	},
+	{
+		"remoteID" : 8,
+		"heroClass" : "Mage",
+		"name" : "Jaina Proudmoore"
+	},
+	{
+		"remoteID" : 9,
+		"heroClass" : "Warlock",
+		"name" : "Gul'dan"
+	},
+	{
+		"remoteID" : 11,
+		"heroClass" : "Druid",
+		"name" : "Malfurion Stormrage"
+	}
+]

@@ -18,6 +18,20 @@
 		1A1A7F5B18BEDF9E00EE0388 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1A7F4018BEDF9E00EE0388 /* Foundation.framework */; };
 		1A1A7F5C18BEDF9E00EE0388 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1A7F4418BEDF9E00EE0388 /* UIKit.framework */; };
 		1A1A7F6418BEDF9E00EE0388 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A7F6218BEDF9E00EE0388 /* InfoPlist.strings */; };
+		1A1EFD1118BEE23F007A1634 /* GoldCardsSchema.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD0F18BEE23F007A1634 /* GoldCardsSchema.xcdatamodeld */; };
+		1A1EFD1518BEE713007A1634 /* heros.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A1EFD1418BEE713007A1634 /* heros.json */; };
+		1A1EFD2F18BEE7E0007A1634 /* _GCAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD1818BEE7E0007A1634 /* _GCAchievement.m */; };
+		1A1EFD3018BEE7E0007A1634 /* _GCCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD1A18BEE7E0007A1634 /* _GCCard.m */; };
+		1A1EFD3118BEE7E0007A1634 /* _GCEmote.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD1C18BEE7E0007A1634 /* _GCEmote.m */; };
+		1A1EFD3218BEE7E0007A1634 /* _GCHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD1E18BEE7E0007A1634 /* _GCHero.m */; };
+		1A1EFD3318BEE7E0007A1634 /* _GCMechanic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD2018BEE7E0007A1634 /* _GCMechanic.m */; };
+		1A1EFD3418BEE7E0007A1634 /* _GCQuest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD2218BEE7E0007A1634 /* _GCQuest.m */; };
+		1A1EFD3518BEE7E0007A1634 /* GCAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD2418BEE7E0007A1634 /* GCAchievement.m */; };
+		1A1EFD3618BEE7E0007A1634 /* GCCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD2618BEE7E0007A1634 /* GCCard.m */; };
+		1A1EFD3718BEE7E0007A1634 /* GCEmote.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD2818BEE7E0007A1634 /* GCEmote.m */; };
+		1A1EFD3818BEE7E0007A1634 /* GCHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD2A18BEE7E0007A1634 /* GCHero.m */; };
+		1A1EFD3918BEE7E0007A1634 /* GCMechanic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD2C18BEE7E0007A1634 /* GCMechanic.m */; };
+		1A1EFD3A18BEE7E0007A1634 /* GCQuest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD2E18BEE7E0007A1634 /* GCQuest.m */; };
 		1AF010D618BEE19600D87FF6 /* MathSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF010D518BEE19600D87FF6 /* MathSpec.m */; };
 		710026F03BBE4153B262AF79 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979DD3D577A943E388CA4F71 /* libPods.a */; };
 		8FFB7B47C7C340299E6FA7C1 /* libPods-GoldCardsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F23FDD009F04A32A4FDB66A /* libPods-GoldCardsTests.a */; };
@@ -51,6 +65,32 @@
 		1A1A7F5918BEDF9E00EE0388 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1A1A7F6118BEDF9E00EE0388 /* GoldCardsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoldCardsTests-Info.plist"; sourceTree = "<group>"; };
 		1A1A7F6318BEDF9E00EE0388 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A1EFD1018BEE23F007A1634 /* GoldCardsSchema.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoldCardsSchema.xcdatamodel; sourceTree = "<group>"; };
+		1A1EFD1418BEE713007A1634 /* heros.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heros.json; sourceTree = "<group>"; };
+		1A1EFD1718BEE7E0007A1634 /* _GCAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _GCAchievement.h; path = Source/_GCAchievement.h; sourceTree = "<group>"; };
+		1A1EFD1818BEE7E0007A1634 /* _GCAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _GCAchievement.m; path = Source/_GCAchievement.m; sourceTree = "<group>"; };
+		1A1EFD1918BEE7E0007A1634 /* _GCCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _GCCard.h; path = Source/_GCCard.h; sourceTree = "<group>"; };
+		1A1EFD1A18BEE7E0007A1634 /* _GCCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _GCCard.m; path = Source/_GCCard.m; sourceTree = "<group>"; };
+		1A1EFD1B18BEE7E0007A1634 /* _GCEmote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _GCEmote.h; path = Source/_GCEmote.h; sourceTree = "<group>"; };
+		1A1EFD1C18BEE7E0007A1634 /* _GCEmote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _GCEmote.m; path = Source/_GCEmote.m; sourceTree = "<group>"; };
+		1A1EFD1D18BEE7E0007A1634 /* _GCHero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _GCHero.h; path = Source/_GCHero.h; sourceTree = "<group>"; };
+		1A1EFD1E18BEE7E0007A1634 /* _GCHero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _GCHero.m; path = Source/_GCHero.m; sourceTree = "<group>"; };
+		1A1EFD1F18BEE7E0007A1634 /* _GCMechanic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _GCMechanic.h; path = Source/_GCMechanic.h; sourceTree = "<group>"; };
+		1A1EFD2018BEE7E0007A1634 /* _GCMechanic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _GCMechanic.m; path = Source/_GCMechanic.m; sourceTree = "<group>"; };
+		1A1EFD2118BEE7E0007A1634 /* _GCQuest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _GCQuest.h; path = Source/_GCQuest.h; sourceTree = "<group>"; };
+		1A1EFD2218BEE7E0007A1634 /* _GCQuest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _GCQuest.m; path = Source/_GCQuest.m; sourceTree = "<group>"; };
+		1A1EFD2318BEE7E0007A1634 /* GCAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCAchievement.h; path = Source/GCAchievement.h; sourceTree = "<group>"; };
+		1A1EFD2418BEE7E0007A1634 /* GCAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCAchievement.m; path = Source/GCAchievement.m; sourceTree = "<group>"; };
+		1A1EFD2518BEE7E0007A1634 /* GCCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCCard.h; path = Source/GCCard.h; sourceTree = "<group>"; };
+		1A1EFD2618BEE7E0007A1634 /* GCCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCCard.m; path = Source/GCCard.m; sourceTree = "<group>"; };
+		1A1EFD2718BEE7E0007A1634 /* GCEmote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCEmote.h; path = Source/GCEmote.h; sourceTree = "<group>"; };
+		1A1EFD2818BEE7E0007A1634 /* GCEmote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCEmote.m; path = Source/GCEmote.m; sourceTree = "<group>"; };
+		1A1EFD2918BEE7E0007A1634 /* GCHero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCHero.h; path = Source/GCHero.h; sourceTree = "<group>"; };
+		1A1EFD2A18BEE7E0007A1634 /* GCHero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCHero.m; path = Source/GCHero.m; sourceTree = "<group>"; };
+		1A1EFD2B18BEE7E0007A1634 /* GCMechanic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCMechanic.h; path = Source/GCMechanic.h; sourceTree = "<group>"; };
+		1A1EFD2C18BEE7E0007A1634 /* GCMechanic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCMechanic.m; path = Source/GCMechanic.m; sourceTree = "<group>"; };
+		1A1EFD2D18BEE7E0007A1634 /* GCQuest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCQuest.h; path = Source/GCQuest.h; sourceTree = "<group>"; };
+		1A1EFD2E18BEE7E0007A1634 /* GCQuest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCQuest.m; path = Source/GCQuest.m; sourceTree = "<group>"; };
 		1AF010D518BEE19600D87FF6 /* MathSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSpec.m; sourceTree = "<group>"; };
 		2F23FDD009F04A32A4FDB66A /* libPods-GoldCardsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoldCardsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		979DD3D577A943E388CA4F71 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +159,8 @@
 		1A1A7F4618BEDF9E00EE0388 /* GoldCards */ = {
 			isa = PBXGroup;
 			children = (
+				1A1EFD1218BEE713007A1634 /* Resources */,
+				1A1EFD0E18BEE212007A1634 /* Models */,
 				1A1A7F4F18BEDF9E00EE0388 /* AppDelegate.h */,
 				1A1A7F5018BEDF9E00EE0388 /* AppDelegate.m */,
 				1A1A7F5218BEDF9E00EE0388 /* Images.xcassets */,
@@ -154,6 +196,62 @@
 				1A1A7F6218BEDF9E00EE0388 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A1EFD0E18BEE212007A1634 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EFD1618BEE729007A1634 /* Machine */,
+				1A1EFD0F18BEE23F007A1634 /* GoldCardsSchema.xcdatamodeld */,
+				1A1EFD2318BEE7E0007A1634 /* GCAchievement.h */,
+				1A1EFD2418BEE7E0007A1634 /* GCAchievement.m */,
+				1A1EFD2518BEE7E0007A1634 /* GCCard.h */,
+				1A1EFD2618BEE7E0007A1634 /* GCCard.m */,
+				1A1EFD2718BEE7E0007A1634 /* GCEmote.h */,
+				1A1EFD2818BEE7E0007A1634 /* GCEmote.m */,
+				1A1EFD2918BEE7E0007A1634 /* GCHero.h */,
+				1A1EFD2A18BEE7E0007A1634 /* GCHero.m */,
+				1A1EFD2B18BEE7E0007A1634 /* GCMechanic.h */,
+				1A1EFD2C18BEE7E0007A1634 /* GCMechanic.m */,
+				1A1EFD2D18BEE7E0007A1634 /* GCQuest.h */,
+				1A1EFD2E18BEE7E0007A1634 /* GCQuest.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1A1EFD1218BEE713007A1634 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EFD1318BEE713007A1634 /* JSON */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A1EFD1318BEE713007A1634 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EFD1418BEE713007A1634 /* heros.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		1A1EFD1618BEE729007A1634 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EFD1718BEE7E0007A1634 /* _GCAchievement.h */,
+				1A1EFD1818BEE7E0007A1634 /* _GCAchievement.m */,
+				1A1EFD1918BEE7E0007A1634 /* _GCCard.h */,
+				1A1EFD1A18BEE7E0007A1634 /* _GCCard.m */,
+				1A1EFD1B18BEE7E0007A1634 /* _GCEmote.h */,
+				1A1EFD1C18BEE7E0007A1634 /* _GCEmote.m */,
+				1A1EFD1D18BEE7E0007A1634 /* _GCHero.h */,
+				1A1EFD1E18BEE7E0007A1634 /* _GCHero.m */,
+				1A1EFD1F18BEE7E0007A1634 /* _GCMechanic.h */,
+				1A1EFD2018BEE7E0007A1634 /* _GCMechanic.m */,
+				1A1EFD2118BEE7E0007A1634 /* _GCQuest.h */,
+				1A1EFD2218BEE7E0007A1634 /* _GCQuest.m */,
+			);
+			name = Machine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +335,7 @@
 			files = (
 				1A1A7F4B18BEDF9E00EE0388 /* InfoPlist.strings in Resources */,
 				1A1A7F5318BEDF9E00EE0388 /* Images.xcassets in Resources */,
+				1A1EFD1518BEE713007A1634 /* heros.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,8 +417,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1EFD3718BEE7E0007A1634 /* GCEmote.m in Sources */,
+				1A1EFD3618BEE7E0007A1634 /* GCCard.m in Sources */,
+				1A1EFD3818BEE7E0007A1634 /* GCHero.m in Sources */,
 				1A1A7F5118BEDF9E00EE0388 /* AppDelegate.m in Sources */,
+				1A1EFD3318BEE7E0007A1634 /* _GCMechanic.m in Sources */,
+				1A1EFD2F18BEE7E0007A1634 /* _GCAchievement.m in Sources */,
+				1A1EFD3418BEE7E0007A1634 /* _GCQuest.m in Sources */,
+				1A1EFD3918BEE7E0007A1634 /* GCMechanic.m in Sources */,
+				1A1EFD3018BEE7E0007A1634 /* _GCCard.m in Sources */,
 				1A1A7F4D18BEDF9E00EE0388 /* main.m in Sources */,
+				1A1EFD3118BEE7E0007A1634 /* _GCEmote.m in Sources */,
+				1A1EFD1118BEE23F007A1634 /* GoldCardsSchema.xcdatamodeld in Sources */,
+				1A1EFD3A18BEE7E0007A1634 /* GCQuest.m in Sources */,
+				1A1EFD3218BEE7E0007A1634 /* _GCHero.m in Sources */,
+				1A1EFD3518BEE7E0007A1634 /* GCAchievement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +650,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A1EFD0F18BEE23F007A1634 /* GoldCardsSchema.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A1EFD1018BEE23F007A1634 /* GoldCardsSchema.xcdatamodel */,
+			);
+			currentVersion = 1A1EFD1018BEE23F007A1634 /* GoldCardsSchema.xcdatamodel */;
+			name = GoldCardsSchema.xcdatamodeld;
+			path = Source/GoldCardsSchema.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1A1A7F3518BEDF9E00EE0388 /* Project object */;
 }
