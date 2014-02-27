@@ -18,7 +18,9 @@
 		1A1A7F5B18BEDF9E00EE0388 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1A7F4018BEDF9E00EE0388 /* Foundation.framework */; };
 		1A1A7F5C18BEDF9E00EE0388 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1A7F4418BEDF9E00EE0388 /* UIKit.framework */; };
 		1A1A7F6418BEDF9E00EE0388 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A7F6218BEDF9E00EE0388 /* InfoPlist.strings */; };
-		1A1A7F6618BEDF9E00EE0388 /* GoldCardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A7F6518BEDF9E00EE0388 /* GoldCardsTests.m */; };
+		1AF010D618BEE19600D87FF6 /* MathSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF010D518BEE19600D87FF6 /* MathSpec.m */; };
+		710026F03BBE4153B262AF79 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979DD3D577A943E388CA4F71 /* libPods.a */; };
+		8FFB7B47C7C340299E6FA7C1 /* libPods-GoldCardsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F23FDD009F04A32A4FDB66A /* libPods-GoldCardsTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0477237BD8214C118BF1FEA0 /* Pods-GoldCardsTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldCardsTests.xcconfig"; path = "Pods/Pods-GoldCardsTests.xcconfig"; sourceTree = "<group>"; };
+		1099356D53B44F11B87581AA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		1A1A7F3D18BEDF9E00EE0388 /* GoldCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1A7F4018BEDF9E00EE0388 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A1A7F4218BEDF9E00EE0388 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,7 +51,9 @@
 		1A1A7F5918BEDF9E00EE0388 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1A1A7F6118BEDF9E00EE0388 /* GoldCardsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoldCardsTests-Info.plist"; sourceTree = "<group>"; };
 		1A1A7F6318BEDF9E00EE0388 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1A1A7F6518BEDF9E00EE0388 /* GoldCardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoldCardsTests.m; sourceTree = "<group>"; };
+		1AF010D518BEE19600D87FF6 /* MathSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSpec.m; sourceTree = "<group>"; };
+		2F23FDD009F04A32A4FDB66A /* libPods-GoldCardsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoldCardsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		979DD3D577A943E388CA4F71 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 				1A1A7F4318BEDF9E00EE0388 /* CoreGraphics.framework in Frameworks */,
 				1A1A7F4518BEDF9E00EE0388 /* UIKit.framework in Frameworks */,
 				1A1A7F4118BEDF9E00EE0388 /* Foundation.framework in Frameworks */,
+				710026F03BBE4153B262AF79 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +75,7 @@
 				1A1A7F5A18BEDF9E00EE0388 /* XCTest.framework in Frameworks */,
 				1A1A7F5C18BEDF9E00EE0388 /* UIKit.framework in Frameworks */,
 				1A1A7F5B18BEDF9E00EE0388 /* Foundation.framework in Frameworks */,
+				8FFB7B47C7C340299E6FA7C1 /* libPods-GoldCardsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,8 @@
 				1A1A7F5F18BEDF9E00EE0388 /* GoldCardsTests */,
 				1A1A7F3F18BEDF9E00EE0388 /* Frameworks */,
 				1A1A7F3E18BEDF9E00EE0388 /* Products */,
+				1099356D53B44F11B87581AA /* Pods.xcconfig */,
+				0477237BD8214C118BF1FEA0 /* Pods-GoldCardsTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +110,8 @@
 				1A1A7F4218BEDF9E00EE0388 /* CoreGraphics.framework */,
 				1A1A7F4418BEDF9E00EE0388 /* UIKit.framework */,
 				1A1A7F5918BEDF9E00EE0388 /* XCTest.framework */,
+				979DD3D577A943E388CA4F71 /* libPods.a */,
+				2F23FDD009F04A32A4FDB66A /* libPods-GoldCardsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,7 +141,7 @@
 		1A1A7F5F18BEDF9E00EE0388 /* GoldCardsTests */ = {
 			isa = PBXGroup;
 			children = (
-				1A1A7F6518BEDF9E00EE0388 /* GoldCardsTests.m */,
+				1AF010D518BEE19600D87FF6 /* MathSpec.m */,
 				1A1A7F6018BEDF9E00EE0388 /* Supporting Files */,
 			);
 			path = GoldCardsTests;
@@ -151,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A1A7F6918BEDF9E00EE0388 /* Build configuration list for PBXNativeTarget "GoldCards" */;
 			buildPhases = (
+				672AE5FFB0BC4722BC7C1FDD /* Check Pods Manifest.lock */,
 				1A1A7F3918BEDF9E00EE0388 /* Sources */,
 				1A1A7F3A18BEDF9E00EE0388 /* Frameworks */,
 				1A1A7F3B18BEDF9E00EE0388 /* Resources */,
+				0E4AC04EFBC24C78B3EB4C13 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A1A7F6C18BEDF9E00EE0388 /* Build configuration list for PBXNativeTarget "GoldCardsTests" */;
 			buildPhases = (
+				397577E63C0F4A48A2684970 /* Check Pods Manifest.lock */,
 				1A1A7F5418BEDF9E00EE0388 /* Sources */,
 				1A1A7F5518BEDF9E00EE0388 /* Frameworks */,
 				1A1A7F5618BEDF9E00EE0388 /* Resources */,
+				6B50E70539284456994BDCB2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +250,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E4AC04EFBC24C78B3EB4C13 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		397577E63C0F4A48A2684970 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		672AE5FFB0BC4722BC7C1FDD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B50E70539284456994BDCB2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-GoldCardsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1A1A7F3918BEDF9E00EE0388 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -248,7 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A1A7F6618BEDF9E00EE0388 /* GoldCardsTests.m in Sources */,
+				1AF010D618BEE19600D87FF6 /* MathSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +437,7 @@
 		};
 		1A1A7F6A18BEDF9E00EE0388 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1099356D53B44F11B87581AA /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -371,6 +451,7 @@
 		};
 		1A1A7F6B18BEDF9E00EE0388 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1099356D53B44F11B87581AA /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -384,6 +465,7 @@
 		};
 		1A1A7F6D18BEDF9E00EE0388 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0477237BD8214C118BF1FEA0 /* Pods-GoldCardsTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoldCards.app/GoldCards";
@@ -407,6 +489,7 @@
 		};
 		1A1A7F6E18BEDF9E00EE0388 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0477237BD8214C118BF1FEA0 /* Pods-GoldCardsTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoldCards.app/GoldCards";
@@ -443,6 +526,7 @@
 				1A1A7F6B18BEDF9E00EE0388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A1A7F6C18BEDF9E00EE0388 /* Build configuration list for PBXNativeTarget "GoldCardsTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +535,7 @@
 				1A1A7F6E18BEDF9E00EE0388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
