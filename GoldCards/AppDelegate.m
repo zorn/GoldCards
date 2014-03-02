@@ -42,8 +42,7 @@
     }
     
     // if this is a fresh db, make sure we import all the stuff
-    GCCoreDataManager *coreDateManager = [[GCCoreDataManager alloc] init];
-    coreDateManager.coreDataStack = self.coreDataStack;
+    GCCoreDataManager *coreDateManager = [[GCCoreDataManager alloc] initWithCoreDataStack:self.coreDataStack];
     if ([coreDateManager isStoreEmpty]) {
         NSError *error = nil;
         if (![coreDateManager initializeEmptyStore:&error]) {

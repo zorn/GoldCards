@@ -4,8 +4,9 @@
 
 @interface GCCoreDataManager : NSObject
 
-@property (strong) ZORNCoreDataStack *coreDataStack;
+@property (readonly) ZORNCoreDataStack *coreDataStack;
 
+- (id)initWithCoreDataStack:(ZORNCoreDataStack *)coreDataStack;
 - (BOOL)initializeEmptyStore:(NSError **)error;
 - (BOOL)isStoreEmpty;
 

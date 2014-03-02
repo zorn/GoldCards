@@ -7,6 +7,7 @@
 extern const struct GCHeroAttributes {
 	__unsafe_unretained NSString *heroClass;
 	__unsafe_unretained NSString *name;
+	__unsafe_unretained NSString *remoteID;
 } GCHeroAttributes;
 
 extern const struct GCHeroRelationships {
@@ -17,6 +18,7 @@ extern const struct GCHeroFetchedProperties {
 } GCHeroFetchedProperties;
 
 @class GCCard;
+
 
 
 
@@ -54,6 +56,20 @@ extern const struct GCHeroFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSNumber* remoteID;
+
+
+
+@property int16_t remoteIDValue;
+- (int16_t)remoteIDValue;
+- (void)setRemoteIDValue:(int16_t)value_;
+
+//- (BOOL)validateRemoteID:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
 @property (nonatomic, strong) NSSet *cards;
 
 - (NSMutableSet*)cardsSet;
@@ -84,6 +100,15 @@ extern const struct GCHeroFetchedProperties {
 
 - (NSString*)primitiveName;
 - (void)setPrimitiveName:(NSString*)value;
+
+
+
+
+- (NSNumber*)primitiveRemoteID;
+- (void)setPrimitiveRemoteID:(NSNumber*)value;
+
+- (int16_t)primitiveRemoteIDValue;
+- (void)setPrimitiveRemoteIDValue:(int16_t)value_;
 
 
 

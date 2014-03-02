@@ -1,15 +1,12 @@
 #import "GCHero.h"
 
-
-@interface GCHero ()
-
-// Private interface goes here.
-
-@end
-
-
 @implementation GCHero
 
-// Custom logic goes here.
++ (NSDictionary *)zorn_JSONToModelAttributeMapping
+{
+    return @{@"remoteID": @"remoteID",
+             @"heroClass": @"heroClass",
+             @"name": @"name"};
+}
 
 @end

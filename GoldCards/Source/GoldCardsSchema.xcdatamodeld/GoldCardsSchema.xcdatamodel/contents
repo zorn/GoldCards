@@ -22,6 +22,7 @@
     <entity name="GCHero" representedClassName="GCHero" syncable="YES">
         <attribute name="heroClass" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remoteID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="cards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GCCard" inverseName="hero" inverseEntity="GCCard" syncable="YES"/>
     </entity>
     <entity name="GCMechanic" representedClassName="GCMechanic" syncable="YES"/>

@@ -37,12 +37,12 @@
 		1A1EFD8518BEECD2007A1634 /* NSObject+ZORNCoreDataStackAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD7E18BEECD2007A1634 /* NSObject+ZORNCoreDataStackAdditions.m */; };
 		1A1EFD8618BEECD2007A1634 /* ZORNCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD8018BEECD2007A1634 /* ZORNCoreDataStack.m */; };
 		1A1EFD8718BEECD2007A1634 /* ZORNCoreDataStackErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD8218BEECD2007A1634 /* ZORNCoreDataStackErrors.m */; };
-		1A1EFD8E18BEECF4007A1634 /* ZORNJsonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD8918BEECF4007A1634 /* ZORNJsonService.m */; };
 		1A1EFD8F18BEECF4007A1634 /* ZORNMappingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD8B18BEECF4007A1634 /* ZORNMappingService.m */; };
 		1A1EFD9018BEECF4007A1634 /* ZORNTwitterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD8D18BEECF4007A1634 /* ZORNTwitterService.m */; };
 		1A1EFD9418BEF046007A1634 /* GCGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9318BEF046007A1634 /* GCGlobal.m */; };
 		1A1EFD9818BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9718BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m */; };
 		1A1EFD9C18BEF179007A1634 /* GCCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9B18BEF179007A1634 /* GCCoreDataManager.m */; };
+		1A969D8318C3DC8D0033F7C0 /* ZORNJSONService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A969D8218C3DC8D0033F7C0 /* ZORNJSONService.m */; };
 		1AF010D618BEE19600D87FF6 /* MathSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF010D518BEE19600D87FF6 /* MathSpec.m */; };
 		710026F03BBE4153B262AF79 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979DD3D577A943E388CA4F71 /* libPods.a */; };
 		8FFB7B47C7C340299E6FA7C1 /* libPods-GoldCardsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F23FDD009F04A32A4FDB66A /* libPods-GoldCardsTests.a */; };
@@ -112,8 +112,6 @@
 		1A1EFD8018BEECD2007A1634 /* ZORNCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZORNCoreDataStack.m; sourceTree = "<group>"; };
 		1A1EFD8118BEECD2007A1634 /* ZORNCoreDataStackErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZORNCoreDataStackErrors.h; sourceTree = "<group>"; };
 		1A1EFD8218BEECD2007A1634 /* ZORNCoreDataStackErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZORNCoreDataStackErrors.m; sourceTree = "<group>"; };
-		1A1EFD8818BEECF4007A1634 /* ZORNJsonService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZORNJsonService.h; path = Submodules/ZORNKit/ZORNKit/ZORNJsonService.h; sourceTree = SOURCE_ROOT; };
-		1A1EFD8918BEECF4007A1634 /* ZORNJsonService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZORNJsonService.m; path = Submodules/ZORNKit/ZORNKit/ZORNJsonService.m; sourceTree = SOURCE_ROOT; };
 		1A1EFD8A18BEECF4007A1634 /* ZORNMappingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZORNMappingService.h; path = Submodules/ZORNKit/ZORNKit/ZORNMappingService.h; sourceTree = SOURCE_ROOT; };
 		1A1EFD8B18BEECF4007A1634 /* ZORNMappingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZORNMappingService.m; path = Submodules/ZORNKit/ZORNKit/ZORNMappingService.m; sourceTree = SOURCE_ROOT; };
 		1A1EFD8C18BEECF4007A1634 /* ZORNTwitterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZORNTwitterService.h; path = Submodules/ZORNKit/ZORNKit/ZORNTwitterService.h; sourceTree = SOURCE_ROOT; };
@@ -125,6 +123,10 @@
 		1A1EFD9A18BEF179007A1634 /* GCCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCCoreDataManager.h; path = Source/GCCoreDataManager.h; sourceTree = "<group>"; };
 		1A1EFD9B18BEF179007A1634 /* GCCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCCoreDataManager.m; path = Source/GCCoreDataManager.m; sourceTree = "<group>"; };
 		1A1EFD9D18BEF201007A1634 /* GCModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCModels.h; path = Source/GCModels.h; sourceTree = "<group>"; };
+		1A969D7F18C3DA020033F7C0 /* ZORNMappingServiceMappableObjectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZORNMappingServiceMappableObjectProtocol.h; path = Submodules/ZORNKit/ZORNKit/ZORNMappingServiceMappableObjectProtocol.h; sourceTree = SOURCE_ROOT; };
+		1A969D8018C3DC120033F7C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		1A969D8118C3DC8D0033F7C0 /* ZORNJSONService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZORNJSONService.h; path = Submodules/ZORNKit/ZORNKit/ZORNJSONService.h; sourceTree = SOURCE_ROOT; };
+		1A969D8218C3DC8D0033F7C0 /* ZORNJSONService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZORNJSONService.m; path = Submodules/ZORNKit/ZORNKit/ZORNJSONService.m; sourceTree = SOURCE_ROOT; };
 		1AF010D518BEE19600D87FF6 /* MathSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSpec.m; sourceTree = "<group>"; };
 		2F23FDD009F04A32A4FDB66A /* libPods-GoldCardsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoldCardsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		979DD3D577A943E388CA4F71 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +161,7 @@
 		1A1A7F3418BEDF9E00EE0388 = {
 			isa = PBXGroup;
 			children = (
+				1A969D8018C3DC120033F7C0 /* README.md */,
 				1A1A7F4618BEDF9E00EE0388 /* GoldCards */,
 				1A1A7F5F18BEDF9E00EE0388 /* GoldCardsTests */,
 				1A1A7F3F18BEDF9E00EE0388 /* Frameworks */,
@@ -293,10 +296,11 @@
 			children = (
 				1A1EFD9518BEF0B5007A1634 /* Categories */,
 				1A1EFD7818BEECD2007A1634 /* CoreData */,
-				1A1EFD8818BEECF4007A1634 /* ZORNJsonService.h */,
-				1A1EFD8918BEECF4007A1634 /* ZORNJsonService.m */,
 				1A1EFD8A18BEECF4007A1634 /* ZORNMappingService.h */,
 				1A1EFD8B18BEECF4007A1634 /* ZORNMappingService.m */,
+				1A969D8118C3DC8D0033F7C0 /* ZORNJSONService.h */,
+				1A969D8218C3DC8D0033F7C0 /* ZORNJSONService.m */,
+				1A969D7F18C3DA020033F7C0 /* ZORNMappingServiceMappableObjectProtocol.h */,
 				1A1EFD8C18BEECF4007A1634 /* ZORNTwitterService.h */,
 				1A1EFD8D18BEECF4007A1634 /* ZORNTwitterService.m */,
 			);
@@ -524,7 +528,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1EFD3718BEE7E0007A1634 /* GCEmote.m in Sources */,
-				1A1EFD8E18BEECF4007A1634 /* ZORNJsonService.m in Sources */,
 				1A1EFD3618BEE7E0007A1634 /* GCCard.m in Sources */,
 				1A1EFD3818BEE7E0007A1634 /* GCHero.m in Sources */,
 				1A1A7F5118BEDF9E00EE0388 /* AppDelegate.m in Sources */,
@@ -544,6 +547,7 @@
 				1A1EFD9818BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m in Sources */,
 				1A1EFD3A18BEE7E0007A1634 /* GCQuest.m in Sources */,
 				1A1EFD9018BEECF4007A1634 /* ZORNTwitterService.m in Sources */,
+				1A969D8318C3DC8D0033F7C0 /* ZORNJSONService.m in Sources */,
 				1A1EFD3218BEE7E0007A1634 /* _GCHero.m in Sources */,
 				1A1EFD9C18BEF179007A1634 /* GCCoreDataManager.m in Sources */,
 				1A1EFD3518BEE7E0007A1634 /* GCAchievement.m in Sources */,

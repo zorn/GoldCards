@@ -1,5 +1,7 @@
 #import "_GCHero.h"
 
 @interface GCHero : _GCHero {}
-// Custom logic goes here.
+
++ (NSDictionary *)zorn_JSONToModelAttributeMapping;
+
 @end

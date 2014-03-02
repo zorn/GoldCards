@@ -6,6 +6,7 @@
 const struct GCHeroAttributes GCHeroAttributes = {
 	.heroClass = @"heroClass",
 	.name = @"name",
+	.remoteID = @"remoteID",
 };
 
 const struct GCHeroRelationships GCHeroRelationships = {
@@ -41,6 +42,11 @@ const struct GCHeroFetchedProperties GCHeroFetchedProperties = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 	
+	if ([key isEqualToString:@"remoteIDValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"remoteID"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
 
 	return keyPaths;
 }
@@ -57,6 +63,32 @@ const struct GCHeroFetchedProperties GCHeroFetchedProperties = {
 
 @dynamic name;
 
+
+
+
+
+
+@dynamic remoteID;
+
+
+
+- (int16_t)remoteIDValue {
+	NSNumber *result = [self remoteID];
+	return [result shortValue];
+}
+
+- (void)setRemoteIDValue:(int16_t)value_ {
+	[self setRemoteID:[NSNumber numberWithShort:value_]];
+}
+
+- (int16_t)primitiveRemoteIDValue {
+	NSNumber *result = [self primitiveRemoteID];
+	return [result shortValue];
+}
+
+- (void)setPrimitiveRemoteIDValue:(int16_t)value_ {
+	[self setPrimitiveRemoteID:[NSNumber numberWithShort:value_]];
+}
 
 
 
