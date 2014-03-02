@@ -43,6 +43,10 @@
 		1A1EFD9818BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9718BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m */; };
 		1A1EFD9C18BEF179007A1634 /* GCCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9B18BEF179007A1634 /* GCCoreDataManager.m */; };
 		1A969D8318C3DC8D0033F7C0 /* ZORNJSONService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A969D8218C3DC8D0033F7C0 /* ZORNJSONService.m */; };
+		1AE19C4E18C3E5FD00D2475A /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE19C4D18C3E5FD00D2475A /* MainMenu.storyboard */; };
+		1AE19C5118C3E88300D2475A /* GCHerosListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE19C5018C3E88300D2475A /* GCHerosListViewController.m */; };
+		1AE19C5618C3E98900D2475A /* GCMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE19C5518C3E98900D2475A /* GCMainMenuViewController.m */; };
+		1AE19C5918C3EA3200D2475A /* UIStoryboardSegue+ZORNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE19C5818C3EA3200D2475A /* UIStoryboardSegue+ZORNAdditions.m */; };
 		1AF010D618BEE19600D87FF6 /* MathSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF010D518BEE19600D87FF6 /* MathSpec.m */; };
 		710026F03BBE4153B262AF79 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979DD3D577A943E388CA4F71 /* libPods.a */; };
 		8FFB7B47C7C340299E6FA7C1 /* libPods-GoldCardsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F23FDD009F04A32A4FDB66A /* libPods-GoldCardsTests.a */; };
@@ -71,7 +75,7 @@
 		1A1A7F4E18BEDF9E00EE0388 /* GoldCards-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoldCards-Prefix.pch"; sourceTree = "<group>"; };
 		1A1A7F4F18BEDF9E00EE0388 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1A1A7F5018BEDF9E00EE0388 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1A1A7F5218BEDF9E00EE0388 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A1A7F5218BEDF9E00EE0388 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		1A1A7F5818BEDF9E00EE0388 /* GoldCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoldCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1A7F5918BEDF9E00EE0388 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1A1A7F6118BEDF9E00EE0388 /* GoldCardsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoldCardsTests-Info.plist"; sourceTree = "<group>"; };
@@ -127,6 +131,13 @@
 		1A969D8018C3DC120033F7C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1A969D8118C3DC8D0033F7C0 /* ZORNJSONService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZORNJSONService.h; path = Submodules/ZORNKit/ZORNKit/ZORNJSONService.h; sourceTree = SOURCE_ROOT; };
 		1A969D8218C3DC8D0033F7C0 /* ZORNJSONService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZORNJSONService.m; path = Submodules/ZORNKit/ZORNKit/ZORNJSONService.m; sourceTree = SOURCE_ROOT; };
+		1AE19C4D18C3E5FD00D2475A /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainMenu.storyboard; path = Source/MainMenu.storyboard; sourceTree = "<group>"; };
+		1AE19C4F18C3E88300D2475A /* GCHerosListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCHerosListViewController.h; path = Source/GCHerosListViewController.h; sourceTree = "<group>"; };
+		1AE19C5018C3E88300D2475A /* GCHerosListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCHerosListViewController.m; path = Source/GCHerosListViewController.m; sourceTree = "<group>"; };
+		1AE19C5418C3E98900D2475A /* GCMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCMainMenuViewController.h; path = Source/GCMainMenuViewController.h; sourceTree = "<group>"; };
+		1AE19C5518C3E98900D2475A /* GCMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCMainMenuViewController.m; path = Source/GCMainMenuViewController.m; sourceTree = "<group>"; };
+		1AE19C5718C3EA3200D2475A /* UIStoryboardSegue+ZORNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIStoryboardSegue+ZORNAdditions.h"; path = "Submodules/ZORNKit/ZORNKit/Categories/UIStoryboardSegue+ZORNAdditions.h"; sourceTree = SOURCE_ROOT; };
+		1AE19C5818C3EA3200D2475A /* UIStoryboardSegue+ZORNAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIStoryboardSegue+ZORNAdditions.m"; path = "Submodules/ZORNKit/ZORNKit/Categories/UIStoryboardSegue+ZORNAdditions.m"; sourceTree = SOURCE_ROOT; };
 		1AF010D518BEE19600D87FF6 /* MathSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSpec.m; sourceTree = "<group>"; };
 		2F23FDD009F04A32A4FDB66A /* libPods-GoldCardsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoldCardsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		979DD3D577A943E388CA4F71 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,8 +211,9 @@
 				1A1EFD9318BEF046007A1634 /* GCGlobal.m */,
 				1A1A7F4F18BEDF9E00EE0388 /* AppDelegate.h */,
 				1A1A7F5018BEDF9E00EE0388 /* AppDelegate.m */,
+				1AE19C4B18C3E5A100D2475A /* Storyboards */,
+				1AE19C4C18C3E5A700D2475A /* Screens */,
 				1A1EFD0E18BEE212007A1634 /* Models */,
-				1A1A7F5218BEDF9E00EE0388 /* Images.xcassets */,
 				1A1EFD1218BEE713007A1634 /* Resources */,
 				1A1A7F4718BEDF9E00EE0388 /* Supporting Files */,
 				1A1EFD7618BEEC88007A1634 /* Submodules */,
@@ -251,6 +263,7 @@
 		1A1EFD1218BEE713007A1634 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1A1A7F5218BEDF9E00EE0388 /* Images.xcassets */,
 				1A1EFD1318BEE713007A1634 /* JSON */,
 			);
 			path = Resources;
@@ -338,6 +351,8 @@
 			children = (
 				1A1EFD9618BEF0D4007A1634 /* NSURL+ZORNKitAdditions.h */,
 				1A1EFD9718BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m */,
+				1AE19C5718C3EA3200D2475A /* UIStoryboardSegue+ZORNAdditions.h */,
+				1AE19C5818C3EA3200D2475A /* UIStoryboardSegue+ZORNAdditions.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -362,6 +377,41 @@
 				1A1EFD2E18BEE7E0007A1634 /* GCQuest.m */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		1AE19C4B18C3E5A100D2475A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1AE19C4D18C3E5FD00D2475A /* MainMenu.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		1AE19C4C18C3E5A700D2475A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1AE19C5318C3E97800D2475A /* Main Menu */,
+				1AE19C5218C3E97000D2475A /* Hero List */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		1AE19C5218C3E97000D2475A /* Hero List */ = {
+			isa = PBXGroup;
+			children = (
+				1AE19C4F18C3E88300D2475A /* GCHerosListViewController.h */,
+				1AE19C5018C3E88300D2475A /* GCHerosListViewController.m */,
+			);
+			name = "Hero List";
+			sourceTree = "<group>";
+		};
+		1AE19C5318C3E97800D2475A /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				1AE19C5418C3E98900D2475A /* GCMainMenuViewController.h */,
+				1AE19C5518C3E98900D2475A /* GCMainMenuViewController.m */,
+			);
+			name = "Main Menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1A7F4B18BEDF9E00EE0388 /* InfoPlist.strings in Resources */,
+				1AE19C4E18C3E5FD00D2475A /* MainMenu.storyboard in Resources */,
 				1A1A7F5318BEDF9E00EE0388 /* Images.xcassets in Resources */,
 				1A1EFD1518BEE713007A1634 /* heros.json in Resources */,
 			);
@@ -529,15 +580,18 @@
 			files = (
 				1A1EFD3718BEE7E0007A1634 /* GCEmote.m in Sources */,
 				1A1EFD3618BEE7E0007A1634 /* GCCard.m in Sources */,
+				1AE19C5118C3E88300D2475A /* GCHerosListViewController.m in Sources */,
 				1A1EFD3818BEE7E0007A1634 /* GCHero.m in Sources */,
 				1A1A7F5118BEDF9E00EE0388 /* AppDelegate.m in Sources */,
 				1A1EFD3318BEE7E0007A1634 /* _GCMechanic.m in Sources */,
 				1A1EFD2F18BEE7E0007A1634 /* _GCAchievement.m in Sources */,
 				1A1EFD3418BEE7E0007A1634 /* _GCQuest.m in Sources */,
+				1AE19C5618C3E98900D2475A /* GCMainMenuViewController.m in Sources */,
 				1A1EFD3918BEE7E0007A1634 /* GCMechanic.m in Sources */,
 				1A1EFD8F18BEECF4007A1634 /* ZORNMappingService.m in Sources */,
 				1A1EFD8518BEECD2007A1634 /* NSObject+ZORNCoreDataStackAdditions.m in Sources */,
 				1A1EFD8318BEECD2007A1634 /* NSManagedObject+ZORNCoreDataStackAdditions.m in Sources */,
+				1AE19C5918C3EA3200D2475A /* UIStoryboardSegue+ZORNAdditions.m in Sources */,
 				1A1EFD3018BEE7E0007A1634 /* _GCCard.m in Sources */,
 				1A1A7F4D18BEDF9E00EE0388 /* main.m in Sources */,
 				1A1EFD3118BEE7E0007A1634 /* _GCEmote.m in Sources */,

@@ -2,6 +2,7 @@
 #import "ZORNCoreDataStack.h"
 #import "NSURL+ZORNKitAdditions.h"
 #import "GCCoreDataManager.h"
+#import "GCMainMenuViewController.h"
 
 @interface AppDelegate ()
 @property (strong) ZORNCoreDataStack *coreDataStack;
@@ -11,12 +12,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
     [self setupCoreDataStack];
     
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    UINavigationController *navVC = (UINavigationController *)self.window.rootViewController;
+    UIViewController *vc = [navVC topViewController];
+    [(GCMainMenuViewController *)vc setManagedObjectContext:self.coreDataStack.managedObjectContext];
+    
     return YES;
 }
 
