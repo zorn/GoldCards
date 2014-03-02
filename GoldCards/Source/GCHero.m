@@ -3,11 +3,11 @@
 
 @implementation GCHero
 
-+ (NSArray *)orderedHerosInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
++ (NSArray *)orderedHeroesInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
 {
-    NSArray *unorderdHeros = [GCHero zorncds_findAllInManagedObjectContext:managedObjectContext];
+    NSArray *unorderdHeroes = [GCHero zorncds_findAllInManagedObjectContext:managedObjectContext];
     NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"remoteID" ascending:YES];
-    return [unorderdHeros sortedArrayUsingDescriptors:@[sort]];
+    return [unorderdHeroes sortedArrayUsingDescriptors:@[sort]];
 }
 
 + (NSDictionary *)zorn_JSONToModelAttributeMapping

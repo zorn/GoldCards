@@ -22,7 +22,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Heros" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P4k-0e-VfJ">
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Heroes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P4k-0e-VfJ">
                                                     <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -172,10 +172,10 @@
             </objects>
             <point key="canvasLocation" x="579" y="161"/>
         </scene>
-        <!--Heros List View Controller - Heros-->
+        <!--Heroes List View Controller - Heroes-->
         <scene sceneID="siw-Mh-Iks">
             <objects>
-                <viewController id="Yei-jq-PL5" customClass="GCHerosListViewController" sceneMemberID="viewController">
+                <viewController id="Yei-jq-PL5" customClass="GCHeroesListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3s5-EC-Gu2"/>
                         <viewControllerLayoutGuide type="bottom" id="egh-OH-cOg"/>
@@ -228,7 +228,7 @@
                             <constraint firstAttribute="trailing" secondItem="QAA-lf-oBX" secondAttribute="trailing" id="wru-RC-l0v"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Heros" id="Z8h-NG-h3U"/>
+                    <navigationItem key="navigationItem" title="Heroes" id="Z8h-NG-h3U"/>
                     <connections>
                         <outlet property="tableView" destination="QAA-lf-oBX" id="doM-ol-9ni"/>
                     </connections>

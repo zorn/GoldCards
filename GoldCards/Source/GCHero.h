@@ -2,7 +2,7 @@
 
 @interface GCHero : _GCHero {}
 
-+ (NSArray *)orderedHerosInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
++ (NSArray *)orderedHeroesInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 + (NSDictionary *)zorn_JSONToModelAttributeMapping;
 
 @end

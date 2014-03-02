@@ -1,5 +1,5 @@
 #import "GCMainMenuViewController.h"
-#import "GCHerosListViewController.h"
+#import "GCHeroesListViewController.h"
 #import "UIStoryboardSegue+ZORNAdditions.h"
 #import "GCModels.h"
 #import "ZORNCoreDataStack.h"
@@ -16,8 +16,8 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"heroList"]) {
-        UIViewController *heroListVC = [segue zorn_destinationViewControllerOfClass:[GCHerosListViewController class]];
-        [(GCHerosListViewController *)heroListVC setHeros:[GCHero orderedHerosInManagedObjectContext:self.managedObjectContext]];
+        UIViewController *heroListVC = [segue zorn_destinationViewControllerOfClass:[GCHeroesListViewController class]];
+        [(GCHeroesListViewController *)heroListVC setHeroes:[GCHero orderedHeroesInManagedObjectContext:self.managedObjectContext]];
     }
 }
 

@@ -1,22 +1,22 @@
-#import "GCHerosListViewController.h"
+#import "GCHeroesListViewController.h"
 #import "GCModels.h"
 
-@interface GCHerosListViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface GCHeroesListViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
-@implementation GCHerosListViewController
+@implementation GCHeroesListViewController
 
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.heros count];
+    return [self.heroes count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    GCHero *hero = [self.heros objectAtIndex:indexPath.row];
+    GCHero *hero = [self.heroes objectAtIndex:indexPath.row];
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"HeroCell"];
     cell.textLabel.text = hero.name;
     cell.detailTextLabel.text = hero.heroClass;

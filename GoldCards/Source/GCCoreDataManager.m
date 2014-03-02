@@ -39,7 +39,7 @@
     }
     
     NSError *importError = nil;
-    if (![self importHeros:&importError]) {
+    if (![self importHeroes:&importError]) {
         DDLogError(@"error: %@", importError);
         return NO;
     }
@@ -55,13 +55,13 @@
 
 #pragma mark - Private
 
-- (BOOL)importHeros:(NSError **)returnError
+- (BOOL)importHeroes:(NSError **)returnError
 {
-    NSData *jsonData = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"heros" withExtension:@"json"]];
-    NSArray *heros = [ZORNJSONService arrayForJSONData:jsonData];
+    NSData *jsonData = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"heroes" withExtension:@"json"]];
+    NSArray *heroes = [ZORNJSONService arrayForJSONData:jsonData];
     ZORNMappingService *mappingService = [[ZORNMappingService alloc] init];
     NSError *mappingError = nil;
-    NSArray *mappedObjects = [mappingService mapDictionaryCollection:heros
+    NSArray *mappedObjects = [mappingService mapDictionaryCollection:heroes
                                              toObjectInstanseOfClass:[GCHero class]
                                               inManagedObjectContext:self.coreDataStack.managedObjectContext
                                                        updateObjects:YES
@@ -70,7 +70,7 @@
                                                   customMappingBlock:nil
                                                                error:&mappingError];
     if (!mappedObjects) {
-        DDLogError(@"error mapping heros: %@", mappingError);
+        DDLogError(@"error mapping heroes: %@", mappingError);
         *returnError = mappingError;
         return NO;
     }
