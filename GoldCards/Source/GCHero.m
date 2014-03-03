@@ -17,4 +17,10 @@
              @"name": @"name"};
 }
 
++ (GCHero *)heroForCardClassValue:(NSNumber *)classValue inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"remoteID == %@", classValue];
+    return [GCHero zorncds_findOnlyInManagedObjectContext:managedObjectContext withPredicate:predicate];
+}
+
 @end

@@ -62,16 +62,27 @@
 
 - (BOOL)importHeroes:(NSError **)returnError
 {
-    return [self importJSONAtURL:[[NSBundle mainBundle] URLForResource:@"heroes" withExtension:@"json"] mapToClass:[GCHero class] error:returnError];
+    return [self importJSONAtURL:[[NSBundle mainBundle] URLForResource:@"heroes" withExtension:@"json"] mapToClass:[GCHero class] customMappingBlock:nil error:returnError];
 
 }
 
 - (BOOL)importCards:(NSError **)returnError
 {
-    return [self importJSONAtURL:[[NSBundle mainBundle] URLForResource:@"cards" withExtension:@"json"] mapToClass:[GCCard class] error:returnError];
+    ZORNMappingServiceMapObjectsCustomMappingBlock customMappingBlock = ^(NSObject *mappedObject, NSDictionary *valueDictionary) {
+        
+        GCCard *card = (GCCard *)mappedObject;
+        NSNumber *classValue = [valueDictionary objectForKey:@"classs"];
+        if (classValue) {
+            GCHero *hero = [GCHero heroForCardClassValue:classValue inManagedObjectContext:card.managedObjectContext];
+            card.hero = hero;
+        }
+        
+    };
+    
+    return [self importJSONAtURL:[[NSBundle mainBundle] URLForResource:@"cards" withExtension:@"json"] mapToClass:[GCCard class] customMappingBlock:customMappingBlock error:returnError];
 }
 
-- (BOOL)importJSONAtURL:(NSURL *)jsonURL mapToClass:(Class)someClass error:(NSError **)returnError
+- (BOOL)importJSONAtURL:(NSURL *)jsonURL mapToClass:(Class)someClass customMappingBlock:(ZORNMappingServiceMapObjectsCustomMappingBlock)customMappingBlock error:(NSError **)returnError
 {
     NSData *jsonData = [NSData dataWithContentsOfURL:jsonURL];
     NSArray *objects = [ZORNJSONService arrayForJSONData:jsonData];
@@ -83,7 +94,7 @@
                                                        updateObjects:YES
                                                         usingMapping:[someClass zorn_JSONToModelAttributeMapping]
                                            uniqueIdentifierAttribute:@"remoteID"
-                                                  customMappingBlock:nil
+                                                  customMappingBlock:customMappingBlock
                                                                error:&mappingError];
     if (!mappedObjects) {
         DDLogError(@"error mapping: %@", mappingError);
