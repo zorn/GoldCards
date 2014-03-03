@@ -10,6 +10,11 @@
 
 @implementation GCCard
 
+- (NSString *)goldImageFilename
+{
+    return [NSString stringWithFormat:@"%@_premium", self.imageFilename];
+}
+
 + (NSDictionary *)zorn_JSONToModelAttributeMapping
 {
     return @{@"attack": @"attack",

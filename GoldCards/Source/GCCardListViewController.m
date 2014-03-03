@@ -1,11 +1,32 @@
 #import "GCCardListViewController.h"
 #import "GCModels.h"
-
-@interface GCCardListViewController ()
-
-@end
+#import "UIStoryboardSegue+ZORNAdditions.h"
+#import "GCCardDetailViewController.h"
 
 @implementation GCCardListViewController
+
+#pragma mark - UIViewController
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"cardDetail"]) {
+        
+        UIViewController *vc = [segue zorn_destinationViewControllerOfClass:[GCCardDetailViewController class]];
+        GCCard *selectedCard = nil;
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        if ([self.savedSearchTerm length] > 0){
+            UITableView *searchTableView = self.searchDisplayController.searchResultsTableView;
+            indexPath = [searchTableView indexPathForSelectedRow];
+            selectedCard = [[self fetchedResultsControllerForTableView:searchTableView] objectAtIndexPath:indexPath];
+        } else {
+            selectedCard = [[self fetchedResultsControllerForTableView:self.tableView] objectAtIndexPath:indexPath];
+        }
+        [(GCCardDetailViewController *)vc setCard:selectedCard];
+    }
+}
+
+
+#pragma mark - ZORNCoreDataTableViewController
 
 - (NSString *)entityName
 {
