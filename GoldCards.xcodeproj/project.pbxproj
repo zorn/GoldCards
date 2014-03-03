@@ -43,6 +43,8 @@
 		1A1EFD9818BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9718BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m */; };
 		1A1EFD9C18BEF179007A1634 /* GCCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9B18BEF179007A1634 /* GCCoreDataManager.m */; };
 		1A969D8318C3DC8D0033F7C0 /* ZORNJSONService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A969D8218C3DC8D0033F7C0 /* ZORNJSONService.m */; };
+		1AD4C5C718C4168900C870D2 /* ZORNCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4C5C618C4168900C870D2 /* ZORNCoreDataTableViewController.m */; };
+		1AD4C5CB18C4179300C870D2 /* GCCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4C5CA18C4179300C870D2 /* GCCardListViewController.m */; };
 		1AE19C4E18C3E5FD00D2475A /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE19C4D18C3E5FD00D2475A /* MainMenu.storyboard */; };
 		1AE19C5118C3E88300D2475A /* GCHeroesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE19C5018C3E88300D2475A /* GCHeroesListViewController.m */; };
 		1AE19C5618C3E98900D2475A /* GCMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE19C5518C3E98900D2475A /* GCMainMenuViewController.m */; };
@@ -132,6 +134,10 @@
 		1A969D8018C3DC120033F7C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1A969D8118C3DC8D0033F7C0 /* ZORNJSONService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZORNJSONService.h; path = Submodules/ZORNKit/ZORNKit/ZORNJSONService.h; sourceTree = SOURCE_ROOT; };
 		1A969D8218C3DC8D0033F7C0 /* ZORNJSONService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZORNJSONService.m; path = Submodules/ZORNKit/ZORNKit/ZORNJSONService.m; sourceTree = SOURCE_ROOT; };
+		1AD4C5C518C4168900C870D2 /* ZORNCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZORNCoreDataTableViewController.h; sourceTree = "<group>"; };
+		1AD4C5C618C4168900C870D2 /* ZORNCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZORNCoreDataTableViewController.m; sourceTree = "<group>"; };
+		1AD4C5C918C4179300C870D2 /* GCCardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCCardListViewController.h; path = Source/GCCardListViewController.h; sourceTree = "<group>"; };
+		1AD4C5CA18C4179300C870D2 /* GCCardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCCardListViewController.m; path = Source/GCCardListViewController.m; sourceTree = "<group>"; };
 		1AE19C4D18C3E5FD00D2475A /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainMenu.storyboard; path = Source/MainMenu.storyboard; sourceTree = "<group>"; };
 		1AE19C4F18C3E88300D2475A /* GCHeroesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCHeroesListViewController.h; path = Source/GCHeroesListViewController.h; sourceTree = "<group>"; };
 		1AE19C5018C3E88300D2475A /* GCHeroesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCHeroesListViewController.m; path = Source/GCHeroesListViewController.m; sourceTree = "<group>"; };
@@ -330,6 +336,8 @@
 				1A1EFD8018BEECD2007A1634 /* ZORNCoreDataStack.m */,
 				1A1EFD8118BEECD2007A1634 /* ZORNCoreDataStackErrors.h */,
 				1A1EFD8218BEECD2007A1634 /* ZORNCoreDataStackErrors.m */,
+				1AD4C5C518C4168900C870D2 /* ZORNCoreDataTableViewController.h */,
+				1AD4C5C618C4168900C870D2 /* ZORNCoreDataTableViewController.m */,
 				1A1EFD9118BEED11007A1634 /* Categories */,
 			);
 			name = CoreData;
@@ -382,6 +390,15 @@
 			name = CoreData;
 			sourceTree = "<group>";
 		};
+		1AD4C5C818C4177D00C870D2 /* Card List */ = {
+			isa = PBXGroup;
+			children = (
+				1AD4C5C918C4179300C870D2 /* GCCardListViewController.h */,
+				1AD4C5CA18C4179300C870D2 /* GCCardListViewController.m */,
+			);
+			name = "Card List";
+			sourceTree = "<group>";
+		};
 		1AE19C4B18C3E5A100D2475A /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +412,7 @@
 			children = (
 				1AE19C5318C3E97800D2475A /* Main Menu */,
 				1AE19C5218C3E97000D2475A /* Hero List */,
+				1AD4C5C818C4177D00C870D2 /* Card List */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -582,6 +600,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD4C5C718C4168900C870D2 /* ZORNCoreDataTableViewController.m in Sources */,
 				1A1EFD3718BEE7E0007A1634 /* GCEmote.m in Sources */,
 				1A1EFD3618BEE7E0007A1634 /* GCCard.m in Sources */,
 				1AE19C5118C3E88300D2475A /* GCHeroesListViewController.m in Sources */,
@@ -609,6 +628,7 @@
 				1A1EFD3218BEE7E0007A1634 /* _GCHero.m in Sources */,
 				1A1EFD9C18BEF179007A1634 /* GCCoreDataManager.m in Sources */,
 				1A1EFD3518BEE7E0007A1634 /* GCAchievement.m in Sources */,
+				1AD4C5CB18C4179300C870D2 /* GCCardListViewController.m in Sources */,
 				1A1EFD8418BEECD2007A1634 /* NSManagedObjectContext+ZORNCoreDataStackAdditions.m in Sources */,
 				1A1EFD8718BEECD2007A1634 /* ZORNCoreDataStackErrors.m in Sources */,
 			);

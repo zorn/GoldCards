@@ -51,6 +51,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="KTu-Is-oE9" kind="push" identifier="cardList" id="8Q5-e0-Dk3"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="4mI-Sh-U4R" style="IBUITableViewCellStyleDefault" id="jX0-x1-1Gb">
                                         <rect key="frame" x="0.0" y="110" width="320" height="44"/>
@@ -236,6 +239,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="she-Ys-RE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1013" y="161"/>
+        </scene>
+        <!--Card List View Controller - Cards-->
+        <scene sceneID="jeN-WU-zmW">
+            <objects>
+                <viewController id="KTu-Is-oE9" customClass="GCCardListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nzg-Wn-Wg5"/>
+                        <viewControllerLayoutGuide type="bottom" id="9gq-jl-Un2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QTm-o0-JSM">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0cJ-C8-eUW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardCell" textLabel="1UI-uI-TFi" style="IBUITableViewCellStyleDefault" id="gIm-Il-k4D">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gIm-Il-k4D" id="f0j-RP-ETs">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1UI-uI-TFi">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="KTu-Is-oE9" id="9PN-vu-fZP"/>
+                                    <outlet property="delegate" destination="KTu-Is-oE9" id="Q5p-lt-9bq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0cJ-C8-eUW" secondAttribute="trailing" id="0fS-hd-jLE"/>
+                            <constraint firstItem="0cJ-C8-eUW" firstAttribute="leading" secondItem="QTm-o0-JSM" secondAttribute="leading" id="dPh-Bi-RPw"/>
+                            <constraint firstItem="9gq-jl-Un2" firstAttribute="top" secondItem="0cJ-C8-eUW" secondAttribute="bottom" id="fVF-E2-AEC"/>
+                            <constraint firstItem="0cJ-C8-eUW" firstAttribute="top" secondItem="QTm-o0-JSM" secondAttribute="top" id="iqB-eD-SCx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cards" id="llZ-It-If1"/>
+                    <connections>
+                        <outlet property="tableView" destination="0cJ-C8-eUW" id="ZKL-48-sZK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3uB-FL-mMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="878"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8ll-Uc-wUf">
