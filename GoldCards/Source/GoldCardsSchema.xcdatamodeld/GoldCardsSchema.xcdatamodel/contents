@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="GCAchievement" representedClassName="GCAchievement" syncable="YES"/>
     <entity name="GCCard" representedClassName="GCCard" syncable="YES">
-        <attribute name="attack" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="cost" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="factionAsNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="health" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="attack" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="cardTypeAsNumber" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="cost" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="factionAsNumber" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="health" optional="YES" attributeType="Integer 16" syncable="YES"/>
         <attribute name="iconFilename" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imageFilename" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="isCollectable" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="isElite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isCollectable" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="isElite" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="qualityAsNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="remoteID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <attribute name="setAsNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="qualityAsNumber" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="remoteID" attributeType="Integer 64" syncable="YES"/>
+        <attribute name="setAsNumber" attributeType="Integer 16" syncable="YES"/>
         <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="typeAsNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="hero" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GCHero" inverseName="cards" inverseEntity="GCHero" syncable="YES"/>
     </entity>
     <entity name="GCEmote" representedClassName="GCEmote" syncable="YES"/>

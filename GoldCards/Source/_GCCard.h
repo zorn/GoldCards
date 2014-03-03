@@ -6,6 +6,7 @@
 
 extern const struct GCCardAttributes {
 	__unsafe_unretained NSString *attack;
+	__unsafe_unretained NSString *cardTypeAsNumber;
 	__unsafe_unretained NSString *cost;
 	__unsafe_unretained NSString *factionAsNumber;
 	__unsafe_unretained NSString *health;
@@ -18,7 +19,6 @@ extern const struct GCCardAttributes {
 	__unsafe_unretained NSString *remoteID;
 	__unsafe_unretained NSString *setAsNumber;
 	__unsafe_unretained NSString *summary;
-	__unsafe_unretained NSString *typeAsNumber;
 } GCCardAttributes;
 
 extern const struct GCCardRelationships {
@@ -67,6 +67,20 @@ extern const struct GCCardFetchedProperties {
 - (void)setAttackValue:(int16_t)value_;
 
 //- (BOOL)validateAttack:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSNumber* cardTypeAsNumber;
+
+
+
+@property int16_t cardTypeAsNumberValue;
+- (int16_t)cardTypeAsNumberValue;
+- (void)setCardTypeAsNumberValue:(int16_t)value_;
+
+//- (BOOL)validateCardTypeAsNumber:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -224,20 +238,6 @@ extern const struct GCCardFetchedProperties {
 
 
 
-@property (nonatomic, strong) NSNumber* typeAsNumber;
-
-
-
-@property int16_t typeAsNumberValue;
-- (int16_t)typeAsNumberValue;
-- (void)setTypeAsNumberValue:(int16_t)value_;
-
-//- (BOOL)validateTypeAsNumber:(id*)value_ error:(NSError**)error_;
-
-
-
-
-
 @property (nonatomic, strong) GCHero *hero;
 
 //- (BOOL)validateHero:(id*)value_ error:(NSError**)error_;
@@ -260,6 +260,15 @@ extern const struct GCCardFetchedProperties {
 
 - (int16_t)primitiveAttackValue;
 - (void)setPrimitiveAttackValue:(int16_t)value_;
+
+
+
+
+- (NSNumber*)primitiveCardTypeAsNumber;
+- (void)setPrimitiveCardTypeAsNumber:(NSNumber*)value;
+
+- (int16_t)primitiveCardTypeAsNumberValue;
+- (void)setPrimitiveCardTypeAsNumberValue:(int16_t)value_;
 
 
 
@@ -356,15 +365,6 @@ extern const struct GCCardFetchedProperties {
 
 - (NSString*)primitiveSummary;
 - (void)setPrimitiveSummary:(NSString*)value;
-
-
-
-
-- (NSNumber*)primitiveTypeAsNumber;
-- (void)setPrimitiveTypeAsNumber:(NSNumber*)value;
-
-- (int16_t)primitiveTypeAsNumberValue;
-- (void)setPrimitiveTypeAsNumberValue:(int16_t)value_;
 
 
 

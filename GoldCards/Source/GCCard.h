@@ -1,5 +1,7 @@
 #import "_GCCard.h"
 
 @interface GCCard : _GCCard {}
-// Custom logic goes here.
+
++ (NSDictionary *)zorn_JSONToModelAttributeMapping;
+
 @end

@@ -47,6 +47,7 @@
 		1AE19C5118C3E88300D2475A /* GCHeroesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE19C5018C3E88300D2475A /* GCHeroesListViewController.m */; };
 		1AE19C5618C3E98900D2475A /* GCMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE19C5518C3E98900D2475A /* GCMainMenuViewController.m */; };
 		1AE19C5918C3EA3200D2475A /* UIStoryboardSegue+ZORNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE19C5818C3EA3200D2475A /* UIStoryboardSegue+ZORNAdditions.m */; };
+		1AE19C5E18C40E1B00D2475A /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AE19C5D18C40E1B00D2475A /* cards.json */; };
 		1AF010D618BEE19600D87FF6 /* MathSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF010D518BEE19600D87FF6 /* MathSpec.m */; };
 		710026F03BBE4153B262AF79 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979DD3D577A943E388CA4F71 /* libPods.a */; };
 		8FFB7B47C7C340299E6FA7C1 /* libPods-GoldCardsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F23FDD009F04A32A4FDB66A /* libPods-GoldCardsTests.a */; };
@@ -138,6 +139,7 @@
 		1AE19C5518C3E98900D2475A /* GCMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCMainMenuViewController.m; path = Source/GCMainMenuViewController.m; sourceTree = "<group>"; };
 		1AE19C5718C3EA3200D2475A /* UIStoryboardSegue+ZORNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIStoryboardSegue+ZORNAdditions.h"; path = "Submodules/ZORNKit/ZORNKit/Categories/UIStoryboardSegue+ZORNAdditions.h"; sourceTree = SOURCE_ROOT; };
 		1AE19C5818C3EA3200D2475A /* UIStoryboardSegue+ZORNAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIStoryboardSegue+ZORNAdditions.m"; path = "Submodules/ZORNKit/ZORNKit/Categories/UIStoryboardSegue+ZORNAdditions.m"; sourceTree = SOURCE_ROOT; };
+		1AE19C5D18C40E1B00D2475A /* cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards.json; sourceTree = "<group>"; };
 		1AF010D518BEE19600D87FF6 /* MathSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSpec.m; sourceTree = "<group>"; };
 		2F23FDD009F04A32A4FDB66A /* libPods-GoldCardsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoldCardsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		979DD3D577A943E388CA4F71 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -272,6 +274,7 @@
 		1A1EFD1318BEE713007A1634 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				1AE19C5D18C40E1B00D2475A /* cards.json */,
 				1A1EFD1418BEE713007A1634 /* heroes.json */,
 			);
 			path = JSON;
@@ -496,6 +499,7 @@
 				1A1A7F4B18BEDF9E00EE0388 /* InfoPlist.strings in Resources */,
 				1AE19C4E18C3E5FD00D2475A /* MainMenu.storyboard in Resources */,
 				1A1A7F5318BEDF9E00EE0388 /* Images.xcassets in Resources */,
+				1AE19C5E18C40E1B00D2475A /* cards.json in Resources */,
 				1A1EFD1518BEE713007A1634 /* heroes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

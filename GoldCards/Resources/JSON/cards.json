@@ -4385,7 +4385,6 @@
     "collectible": 1, 
     "cost": 4, 
     "description": "If you control a Secret at the end of your turn, gain +2/+2.", 
-    "elite": 0, 
     "health": 3, 
     "icon": "inv_misc_ticket_tarot_beasts_01", 
     "id": 1737, 

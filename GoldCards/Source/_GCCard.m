@@ -5,6 +5,7 @@
 
 const struct GCCardAttributes GCCardAttributes = {
 	.attack = @"attack",
+	.cardTypeAsNumber = @"cardTypeAsNumber",
 	.cost = @"cost",
 	.factionAsNumber = @"factionAsNumber",
 	.health = @"health",
@@ -17,7 +18,6 @@ const struct GCCardAttributes GCCardAttributes = {
 	.remoteID = @"remoteID",
 	.setAsNumber = @"setAsNumber",
 	.summary = @"summary",
-	.typeAsNumber = @"typeAsNumber",
 };
 
 const struct GCCardRelationships GCCardRelationships = {
@@ -55,6 +55,11 @@ const struct GCCardFetchedProperties GCCardFetchedProperties = {
 	
 	if ([key isEqualToString:@"attackValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"attack"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
+	if ([key isEqualToString:@"cardTypeAsNumberValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"cardTypeAsNumber"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
 		return keyPaths;
 	}
@@ -98,11 +103,6 @@ const struct GCCardFetchedProperties GCCardFetchedProperties = {
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
 		return keyPaths;
 	}
-	if ([key isEqualToString:@"typeAsNumberValue"]) {
-		NSSet *affectingKey = [NSSet setWithObject:@"typeAsNumber"];
-		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
-		return keyPaths;
-	}
 
 	return keyPaths;
 }
@@ -130,6 +130,32 @@ const struct GCCardFetchedProperties GCCardFetchedProperties = {
 
 - (void)setPrimitiveAttackValue:(int16_t)value_ {
 	[self setPrimitiveAttack:[NSNumber numberWithShort:value_]];
+}
+
+
+
+
+
+@dynamic cardTypeAsNumber;
+
+
+
+- (int16_t)cardTypeAsNumberValue {
+	NSNumber *result = [self cardTypeAsNumber];
+	return [result shortValue];
+}
+
+- (void)setCardTypeAsNumberValue:(int16_t)value_ {
+	[self setCardTypeAsNumber:[NSNumber numberWithShort:value_]];
+}
+
+- (int16_t)primitiveCardTypeAsNumberValue {
+	NSNumber *result = [self primitiveCardTypeAsNumber];
+	return [result shortValue];
+}
+
+- (void)setPrimitiveCardTypeAsNumberValue:(int16_t)value_ {
+	[self setPrimitiveCardTypeAsNumber:[NSNumber numberWithShort:value_]];
 }
 
 
@@ -367,32 +393,6 @@ const struct GCCardFetchedProperties GCCardFetchedProperties = {
 
 @dynamic summary;
 
-
-
-
-
-
-@dynamic typeAsNumber;
-
-
-
-- (int16_t)typeAsNumberValue {
-	NSNumber *result = [self typeAsNumber];
-	return [result shortValue];
-}
-
-- (void)setTypeAsNumberValue:(int16_t)value_ {
-	[self setTypeAsNumber:[NSNumber numberWithShort:value_]];
-}
-
-- (int16_t)primitiveTypeAsNumberValue {
-	NSNumber *result = [self primitiveTypeAsNumber];
-	return [result shortValue];
-}
-
-- (void)setPrimitiveTypeAsNumberValue:(int16_t)value_ {
-	[self setPrimitiveTypeAsNumber:[NSNumber numberWithShort:value_]];
-}
 
 
 

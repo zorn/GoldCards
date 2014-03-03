@@ -43,6 +43,11 @@
         DDLogError(@"error: %@", importError);
         return NO;
     }
+    importError = nil;
+    if (![self importCards:&importError]) {
+        DDLogError(@"error: %@", importError);
+        return NO;
+    }
     
     [self.coreDataStack.managedObjectContext zorncds_saveForcefully];
     return YES;
@@ -57,20 +62,31 @@
 
 - (BOOL)importHeroes:(NSError **)returnError
 {
-    NSData *jsonData = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"heroes" withExtension:@"json"]];
-    NSArray *heroes = [ZORNJSONService arrayForJSONData:jsonData];
+    return [self importJSONAtURL:[[NSBundle mainBundle] URLForResource:@"heroes" withExtension:@"json"] mapToClass:[GCHero class] error:returnError];
+
+}
+
+- (BOOL)importCards:(NSError **)returnError
+{
+    return [self importJSONAtURL:[[NSBundle mainBundle] URLForResource:@"cards" withExtension:@"json"] mapToClass:[GCCard class] error:returnError];
+}
+
+- (BOOL)importJSONAtURL:(NSURL *)jsonURL mapToClass:(Class)someClass error:(NSError **)returnError
+{
+    NSData *jsonData = [NSData dataWithContentsOfURL:jsonURL];
+    NSArray *objects = [ZORNJSONService arrayForJSONData:jsonData];
     ZORNMappingService *mappingService = [[ZORNMappingService alloc] init];
     NSError *mappingError = nil;
-    NSArray *mappedObjects = [mappingService mapDictionaryCollection:heroes
-                                             toObjectInstanseOfClass:[GCHero class]
+    NSArray *mappedObjects = [mappingService mapDictionaryCollection:objects
+                                             toObjectInstanseOfClass:someClass
                                               inManagedObjectContext:self.coreDataStack.managedObjectContext
                                                        updateObjects:YES
-                                                        usingMapping:[GCHero zorn_JSONToModelAttributeMapping]
+                                                        usingMapping:[someClass zorn_JSONToModelAttributeMapping]
                                            uniqueIdentifierAttribute:@"remoteID"
                                                   customMappingBlock:nil
                                                                error:&mappingError];
     if (!mappedObjects) {
-        DDLogError(@"error mapping heroes: %@", mappingError);
+        DDLogError(@"error mapping: %@", mappingError);
         *returnError = mappingError;
         return NO;
     }
