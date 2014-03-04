@@ -111,6 +111,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="YAg-7Z-JPp" kind="push" identifier="questList" id="ocd-1O-Qjn"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -179,7 +182,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CkU-ak-eAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="469" y="1229"/>
+            <point key="canvasLocation" x="456" y="2256"/>
         </scene>
         <!--Heroes List View Controller - Heroes-->
         <scene sceneID="siw-Mh-Iks">
@@ -440,6 +443,72 @@
             </objects>
             <point key="canvasLocation" x="1013" y="2256"/>
         </scene>
+        <!--Quest List View Controller - Quests-->
+        <scene sceneID="26W-8a-Wn7">
+            <objects>
+                <viewController id="YAg-7Z-JPp" customClass="GCQuestListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GjB-No-3VT"/>
+                        <viewControllerLayoutGuide type="bottom" id="WOU-fg-0VD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4tY-YQ-pOp">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="IQI-ey-yD3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestCell" textLabel="qe3-0B-Iua" detailTextLabel="Tpr-sR-iBW" style="IBUITableViewCellStyleSubtitle" id="3Oa-wO-6ew">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Oa-wO-6ew" id="xs1-4C-NE3">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qe3-0B-Iua">
+                                                    <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tpr-sR-iBW">
+                                                    <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="YAg-7Z-JPp" id="Zht-7I-Prn"/>
+                                    <outlet property="delegate" destination="YAg-7Z-JPp" id="idI-Na-UKa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IQI-ey-yD3" secondAttribute="trailing" id="I9D-Rl-bmh"/>
+                            <constraint firstItem="IQI-ey-yD3" firstAttribute="top" secondItem="4tY-YQ-pOp" secondAttribute="top" id="amO-dw-bg2"/>
+                            <constraint firstItem="IQI-ey-yD3" firstAttribute="leading" secondItem="4tY-YQ-pOp" secondAttribute="leading" id="h6m-5Q-lAC"/>
+                            <constraint firstItem="WOU-fg-0VD" firstAttribute="top" secondItem="IQI-ey-yD3" secondAttribute="bottom" id="u6w-kX-q7R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quests" id="2Lb-Ld-h3X"/>
+                    <connections>
+                        <outlet property="tableView" destination="IQI-ey-yD3" id="Uj1-7n-Wg3"/>
+                        <outlet property="view" destination="4tY-YQ-pOp" id="j3J-s9-MMB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQV-6Z-2iO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="2945"/>
+        </scene>
         <!--Card Detail View Controller - Card Name-->
         <scene sceneID="DPc-Fa-ZEt">
             <objects>
@@ -555,7 +624,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glK-3x-2Jc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19" y="1229"/>
+            <point key="canvasLocation" x="6" y="2256"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -7,8 +7,8 @@ const struct GCAchievementAttributes GCAchievementAttributes = {
 	.achievementType = @"achievementType",
 	.name = @"name",
 	.remoteID = @"remoteID",
+	.reward = @"reward",
 	.rewardType = @"rewardType",
-	.rewardValue = @"rewardValue",
 	.summary = @"summary",
 	.trigger = @"trigger",
 };
@@ -97,14 +97,14 @@ const struct GCAchievementFetchedProperties GCAchievementFetchedProperties = {
 
 
 
+@dynamic reward;
+
+
+
+
+
+
 @dynamic rewardType;
-
-
-
-
-
-
-@dynamic rewardValue;
 
 
 

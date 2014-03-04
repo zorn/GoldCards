@@ -19,7 +19,7 @@
              //@"maxprogress": "1",
              @"name": @"name",
              //@"race": "0",
-             @"reward": @"rewardValue",
+             @"reward": @"reward",
              //@"rewarddata": "0",
              @"rewardtype": @"rewardType",
              @"trigger": @"trigger",

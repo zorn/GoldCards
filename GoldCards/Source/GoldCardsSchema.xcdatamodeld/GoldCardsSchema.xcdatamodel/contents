@@ -4,8 +4,8 @@
         <attribute name="achievementType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="remoteID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="reward" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="rewardType" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="rewardValue" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="trigger" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
@@ -41,7 +41,15 @@
         <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="cards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GCCard" inverseName="mechanics" inverseEntity="GCCard" syncable="YES"/>
     </entity>
-    <entity name="GCQuest" representedClassName="GCQuest" syncable="YES"/>
+    <entity name="GCQuest" representedClassName="GCQuest" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="questType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remoteID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="reward" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rewardType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trigger" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="GCAchievement" positionX="207" positionY="-34" width="128" height="43"/>
         <element name="GCCard" positionX="16" positionY="173" width="128" height="283"/>

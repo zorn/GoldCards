@@ -6,6 +6,7 @@
 #import "GCCardListViewController.h"
 #import "GCMechanicListViewController.h"
 #import "GCAchievementListViewController.h"
+#import "GCQuestListViewController.h"
 
 @implementation GCMainMenuViewController
 
@@ -30,6 +31,9 @@
     } else if ([segue.identifier isEqualToString:@"achievementList"]) {
         UIViewController *achievementListVC = [segue zorn_destinationViewControllerOfClass:[GCAchievementListViewController class]];
         [(GCAchievementListViewController *)achievementListVC setManagedObjectContext:self.managedObjectContext];
+    } else if ([segue.identifier isEqualToString:@"questList"]) {
+        UIViewController *questListVC = [segue zorn_destinationViewControllerOfClass:[GCQuestListViewController class]];
+        [(GCQuestListViewController *)questListVC setManagedObjectContext:self.managedObjectContext];
     }
 }
 

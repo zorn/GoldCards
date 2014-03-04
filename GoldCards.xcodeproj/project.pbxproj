@@ -11,6 +11,8 @@
 		1A0CAC1D18C57C7E0009EC33 /* mechanics.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A0CAC1B18C57C7E0009EC33 /* mechanics.json */; };
 		1A0CAC2118C57D1E0009EC33 /* GCMechanicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CAC2018C57D1E0009EC33 /* GCMechanicListViewController.m */; };
 		1A0CAC2518C5806C0009EC33 /* GCAchievementListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CAC2418C5806C0009EC33 /* GCAchievementListViewController.m */; };
+		1A0CAC2718C583D10009EC33 /* quests.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A0CAC2618C583D10009EC33 /* quests.json */; };
+		1A0CAC2B18C584550009EC33 /* GCQuestListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CAC2A18C584550009EC33 /* GCQuestListViewController.m */; };
 		1A1A7F4118BEDF9E00EE0388 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1A7F4018BEDF9E00EE0388 /* Foundation.framework */; };
 		1A1A7F4318BEDF9E00EE0388 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1A7F4218BEDF9E00EE0388 /* CoreGraphics.framework */; };
 		1A1A7F4518BEDF9E00EE0388 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1A7F4418BEDF9E00EE0388 /* UIKit.framework */; };
@@ -462,6 +464,9 @@
 		1A0CAC2018C57D1E0009EC33 /* GCMechanicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCMechanicListViewController.m; path = Source/GCMechanicListViewController.m; sourceTree = "<group>"; };
 		1A0CAC2318C5806C0009EC33 /* GCAchievementListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCAchievementListViewController.h; path = Source/GCAchievementListViewController.h; sourceTree = "<group>"; };
 		1A0CAC2418C5806C0009EC33 /* GCAchievementListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCAchievementListViewController.m; path = Source/GCAchievementListViewController.m; sourceTree = "<group>"; };
+		1A0CAC2618C583D10009EC33 /* quests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quests.json; sourceTree = "<group>"; };
+		1A0CAC2918C584550009EC33 /* GCQuestListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCQuestListViewController.h; path = Source/GCQuestListViewController.h; sourceTree = "<group>"; };
+		1A0CAC2A18C584550009EC33 /* GCQuestListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCQuestListViewController.m; path = Source/GCQuestListViewController.m; sourceTree = "<group>"; };
 		1A1A7F3D18BEDF9E00EE0388 /* GoldCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1A7F4018BEDF9E00EE0388 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A1A7F4218BEDF9E00EE0388 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -975,6 +980,15 @@
 			name = "Achievement List";
 			sourceTree = "<group>";
 		};
+		1A0CAC2818C5843E0009EC33 /* Quest List */ = {
+			isa = PBXGroup;
+			children = (
+				1A0CAC2918C584550009EC33 /* GCQuestListViewController.h */,
+				1A0CAC2A18C584550009EC33 /* GCQuestListViewController.m */,
+			);
+			name = "Quest List";
+			sourceTree = "<group>";
+		};
 		1A1A7F3418BEDF9E00EE0388 = {
 			isa = PBXGroup;
 			children = (
@@ -1080,6 +1094,7 @@
 		1A1EFD1318BEE713007A1634 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				1A0CAC2618C583D10009EC33 /* quests.json */,
 				1A0CAC1A18C57C7E0009EC33 /* achievements.json */,
 				1A0CAC1B18C57C7E0009EC33 /* mechanics.json */,
 				1AE19C5D18C40E1B00D2475A /* cards.json */,
@@ -1641,6 +1656,7 @@
 				1AD4C5D118C422E900C870D2 /* Card Detail */,
 				1A0CAC1E18C57CFA0009EC33 /* Mechanic List */,
 				1A0CAC2218C5804F0009EC33 /* Achievement List */,
+				1A0CAC2818C5843E0009EC33 /* Quest List */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -1944,6 +1960,7 @@
 				1A0CAC1D18C57C7E0009EC33 /* mechanics.json in Resources */,
 				1AD4C88018C4391100C870D2 /* EX1_544_premium.gif in Resources */,
 				1AD4C81E18C4391100C870D2 /* EX1_164_premium.gif in Resources */,
+				1A0CAC2718C583D10009EC33 /* quests.json in Resources */,
 				1AD4C7B618C4391100C870D2 /* CS2_188_premium.gif in Resources */,
 				1AD4C81018C4391100C870D2 /* EX1_131_premium.gif in Resources */,
 				1AD4C8A618C4391100C870D2 /* EX1_608_premium.gif in Resources */,
@@ -2221,6 +2238,7 @@
 				1A1EFD3318BEE7E0007A1634 /* _GCMechanic.m in Sources */,
 				1A1EFD2F18BEE7E0007A1634 /* _GCAchievement.m in Sources */,
 				1A1EFD3418BEE7E0007A1634 /* _GCQuest.m in Sources */,
+				1A0CAC2B18C584550009EC33 /* GCQuestListViewController.m in Sources */,
 				1AE19C5618C3E98900D2475A /* GCMainMenuViewController.m in Sources */,
 				1A1EFD3918BEE7E0007A1634 /* GCMechanic.m in Sources */,
 				1A1EFD8F18BEECF4007A1634 /* ZORNMappingService.m in Sources */,
