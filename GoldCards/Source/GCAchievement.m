@@ -12,9 +12,18 @@
 
 + (NSDictionary *)zorn_JSONToModelAttributeMapping
 {
-    return @{@"description": @"summary",
+    // Leaving the fields we are not importing commented out
+    return @{
+             @"description": @"summary",
              @"id": @"remoteID",
+             //@"maxprogress": "1",
              @"name": @"name",
+             //@"race": "0",
+             @"reward": @"rewardValue",
+             //@"rewarddata": "0",
+             @"rewardtype": @"rewardType",
+             @"trigger": @"trigger",
+             @"type": @"achievementType"
              };
 }
 

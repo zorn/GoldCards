@@ -91,6 +91,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="TNv-GR-x9x" kind="push" identifier="achievementList" id="t23-tD-qdq"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="rY3-ZB-uep" style="IBUITableViewCellStyleDefault" id="juI-oW-dRF">
                                         <rect key="frame" x="0.0" y="198" width="320" height="44"/>
@@ -176,7 +179,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CkU-ak-eAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="579" y="161"/>
+            <point key="canvasLocation" x="469" y="1229"/>
         </scene>
         <!--Heroes List View Controller - Heroes-->
         <scene sceneID="siw-Mh-Iks">
@@ -371,6 +374,72 @@
             </objects>
             <point key="canvasLocation" x="1013" y="1566"/>
         </scene>
+        <!--Achievement List View Controller - Achievements-->
+        <scene sceneID="DRA-Xv-9ep">
+            <objects>
+                <viewController id="TNv-GR-x9x" customClass="GCAchievementListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SCj-Zb-gur"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zgz-Qd-ANm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aBT-0h-2ix">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pLf-h1-4hd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AchievementCell" textLabel="hhW-wl-wXH" detailTextLabel="8XQ-da-J3T" style="IBUITableViewCellStyleSubtitle" id="h90-Ww-PjV">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h90-Ww-PjV" id="d5A-97-wTj">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hhW-wl-wXH">
+                                                    <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8XQ-da-J3T">
+                                                    <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="TNv-GR-x9x" id="LVP-0e-Cri"/>
+                                    <outlet property="delegate" destination="TNv-GR-x9x" id="bKe-z0-4po"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pLf-h1-4hd" firstAttribute="top" secondItem="SCj-Zb-gur" secondAttribute="bottom" id="0J2-vz-QAy"/>
+                            <constraint firstItem="Zgz-Qd-ANm" firstAttribute="top" secondItem="pLf-h1-4hd" secondAttribute="bottom" id="ZHC-kX-Cuy"/>
+                            <constraint firstItem="pLf-h1-4hd" firstAttribute="leading" secondItem="aBT-0h-2ix" secondAttribute="leading" id="kNM-rN-uXr"/>
+                            <constraint firstAttribute="trailing" secondItem="pLf-h1-4hd" secondAttribute="trailing" id="z5d-hz-D4r"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Achievements" id="Eqa-8z-3Ea"/>
+                    <connections>
+                        <outlet property="tableView" destination="pLf-h1-4hd" id="Qh3-zT-T7t"/>
+                        <outlet property="view" destination="aBT-0h-2ix" id="XrH-2M-nWr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GHb-XP-Lfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="2256"/>
+        </scene>
         <!--Card Detail View Controller - Card Name-->
         <scene sceneID="DPc-Fa-ZEt">
             <objects>
@@ -486,7 +555,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glK-3x-2Jc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="161"/>
+            <point key="canvasLocation" x="19" y="1229"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

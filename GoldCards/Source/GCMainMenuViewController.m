@@ -5,6 +5,7 @@
 #import "ZORNCoreDataStack.h"
 #import "GCCardListViewController.h"
 #import "GCMechanicListViewController.h"
+#import "GCAchievementListViewController.h"
 
 @implementation GCMainMenuViewController
 
@@ -26,6 +27,9 @@
     } else if ([segue.identifier isEqualToString:@"mechanicList"]) {
         UIViewController *mechanicListVC = [segue zorn_destinationViewControllerOfClass:[GCMechanicListViewController class]];
         [(GCMechanicListViewController *)mechanicListVC setManagedObjectContext:self.managedObjectContext];
+    } else if ([segue.identifier isEqualToString:@"achievementList"]) {
+        UIViewController *achievementListVC = [segue zorn_destinationViewControllerOfClass:[GCAchievementListViewController class]];
+        [(GCAchievementListViewController *)achievementListVC setManagedObjectContext:self.managedObjectContext];
     }
 }
 

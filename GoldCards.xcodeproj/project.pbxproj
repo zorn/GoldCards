@@ -10,6 +10,7 @@
 		1A0CAC1C18C57C7E0009EC33 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A0CAC1A18C57C7E0009EC33 /* achievements.json */; };
 		1A0CAC1D18C57C7E0009EC33 /* mechanics.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A0CAC1B18C57C7E0009EC33 /* mechanics.json */; };
 		1A0CAC2118C57D1E0009EC33 /* GCMechanicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CAC2018C57D1E0009EC33 /* GCMechanicListViewController.m */; };
+		1A0CAC2518C5806C0009EC33 /* GCAchievementListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CAC2418C5806C0009EC33 /* GCAchievementListViewController.m */; };
 		1A1A7F4118BEDF9E00EE0388 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1A7F4018BEDF9E00EE0388 /* Foundation.framework */; };
 		1A1A7F4318BEDF9E00EE0388 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1A7F4218BEDF9E00EE0388 /* CoreGraphics.framework */; };
 		1A1A7F4518BEDF9E00EE0388 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1A7F4418BEDF9E00EE0388 /* UIKit.framework */; };
@@ -459,6 +460,8 @@
 		1A0CAC1B18C57C7E0009EC33 /* mechanics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mechanics.json; sourceTree = "<group>"; };
 		1A0CAC1F18C57D1E0009EC33 /* GCMechanicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCMechanicListViewController.h; path = Source/GCMechanicListViewController.h; sourceTree = "<group>"; };
 		1A0CAC2018C57D1E0009EC33 /* GCMechanicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCMechanicListViewController.m; path = Source/GCMechanicListViewController.m; sourceTree = "<group>"; };
+		1A0CAC2318C5806C0009EC33 /* GCAchievementListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCAchievementListViewController.h; path = Source/GCAchievementListViewController.h; sourceTree = "<group>"; };
+		1A0CAC2418C5806C0009EC33 /* GCAchievementListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCAchievementListViewController.m; path = Source/GCAchievementListViewController.m; sourceTree = "<group>"; };
 		1A1A7F3D18BEDF9E00EE0388 /* GoldCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1A7F4018BEDF9E00EE0388 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A1A7F4218BEDF9E00EE0388 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -961,6 +964,15 @@
 				1A0CAC2018C57D1E0009EC33 /* GCMechanicListViewController.m */,
 			);
 			name = "Mechanic List";
+			sourceTree = "<group>";
+		};
+		1A0CAC2218C5804F0009EC33 /* Achievement List */ = {
+			isa = PBXGroup;
+			children = (
+				1A0CAC2318C5806C0009EC33 /* GCAchievementListViewController.h */,
+				1A0CAC2418C5806C0009EC33 /* GCAchievementListViewController.m */,
+			);
+			name = "Achievement List";
 			sourceTree = "<group>";
 		};
 		1A1A7F3418BEDF9E00EE0388 = {
@@ -1628,6 +1640,7 @@
 				1AD4C5C818C4177D00C870D2 /* Card List */,
 				1AD4C5D118C422E900C870D2 /* Card Detail */,
 				1A0CAC1E18C57CFA0009EC33 /* Mechanic List */,
+				1A0CAC2218C5804F0009EC33 /* Achievement List */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -2225,6 +2238,7 @@
 				1A1EFD9818BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m in Sources */,
 				1A1EFD3A18BEE7E0007A1634 /* GCQuest.m in Sources */,
 				1A1EFD9018BEECF4007A1634 /* ZORNTwitterService.m in Sources */,
+				1A0CAC2518C5806C0009EC33 /* GCAchievementListViewController.m in Sources */,
 				1A0CAC2118C57D1E0009EC33 /* GCMechanicListViewController.m in Sources */,
 				1A969D8318C3DC8D0033F7C0 /* ZORNJSONService.m in Sources */,
 				1A1EFD3218BEE7E0007A1634 /* _GCHero.m in Sources */,

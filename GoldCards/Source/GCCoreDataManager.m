@@ -53,6 +53,11 @@
         DDLogError(@"error: %@", importError);
         return NO;
     }
+    importError = nil;
+    if (![self importAchievements:&importError]) {
+        DDLogError(@"error: %@", importError);
+        return NO;
+    }
     
     [self.coreDataStack.managedObjectContext zorncds_saveForcefully];
     return YES;
@@ -89,6 +94,11 @@
 - (BOOL)importMechanics:(NSError **)returnError
 {
     return [self importJSONAtURL:[[NSBundle mainBundle] URLForResource:@"mechanics" withExtension:@"json"] mapToClass:[GCMechanic class] customMappingBlock:nil error:returnError];
+}
+
+- (BOOL)importAchievements:(NSError **)returnError
+{
+    return [self importJSONAtURL:[[NSBundle mainBundle] URLForResource:@"achievements" withExtension:@"json"] mapToClass:[GCAchievement class] customMappingBlock:nil error:returnError];
 }
 
 - (BOOL)importJSONAtURL:(NSURL *)jsonURL mapToClass:(Class)someClass customMappingBlock:(ZORNMappingServiceMapObjectsCustomMappingBlock)customMappingBlock error:(NSError **)returnError
