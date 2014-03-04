@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0CAC1C18C57C7E0009EC33 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A0CAC1A18C57C7E0009EC33 /* achievements.json */; };
+		1A0CAC1D18C57C7E0009EC33 /* mechanics.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A0CAC1B18C57C7E0009EC33 /* mechanics.json */; };
+		1A0CAC2118C57D1E0009EC33 /* GCMechanicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CAC2018C57D1E0009EC33 /* GCMechanicListViewController.m */; };
 		1A1A7F4118BEDF9E00EE0388 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1A7F4018BEDF9E00EE0388 /* Foundation.framework */; };
 		1A1A7F4318BEDF9E00EE0388 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1A7F4218BEDF9E00EE0388 /* CoreGraphics.framework */; };
 		1A1A7F4518BEDF9E00EE0388 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1A7F4418BEDF9E00EE0388 /* UIKit.framework */; };
@@ -452,6 +455,10 @@
 /* Begin PBXFileReference section */
 		0477237BD8214C118BF1FEA0 /* Pods-GoldCardsTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldCardsTests.xcconfig"; path = "Pods/Pods-GoldCardsTests.xcconfig"; sourceTree = "<group>"; };
 		1099356D53B44F11B87581AA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		1A0CAC1A18C57C7E0009EC33 /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		1A0CAC1B18C57C7E0009EC33 /* mechanics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mechanics.json; sourceTree = "<group>"; };
+		1A0CAC1F18C57D1E0009EC33 /* GCMechanicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCMechanicListViewController.h; path = Source/GCMechanicListViewController.h; sourceTree = "<group>"; };
+		1A0CAC2018C57D1E0009EC33 /* GCMechanicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCMechanicListViewController.m; path = Source/GCMechanicListViewController.m; sourceTree = "<group>"; };
 		1A1A7F3D18BEDF9E00EE0388 /* GoldCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1A7F4018BEDF9E00EE0388 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A1A7F4218BEDF9E00EE0388 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -947,6 +954,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A0CAC1E18C57CFA0009EC33 /* Mechanic List */ = {
+			isa = PBXGroup;
+			children = (
+				1A0CAC1F18C57D1E0009EC33 /* GCMechanicListViewController.h */,
+				1A0CAC2018C57D1E0009EC33 /* GCMechanicListViewController.m */,
+			);
+			name = "Mechanic List";
+			sourceTree = "<group>";
+		};
 		1A1A7F3418BEDF9E00EE0388 = {
 			isa = PBXGroup;
 			children = (
@@ -1052,6 +1068,8 @@
 		1A1EFD1318BEE713007A1634 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				1A0CAC1A18C57C7E0009EC33 /* achievements.json */,
+				1A0CAC1B18C57C7E0009EC33 /* mechanics.json */,
 				1AE19C5D18C40E1B00D2475A /* cards.json */,
 				1A1EFD1418BEE713007A1634 /* heroes.json */,
 			);
@@ -1609,6 +1627,7 @@
 				1AE19C5218C3E97000D2475A /* Hero List */,
 				1AD4C5C818C4177D00C870D2 /* Card List */,
 				1AD4C5D118C422E900C870D2 /* Card Detail */,
+				1A0CAC1E18C57CFA0009EC33 /* Mechanic List */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -1759,6 +1778,7 @@
 				1AD4C87718C4391100C870D2 /* EX1_522_premium.gif in Resources */,
 				1AD4C77118C4391100C870D2 /* CS2_032_premium.gif in Resources */,
 				1AD4C83C18C4391100C870D2 /* EX1_295_premium.gif in Resources */,
+				1A0CAC1C18C57C7E0009EC33 /* achievements.json in Resources */,
 				1AD4C8CF18C4391100C870D2 /* NEW1_036_premium.gif in Resources */,
 				1AD4C8A418C4391100C870D2 /* EX1_606_premium.gif in Resources */,
 				1AD4C77518C4391100C870D2 /* CS2_039_premium.gif in Resources */,
@@ -1908,6 +1928,7 @@
 				1AD4C8BA18C4391100C870D2 /* NEW1_007_premium.gif in Resources */,
 				1AD4C76C18C4391100C870D2 /* CS2_026_premium.gif in Resources */,
 				1AD4C85018C4391100C870D2 /* EX1_335_premium.gif in Resources */,
+				1A0CAC1D18C57C7E0009EC33 /* mechanics.json in Resources */,
 				1AD4C88018C4391100C870D2 /* EX1_544_premium.gif in Resources */,
 				1AD4C81E18C4391100C870D2 /* EX1_164_premium.gif in Resources */,
 				1AD4C7B618C4391100C870D2 /* CS2_188_premium.gif in Resources */,
@@ -2204,6 +2225,7 @@
 				1A1EFD9818BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m in Sources */,
 				1A1EFD3A18BEE7E0007A1634 /* GCQuest.m in Sources */,
 				1A1EFD9018BEECF4007A1634 /* ZORNTwitterService.m in Sources */,
+				1A0CAC2118C57D1E0009EC33 /* GCMechanicListViewController.m in Sources */,
 				1A969D8318C3DC8D0033F7C0 /* ZORNJSONService.m in Sources */,
 				1A1EFD3218BEE7E0007A1634 /* _GCHero.m in Sources */,
 				1A1EFD9C18BEF179007A1634 /* GCCoreDataManager.m in Sources */,

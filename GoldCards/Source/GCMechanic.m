@@ -10,6 +10,14 @@
 
 @implementation GCMechanic
 
-// Custom logic goes here.
++ (NSDictionary *)zorn_JSONToModelAttributeMapping
+{
+    return @{
+             @"description": @"summary",
+             @"icon": @"icon",
+             @"id": @"remoteID",
+             @"name": @"name"
+             };
+}
 
 @end

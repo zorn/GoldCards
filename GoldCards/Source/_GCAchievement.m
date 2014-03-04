@@ -4,6 +4,13 @@
 #import "_GCAchievement.h"
 
 const struct GCAchievementAttributes GCAchievementAttributes = {
+	.achievementType = @"achievementType",
+	.name = @"name",
+	.remoteID = @"remoteID",
+	.rewardType = @"rewardType",
+	.rewardValue = @"rewardValue",
+	.summary = @"summary",
+	.trigger = @"trigger",
 };
 
 const struct GCAchievementRelationships GCAchievementRelationships = {
@@ -38,9 +45,82 @@ const struct GCAchievementFetchedProperties GCAchievementFetchedProperties = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 	
+	if ([key isEqualToString:@"remoteIDValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"remoteID"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
 
 	return keyPaths;
 }
+
+
+
+
+@dynamic achievementType;
+
+
+
+
+
+
+@dynamic name;
+
+
+
+
+
+
+@dynamic remoteID;
+
+
+
+- (int64_t)remoteIDValue {
+	NSNumber *result = [self remoteID];
+	return [result longLongValue];
+}
+
+- (void)setRemoteIDValue:(int64_t)value_ {
+	[self setRemoteID:[NSNumber numberWithLongLong:value_]];
+}
+
+- (int64_t)primitiveRemoteIDValue {
+	NSNumber *result = [self primitiveRemoteID];
+	return [result longLongValue];
+}
+
+- (void)setPrimitiveRemoteIDValue:(int64_t)value_ {
+	[self setPrimitiveRemoteID:[NSNumber numberWithLongLong:value_]];
+}
+
+
+
+
+
+@dynamic rewardType;
+
+
+
+
+
+
+@dynamic rewardValue;
+
+
+
+
+
+
+@dynamic summary;
+
+
+
+
+
+
+@dynamic trigger;
+
+
 
 
 

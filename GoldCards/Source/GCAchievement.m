@@ -10,6 +10,12 @@
 
 @implementation GCAchievement
 
-// Custom logic goes here.
++ (NSDictionary *)zorn_JSONToModelAttributeMapping
+{
+    return @{@"description": @"summary",
+             @"id": @"remoteID",
+             @"name": @"name",
+             };
+}
 
 @end

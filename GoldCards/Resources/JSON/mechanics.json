@@ -1,0 +1,236 @@
+[
+  {
+    "description": "Does something when you play it from your hand.", 
+    "icon": "ability_warrior_battleshout", 
+    "id": 1, 
+    "name": "Battlecry"
+  }, 
+  {
+    "description": "Can attack immediately.", 
+    "icon": "ability_warrior_charge", 
+    "id": 2, 
+    "name": "Charge"
+  }, 
+  {
+    "description": "A bonus if you already played a card this turn.", 
+    "icon": "ability_warrior_secondwind", 
+    "id": 3, 
+    "name": "Combo"
+  }, 
+  {
+    "description": "Does something when it dies.", 
+    "icon": "spell_shadow_deathcoil", 
+    "id": 4, 
+    "name": "Deathrattle"
+  }, 
+  {
+    "description": "The first time this minion takes damage, ignore it.", 
+    "icon": "spell_holy_divineshield", 
+    "id": 5, 
+    "name": "Divine Shield"
+  }, 
+  {
+    "description": "While damaged, this minion has a new power.", 
+    "icon": "ability_racial_bloodrage", 
+    "id": 6, 
+    "name": "Enrage"
+  }, 
+  {
+    "description": "Frozen characters lose their next attack.", 
+    "icon": "spell_frost_frostnova", 
+    "id": 7, 
+    "name": "Freeze"
+  }, 
+  {
+    "description": "", 
+    "icon": "spell_arcane_arcane01", 
+    "id": 8, 
+    "name": "Grant Charge"
+  }, 
+  {
+    "description": "You have X less mana next turn.", 
+    "icon": "spell_nature_lightningoverload", 
+    "id": 9, 
+    "name": "Overload: X"
+  }, 
+  {
+    "description": "Your spell cards deal # extra damage.", 
+    "icon": "inv_enchant_essencemagiclarge", 
+    "id": 10, 
+    "name": "Spell Damage"
+  }, 
+  {
+    "description": "Hidden until a specific action occurs.", 
+    "icon": "spell_shadow_charm", 
+    "id": 11, 
+    "name": "Secret"
+  }, 
+  {
+    "description": "Removes all card text and enchantments.", 
+    "icon": "ability_priest_silence", 
+    "id": 12, 
+    "name": "Silence"
+  }, 
+  {
+    "description": "Can't be attacked or targeted until it deals damage.", 
+    "icon": "ability_stealth", 
+    "id": 13, 
+    "name": "Stealth"
+  }, 
+  {
+    "description": "Enemies must attack this minion.", 
+    "icon": "spell_nature_reincarnation", 
+    "id": 15, 
+    "name": "Taunt"
+  }, 
+  {
+    "description": "Can attack twice each turn.", 
+    "icon": "spell_shaman_unleashweapon_wind", 
+    "id": 17, 
+    "name": "Windfury"
+  }, 
+  {
+    "description": "A card that is Countered has no effect.", 
+    "icon": "spell_frost_iceshock", 
+    "id": 18, 
+    "name": "Counter"
+  }, 
+  {
+    "description": "Can't be damaged.", 
+    "icon": "spell_holy_dispelmagic", 
+    "id": 19, 
+    "name": "Immune"
+  }, 
+  {
+    "description": "Draws additional card(s) from the deck.", 
+    "icon": "inv_misc_ticket_tarot_maelstrom_01", 
+    "id": 50, 
+    "name": "Draw Cards"
+  }, 
+  {
+    "description": "Removes cards before they can be played.", 
+    "icon": "inv_misc_gear_08", 
+    "id": 51, 
+    "name": "Discard"
+  }, 
+  {
+    "description": "Increases the health and/or attack of a character or weapon.", 
+    "icon": "spell_nature_regeneration", 
+    "id": 52, 
+    "name": "Buff Stats"
+  }, 
+  {
+    "description": "Select one effect from the list of options.", 
+    "icon": "achievement_arena_3v3_4", 
+    "id": 53, 
+    "name": "Choose One"
+  }, 
+  {
+    "description": "Removes something from the battlefield, regardless of its remaining health or effects.", 
+    "icon": "spell_shadow_demonicfortitude", 
+    "id": 54, 
+    "name": "Destroy"
+  }, 
+  {
+    "description": "Places another minion on the battlefield.", 
+    "icon": "spell_shadow_twilight", 
+    "id": 55, 
+    "name": "Summon"
+  }, 
+  {
+    "description": "Creates a duplicate of another card or minion.", 
+    "icon": "spell_magic_lesserinvisibilty", 
+    "id": 56, 
+    "name": "Copy"
+  }, 
+  {
+    "description": "", 
+    "icon": "ability_warrior_disarm", 
+    "id": 57, 
+    "name": "Can't Attack"
+  }, 
+  {
+    "description": "Forces a minion to be controlled by its enemy.", 
+    "icon": "spell_shadow_shadowworddominate", 
+    "id": 58, 
+    "name": "Take Control"
+  }, 
+  {
+    "description": "Causes one minion to become another minion.", 
+    "icon": "spell_nature_heavypolymorph2", 
+    "id": 59, 
+    "name": "Transform"
+  }, 
+  {
+    "description": "Increases a character's remaining health, but not beyond its maximum health.", 
+    "icon": "spell_holy_renew", 
+    "id": 60, 
+    "name": "Restore Health"
+  }, 
+  {
+    "description": "Changes the amount of mana crystals required to play certain cards.", 
+    "icon": "pvecurrency-valor", 
+    "id": 61, 
+    "name": "Change Cost"
+  }, 
+  {
+    "description": "Sets characters' attack or health to a specific value.", 
+    "icon": "inv_gizmo_khoriumpowercore", 
+    "id": 62, 
+    "name": "Change Stats"
+  }, 
+  {
+    "description": "Changes the amount of available mana crystals for a player.", 
+    "icon": "inv_misc_gem_sapphire_02", 
+    "id": 63, 
+    "name": "Mana Crystals"
+  }, 
+  {
+    "description": "Inflicts some amount of damage to character(s).", 
+    "icon": "spell_shadow_ritualofsacrifice", 
+    "id": 64, 
+    "name": "Deal Damage"
+  }, 
+  {
+    "description": "Inflicts some amount of damage to your characters as well as your enemy's characters.", 
+    "icon": "ability_warrior_rampage", 
+    "id": 65, 
+    "name": "Damage All"
+  }, 
+  {
+    "description": "Inflicts some amount of damage to your enemy's characters.", 
+    "icon": "spell_shadow_rainoffire", 
+    "id": 66, 
+    "name": "Damage Enemies"
+  }, 
+  {
+    "description": "Removes a card from play and puts it back into the hand of cards not yet played.", 
+    "icon": "spell_holy_layonhands", 
+    "id": 67, 
+    "name": "Return to Hand"
+  }, 
+  {
+    "description": "Increases the armor value of a hero.", 
+    "icon": "ability_warrior_shieldreflection", 
+    "id": 68, 
+    "name": "Gain Armor"
+  }, 
+  {
+    "description": "Destroy any minion damaged by this minion.", 
+    "icon": "ability_rogue_dualweild", 
+    "id": 69, 
+    "name": "Poisonous"
+  }, 
+  {
+    "description": "Not affected by increased spell damage.", 
+    "icon": "spell_holy_divineprotection", 
+    "id": 70, 
+    "name": "Immune To Spell Damage"
+  }, 
+  {
+    "description": "Damage increased by spell damage.", 
+    "icon": "warlock_curse_shadow", 
+    "id": 71, 
+    "name": "Affected By Spell Damage"
+  }
+]

@@ -23,12 +23,14 @@ extern const struct GCCardAttributes {
 
 extern const struct GCCardRelationships {
 	__unsafe_unretained NSString *hero;
+	__unsafe_unretained NSString *mechanics;
 } GCCardRelationships;
 
 extern const struct GCCardFetchedProperties {
 } GCCardFetchedProperties;
 
 @class GCHero;
+@class GCMechanic;
 
 
 
@@ -245,10 +247,22 @@ extern const struct GCCardFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSSet *mechanics;
+
+- (NSMutableSet*)mechanicsSet;
+
+
+
+
 
 @end
 
 @interface _GCCard (CoreDataGeneratedAccessors)
+
+- (void)addMechanics:(NSSet*)value_;
+- (void)removeMechanics:(NSSet*)value_;
+- (void)addMechanicsObject:(GCMechanic*)value_;
+- (void)removeMechanicsObject:(GCMechanic*)value_;
 
 @end
 
@@ -372,6 +386,11 @@ extern const struct GCCardFetchedProperties {
 
 - (GCHero*)primitiveHero;
 - (void)setPrimitiveHero:(GCHero*)value;
+
+
+
+- (NSMutableSet*)primitiveMechanics;
+- (void)setPrimitiveMechanics:(NSMutableSet*)value;
 
 
 @end

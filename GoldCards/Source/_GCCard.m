@@ -22,6 +22,7 @@ const struct GCCardAttributes GCCardAttributes = {
 
 const struct GCCardRelationships GCCardRelationships = {
 	.hero = @"hero",
+	.mechanics = @"mechanics",
 };
 
 const struct GCCardFetchedProperties GCCardFetchedProperties = {
@@ -400,6 +401,19 @@ const struct GCCardFetchedProperties GCCardFetchedProperties = {
 
 @dynamic hero;
 
+	
+
+@dynamic mechanics;
+
+	
+- (NSMutableSet*)mechanicsSet {
+	[self willAccessValueForKey:@"mechanics"];
+  
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"mechanics"];
+  
+	[self didAccessValueForKey:@"mechanics"];
+	return result;
+}
 	
 
 

@@ -71,6 +71,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dUU-V1-DvZ" kind="push" identifier="mechanicList" id="HHz-Z6-HCT"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="EdQ-X3-DaL" style="IBUITableViewCellStyleDefault" id="Mln-OU-3Mt">
                                         <rect key="frame" x="0.0" y="154" width="320" height="44"/>
@@ -295,11 +298,78 @@
                     <navigationItem key="navigationItem" title="Cards" id="llZ-It-If1"/>
                     <connections>
                         <outlet property="tableView" destination="0cJ-C8-eUW" id="ZKL-48-sZK"/>
+                        <outlet property="view" destination="QTm-o0-JSM" id="msc-Ki-dYF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uB-FL-mMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1013" y="878"/>
+        </scene>
+        <!--Mechanic List View Controller - Mechanics-->
+        <scene sceneID="aE5-0H-EdG">
+            <objects>
+                <viewController id="dUU-V1-DvZ" customClass="GCMechanicListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pjg-nV-CLB"/>
+                        <viewControllerLayoutGuide type="bottom" id="kj0-ZN-Rbm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RNB-VE-wdv">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="He4-OS-U8N">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MechanicCell" textLabel="l3s-Uc-YYw" detailTextLabel="AlM-Cy-Ns2" style="IBUITableViewCellStyleSubtitle" id="Ge5-Nr-Zq1">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ge5-Nr-Zq1" id="FFp-he-pbn">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l3s-Uc-YYw">
+                                                    <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AlM-Cy-Ns2">
+                                                    <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dUU-V1-DvZ" id="ndH-er-1FM"/>
+                                    <outlet property="delegate" destination="dUU-V1-DvZ" id="7Y5-la-Z2e"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kj0-ZN-Rbm" firstAttribute="top" secondItem="He4-OS-U8N" secondAttribute="bottom" id="D1M-4h-sEm"/>
+                            <constraint firstItem="He4-OS-U8N" firstAttribute="leading" secondItem="RNB-VE-wdv" secondAttribute="leading" id="ZgU-yA-Vd1"/>
+                            <constraint firstItem="He4-OS-U8N" firstAttribute="top" secondItem="RNB-VE-wdv" secondAttribute="top" id="eGk-Jt-kqV"/>
+                            <constraint firstAttribute="trailing" secondItem="He4-OS-U8N" secondAttribute="trailing" id="kdU-0o-De1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mechanics" id="f7s-rI-Qxa"/>
+                    <connections>
+                        <outlet property="tableView" destination="He4-OS-U8N" id="9qf-Qb-ueY"/>
+                        <outlet property="view" destination="RNB-VE-wdv" id="5tI-Qz-Rjb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SRq-Zw-LuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="1566"/>
         </scene>
         <!--Card Detail View Controller - Card Name-->
         <scene sceneID="DPc-Fa-ZEt">
