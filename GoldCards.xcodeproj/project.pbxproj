@@ -48,6 +48,7 @@
 		1A1EFD9418BEF046007A1634 /* GCGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9318BEF046007A1634 /* GCGlobal.m */; };
 		1A1EFD9818BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9718BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m */; };
 		1A1EFD9C18BEF179007A1634 /* GCCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9B18BEF179007A1634 /* GCCoreDataManager.m */; };
+		1A5C3F2F18C82BC800A346B8 /* ReviewFeedbackPromptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C3F2E18C82BC800A346B8 /* ReviewFeedbackPromptViewController.m */; };
 		1A969D8318C3DC8D0033F7C0 /* ZORNJSONService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A969D8218C3DC8D0033F7C0 /* ZORNJSONService.m */; };
 		1AD4C5C718C4168900C870D2 /* ZORNCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4C5C618C4168900C870D2 /* ZORNCoreDataTableViewController.m */; };
 		1AD4C5CB18C4179300C870D2 /* GCCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4C5CA18C4179300C870D2 /* GCCardListViewController.m */; };
@@ -435,6 +436,11 @@
 		1AD4C8D418C4391100C870D2 /* PRO_001_premium.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1AD4C75618C4391100C870D2 /* PRO_001_premium.gif */; };
 		1AD4C8D518C4391100C870D2 /* tt_004_premium.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1AD4C75718C4391100C870D2 /* tt_004_premium.gif */; };
 		1AD4C8D618C4391100C870D2 /* tt_010_premium.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1AD4C75818C4391100C870D2 /* tt_010_premium.gif */; };
+		1AD595DB18C832C2008E2701 /* PBSafariActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD595D618C832C2008E2701 /* PBSafariActivity.m */; };
+		1AD595DC18C832C2008E2701 /* Safari@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD595D718C832C2008E2701 /* Safari@2x~ipad.png */; };
+		1AD595DD18C832C2008E2701 /* Safari@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD595D818C832C2008E2701 /* Safari@2x~iphone.png */; };
+		1AD595DE18C832C2008E2701 /* Safari~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD595D918C832C2008E2701 /* Safari~ipad.png */; };
+		1AD595DF18C832C2008E2701 /* Safari~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD595DA18C832C2008E2701 /* Safari~iphone.png */; };
 		1AE19C4E18C3E5FD00D2475A /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE19C4D18C3E5FD00D2475A /* MainMenu.storyboard */; };
 		1AE19C5118C3E88300D2475A /* GCHeroesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE19C5018C3E88300D2475A /* GCHeroesListViewController.m */; };
 		1AE19C5618C3E98900D2475A /* GCMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE19C5518C3E98900D2475A /* GCMainMenuViewController.m */; };
@@ -529,6 +535,8 @@
 		1A1EFD9A18BEF179007A1634 /* GCCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCCoreDataManager.h; path = Source/GCCoreDataManager.h; sourceTree = "<group>"; };
 		1A1EFD9B18BEF179007A1634 /* GCCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCCoreDataManager.m; path = Source/GCCoreDataManager.m; sourceTree = "<group>"; };
 		1A1EFD9D18BEF201007A1634 /* GCModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCModels.h; path = Source/GCModels.h; sourceTree = "<group>"; };
+		1A5C3F2D18C82BC800A346B8 /* ReviewFeedbackPromptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReviewFeedbackPromptViewController.h; path = Source/ReviewFeedbackPromptViewController.h; sourceTree = "<group>"; };
+		1A5C3F2E18C82BC800A346B8 /* ReviewFeedbackPromptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReviewFeedbackPromptViewController.m; path = Source/ReviewFeedbackPromptViewController.m; sourceTree = "<group>"; };
 		1A969D7F18C3DA020033F7C0 /* ZORNMappingServiceMappableObjectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZORNMappingServiceMappableObjectProtocol.h; path = Submodules/ZORNKit/ZORNKit/ZORNMappingServiceMappableObjectProtocol.h; sourceTree = SOURCE_ROOT; };
 		1A969D8018C3DC120033F7C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1A969D8118C3DC8D0033F7C0 /* ZORNJSONService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZORNJSONService.h; path = Submodules/ZORNKit/ZORNKit/ZORNJSONService.h; sourceTree = SOURCE_ROOT; };
@@ -923,6 +931,12 @@
 		1AD4C75618C4391100C870D2 /* PRO_001_premium.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = PRO_001_premium.gif; sourceTree = "<group>"; };
 		1AD4C75718C4391100C870D2 /* tt_004_premium.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tt_004_premium.gif; sourceTree = "<group>"; };
 		1AD4C75818C4391100C870D2 /* tt_010_premium.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tt_010_premium.gif; sourceTree = "<group>"; };
+		1AD595D518C832C2008E2701 /* PBSafariActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSafariActivity.h; sourceTree = "<group>"; };
+		1AD595D618C832C2008E2701 /* PBSafariActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBSafariActivity.m; sourceTree = "<group>"; };
+		1AD595D718C832C2008E2701 /* Safari@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Safari@2x~ipad.png"; sourceTree = "<group>"; };
+		1AD595D818C832C2008E2701 /* Safari@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Safari@2x~iphone.png"; sourceTree = "<group>"; };
+		1AD595D918C832C2008E2701 /* Safari~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Safari~ipad.png"; sourceTree = "<group>"; };
+		1AD595DA18C832C2008E2701 /* Safari~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Safari~iphone.png"; sourceTree = "<group>"; };
 		1AE19C4D18C3E5FD00D2475A /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainMenu.storyboard; path = Source/MainMenu.storyboard; sourceTree = "<group>"; };
 		1AE19C4F18C3E88300D2475A /* GCHeroesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCHeroesListViewController.h; path = Source/GCHeroesListViewController.h; sourceTree = "<group>"; };
 		1AE19C5018C3E88300D2475A /* GCHeroesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCHeroesListViewController.m; path = Source/GCHeroesListViewController.m; sourceTree = "<group>"; };
@@ -1207,6 +1221,15 @@
 			name = CoreData;
 			sourceTree = "<group>";
 		};
+		1A5C3F2C18C82BA900A346B8 /* Review / Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				1A5C3F2D18C82BC800A346B8 /* ReviewFeedbackPromptViewController.h */,
+				1A5C3F2E18C82BC800A346B8 /* ReviewFeedbackPromptViewController.m */,
+			);
+			name = "Review / Feedback";
+			sourceTree = "<group>";
+		};
 		1AD4C5C818C4177D00C870D2 /* Card List */ = {
 			isa = PBXGroup;
 			children = (
@@ -1236,6 +1259,7 @@
 		1AD4C5D518C438BE00C870D2 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				1AD595D418C832C2008E2701 /* PBSafariActivity */,
 				1AD4C5D618C438C700C870D2 /* Animated GIF */,
 			);
 			name = Vendor;
@@ -1639,6 +1663,20 @@
 			path = gold;
 			sourceTree = "<group>";
 		};
+		1AD595D418C832C2008E2701 /* PBSafariActivity */ = {
+			isa = PBXGroup;
+			children = (
+				1AD595D518C832C2008E2701 /* PBSafariActivity.h */,
+				1AD595D618C832C2008E2701 /* PBSafariActivity.m */,
+				1AD595D718C832C2008E2701 /* Safari@2x~ipad.png */,
+				1AD595D818C832C2008E2701 /* Safari@2x~iphone.png */,
+				1AD595D918C832C2008E2701 /* Safari~ipad.png */,
+				1AD595DA18C832C2008E2701 /* Safari~iphone.png */,
+			);
+			name = PBSafariActivity;
+			path = Vendor/PBSafariActivity;
+			sourceTree = "<group>";
+		};
 		1AE19C4B18C3E5A100D2475A /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -1650,6 +1688,7 @@
 		1AE19C4C18C3E5A700D2475A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1A5C3F2C18C82BA900A346B8 /* Review / Feedback */,
 				1AE19C5318C3E97800D2475A /* Main Menu */,
 				1AE19C5218C3E97000D2475A /* Hero List */,
 				1AD4C5C818C4177D00C870D2 /* Card List */,
@@ -1918,6 +1957,7 @@
 				1AD4C8C718C4391100C870D2 /* NEW1_023_premium.gif in Resources */,
 				1AD4C84B18C4391100C870D2 /* EX1_319_premium.gif in Resources */,
 				1AD4C82D18C4391100C870D2 /* EX1_249_premium.gif in Resources */,
+				1AD595DE18C832C2008E2701 /* Safari~ipad.png in Resources */,
 				1AD4C86218C4391100C870D2 /* EX1_390_premium.gif in Resources */,
 				1AD4C89118C4391100C870D2 /* EX1_573_premium.gif in Resources */,
 				1AD4C85E18C4391100C870D2 /* EX1_379_premium.gif in Resources */,
@@ -2046,6 +2086,7 @@
 				1AD4C81718C4391100C870D2 /* EX1_145_premium.gif in Resources */,
 				1AD4C7FA18C4391100C870D2 /* EX1_082_premium.gif in Resources */,
 				1AD4C84318C4391100C870D2 /* EX1_308_premium.gif in Resources */,
+				1AD595DC18C832C2008E2701 /* Safari@2x~ipad.png in Resources */,
 				1AD4C88F18C4391100C870D2 /* EX1_571_premium.gif in Resources */,
 				1AD4C77318C4391100C870D2 /* CS2_037_premium.gif in Resources */,
 				1AD4C7B118C4391100C870D2 /* CS2_179_premium.gif in Resources */,
@@ -2053,6 +2094,7 @@
 				1AD4C80318C4391100C870D2 /* EX1_097_premium.gif in Resources */,
 				1AD4C89518C4391100C870D2 /* EX1_581_premium.gif in Resources */,
 				1AD4C7C818C4391100C870D2 /* CS2_237_premium.gif in Resources */,
+				1AD595DD18C832C2008E2701 /* Safari@2x~iphone.png in Resources */,
 				1AD4C7EB18C4391100C870D2 /* EX1_044_premium.gif in Resources */,
 				1AD4C89E18C4391100C870D2 /* EX1_594_premium.gif in Resources */,
 				1AD4C82118C4391100C870D2 /* EX1_169_premium.gif in Resources */,
@@ -2146,6 +2188,7 @@
 				1AD4C75F18C4391100C870D2 /* CS2_003_premium.gif in Resources */,
 				1AD4C86418C4391100C870D2 /* EX1_392_premium.gif in Resources */,
 				1AD4C76218C4391100C870D2 /* CS2_007_premium.gif in Resources */,
+				1AD595DF18C832C2008E2701 /* Safari~iphone.png in Resources */,
 				1AD4C89218C4391100C870D2 /* EX1_575_premium.gif in Resources */,
 				1AD4C79B18C4391100C870D2 /* CS2_119_premium.gif in Resources */,
 			);
@@ -2229,6 +2272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5C3F2F18C82BC800A346B8 /* ReviewFeedbackPromptViewController.m in Sources */,
 				1AD4C5C718C4168900C870D2 /* ZORNCoreDataTableViewController.m in Sources */,
 				1A1EFD3718BEE7E0007A1634 /* GCEmote.m in Sources */,
 				1A1EFD3618BEE7E0007A1634 /* GCCard.m in Sources */,
@@ -2260,6 +2304,7 @@
 				1A0CAC2118C57D1E0009EC33 /* GCMechanicListViewController.m in Sources */,
 				1A969D8318C3DC8D0033F7C0 /* ZORNJSONService.m in Sources */,
 				1A1EFD3218BEE7E0007A1634 /* _GCHero.m in Sources */,
+				1AD595DB18C832C2008E2701 /* PBSafariActivity.m in Sources */,
 				1A1EFD9C18BEF179007A1634 /* GCCoreDataManager.m in Sources */,
 				1A1EFD3518BEE7E0007A1634 /* GCAchievement.m in Sources */,
 				1AD4C5CB18C4179300C870D2 /* GCCardListViewController.m in Sources */,

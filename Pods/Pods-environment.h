@@ -24,3 +24,9 @@
 #define COCOAPODS_VERSION_MINOR_CocoaLumberjack_Extensions 8
 #define COCOAPODS_VERSION_PATCH_CocoaLumberjack_Extensions 1
 
+// PBWebViewController
+#define COCOAPODS_POD_AVAILABLE_PBWebViewController
+#define COCOAPODS_VERSION_MAJOR_PBWebViewController 0
+#define COCOAPODS_VERSION_MINOR_PBWebViewController 1
+#define COCOAPODS_VERSION_PATCH_PBWebViewController 0
+
