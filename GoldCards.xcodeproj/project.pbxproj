@@ -48,6 +48,9 @@
 		1A1EFD9418BEF046007A1634 /* GCGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9318BEF046007A1634 /* GCGlobal.m */; };
 		1A1EFD9818BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9718BEF0D4007A1634 /* NSURL+ZORNKitAdditions.m */; };
 		1A1EFD9C18BEF179007A1634 /* GCCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EFD9B18BEF179007A1634 /* GCCoreDataManager.m */; };
+		1A5AD6ED18C9754A007394DA /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 1A5AD6EC18C9754A007394DA /* about.html */; };
+		1A5AD6F018C975AA007394DA /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5AD6EE18C975AA007394DA /* iTunesArtwork.png */; };
+		1A5AD6F118C975AA007394DA /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5AD6EF18C975AA007394DA /* iTunesArtwork@2x.png */; };
 		1A5C3F2F18C82BC800A346B8 /* ReviewFeedbackPromptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C3F2E18C82BC800A346B8 /* ReviewFeedbackPromptViewController.m */; };
 		1A969D8318C3DC8D0033F7C0 /* ZORNJSONService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A969D8218C3DC8D0033F7C0 /* ZORNJSONService.m */; };
 		1AD4C5C718C4168900C870D2 /* ZORNCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4C5C618C4168900C870D2 /* ZORNCoreDataTableViewController.m */; };
@@ -535,6 +538,9 @@
 		1A1EFD9A18BEF179007A1634 /* GCCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCCoreDataManager.h; path = Source/GCCoreDataManager.h; sourceTree = "<group>"; };
 		1A1EFD9B18BEF179007A1634 /* GCCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCCoreDataManager.m; path = Source/GCCoreDataManager.m; sourceTree = "<group>"; };
 		1A1EFD9D18BEF201007A1634 /* GCModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCModels.h; path = Source/GCModels.h; sourceTree = "<group>"; };
+		1A5AD6EC18C9754A007394DA /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		1A5AD6EE18C975AA007394DA /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = "app-icon/iTunesArtwork.png"; sourceTree = "<group>"; };
+		1A5AD6EF18C975AA007394DA /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "app-icon/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		1A5C3F2D18C82BC800A346B8 /* ReviewFeedbackPromptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReviewFeedbackPromptViewController.h; path = Source/ReviewFeedbackPromptViewController.h; sourceTree = "<group>"; };
 		1A5C3F2E18C82BC800A346B8 /* ReviewFeedbackPromptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReviewFeedbackPromptViewController.m; path = Source/ReviewFeedbackPromptViewController.m; sourceTree = "<group>"; };
 		1A969D7F18C3DA020033F7C0 /* ZORNMappingServiceMappableObjectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZORNMappingServiceMappableObjectProtocol.h; path = Submodules/ZORNKit/ZORNKit/ZORNMappingServiceMappableObjectProtocol.h; sourceTree = SOURCE_ROOT; };
@@ -1098,6 +1104,9 @@
 		1A1EFD1218BEE713007A1634 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1A5AD6EE18C975AA007394DA /* iTunesArtwork.png */,
+				1A5AD6EF18C975AA007394DA /* iTunesArtwork@2x.png */,
+				1A5AD6EB18C9754A007394DA /* about */,
 				1AD4C5CC18C4229C00C870D2 /* card-images */,
 				1A1A7F5218BEDF9E00EE0388 /* Images.xcassets */,
 				1A1EFD1318BEE713007A1634 /* JSON */,
@@ -1219,6 +1228,14 @@
 				1A1EFD2E18BEE7E0007A1634 /* GCQuest.m */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		1A5AD6EB18C9754A007394DA /* about */ = {
+			isa = PBXGroup;
+			children = (
+				1A5AD6EC18C9754A007394DA /* about.html */,
+			);
+			path = about;
 			sourceTree = "<group>";
 		};
 		1A5C3F2C18C82BA900A346B8 /* Review / Feedback */ = {
@@ -1803,6 +1820,7 @@
 				1AD4C81518C4391100C870D2 /* EX1_137_premium.gif in Resources */,
 				1AD4C77B18C4391100C870D2 /* CS2_057_premium.gif in Resources */,
 				1AD4C8BF18C4391100C870D2 /* NEW1_014_premium.gif in Resources */,
+				1A5AD6F018C975AA007394DA /* iTunesArtwork.png in Resources */,
 				1AD4C87218C4391100C870D2 /* EX1_414_premium.gif in Resources */,
 				1AD4C82718C4391100C870D2 /* EX1_243_premium.gif in Resources */,
 				1AD4C79E18C4391100C870D2 /* CS2_122_premium.gif in Resources */,
@@ -1888,6 +1906,7 @@
 				1AD4C83818C4391100C870D2 /* EX1_284_premium.gif in Resources */,
 				1AD4C7AD18C4391100C870D2 /* CS2_169_premium.gif in Resources */,
 				1AD4C7EE18C4391100C870D2 /* EX1_048_premium.gif in Resources */,
+				1A5AD6F118C975AA007394DA /* iTunesArtwork@2x.png in Resources */,
 				1AD4C84418C4391100C870D2 /* EX1_309_premium.gif in Resources */,
 				1AD4C7D218C4391100C870D2 /* EX1_001_premium.gif in Resources */,
 				1AD4C7E818C4391100C870D2 /* EX1_032_premium.gif in Resources */,
@@ -2060,6 +2079,7 @@
 				1AD4C87318C4391100C870D2 /* EX1_506_premium.gif in Resources */,
 				1AD4C82818C4391100C870D2 /* EX1_244_premium.gif in Resources */,
 				1AD4C8D518C4391100C870D2 /* tt_004_premium.gif in Resources */,
+				1A5AD6ED18C9754A007394DA /* about.html in Resources */,
 				1AD4C7CA18C4391100C870D2 /* DS1_070_premium.gif in Resources */,
 				1AD4C8C018C4391100C870D2 /* NEW1_016_premium.gif in Resources */,
 				1AD4C84118C4391100C870D2 /* EX1_304_premium.gif in Resources */,
