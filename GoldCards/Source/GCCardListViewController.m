@@ -2,6 +2,7 @@
 #import "GCModels.h"
 #import "UIStoryboardSegue+ZORNAdditions.h"
 #import "GCCardDetailViewController.h"
+#import "GCAudioPlayer.h"
 
 @implementation GCCardListViewController
 
@@ -22,6 +23,7 @@
             selectedCard = [[self fetchedResultsControllerForTableView:self.tableView] objectAtIndexPath:indexPath];
         }
         [(GCCardDetailViewController *)vc setCard:selectedCard];
+        [[GCAudioPlayer sharedInstance] playActivateEffectForCard:selectedCard];
     }
 }
 

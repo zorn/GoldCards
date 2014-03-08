@@ -23,6 +23,36 @@
 
 #pragma mark - Private
 
+- (void)initializeHockeyAppAndLogging
+{
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"3c24726e4e479157401bc241ee91e367" delegate:self];
+    
+#ifndef CONFIGURATION_DEBUG
+    // initialize before HockeySDK, so the delegate can access the file logger
+    self.fileLogger = [[DDFileLogger alloc] init];
+    self.fileLogger.maximumFileSize = (1024 * 512); // 512 KByte
+    self.fileLogger.logFileManager.maximumNumberOfLogFiles = 1;
+    self.fileLogger.logFormatter = [[TDLogFormatter alloc] init];
+    [self.fileLogger rollLogFileWithCompletionBlock:nil];
+    [DDLog addLogger:self.fileLogger];
+    
+    [[BITHockeyManager sharedHockeyManager].authenticator setAuthenticationSecret:@"24e2d2d3f536ae839e2d15e50c0b1e90"];
+    [[BITHockeyManager sharedHockeyManager].authenticator setIdentificationType:BITAuthenticatorIdentificationTypeHockeyAppEmail];
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
+    
+    DDASLLogger *aslLogger = [DDASLLogger sharedInstance];
+    aslLogger.logFormatter = [[TDLogFormatter alloc] init];
+    [DDLog addLogger:aslLogger];
+#else
+    [[BITHockeyManager sharedHockeyManager] setDisableCrashManager:YES];
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    DDTTYLogger *ttyLogger = [DDTTYLogger sharedInstance];
+    ttyLogger.logFormatter = [[TDLogFormatter alloc] init];
+    [DDLog addLogger:ttyLogger];
+#endif
+}
+
 - (void)setupCoreDataStack
 {
     if (self.coreDataStack) {
