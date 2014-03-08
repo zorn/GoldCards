@@ -1,6 +1,7 @@
 #import "GCCardDetailViewController.h"
 #import "GCModels.h"
 #import "UIImage+animatedGIF.h"
+#import "GCAudioPlayer.h"
 
 NS_ENUM(NSUInteger, CardDetailSections) {
     CardDetailSectionDescription = 0,
@@ -31,6 +32,18 @@ NS_ENUM(NSUInteger, CardDetailSectionDescriptionRows) {
     self.title = self.card.name;
     NSURL *cardImageURL = [[NSBundle mainBundle] URLForResource:[self.card goldImageFilename] withExtension:@"gif"];
     self.cardImageView.image = [UIImage animatedImageWithAnimatedGIFURL:cardImageURL];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [[GCAudioPlayer sharedInstance] playActivateEffectForCard:self.card];
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [[GCAudioPlayer sharedInstance] stop];
 }
 
 #pragma mark - UITableViewDataSource

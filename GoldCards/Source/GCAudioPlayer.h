@@ -5,7 +5,8 @@
 @interface GCAudioPlayer : NSObject
 
 + (GCAudioPlayer *) sharedInstance;
-- (void)playActivateEffectForCard:(GCCard *)card;
-- (void)playSoundWithFilename:(NSString *)filename andType:(NSString *)type;
+- (BOOL)playActivateEffectForCard:(GCCard *)card;
+- (BOOL)playSoundWithFilename:(NSString *)filename andType:(NSString *)type;
+- (void)stop;
 
 @end

@@ -4,6 +4,7 @@ PODS:
   - CocoaLumberjack/Core (1.8.1)
   - CocoaLumberjack/Extensions (1.8.1):
     - CocoaLumberjack/Core
+  - HockeySDK (3.5.4)
   - Kiwi/ARC (2.2.3)
   - Kiwi/NonARC (2.2.3)
   - Kiwi/XCTest (2.2.3):
@@ -13,11 +14,13 @@ PODS:
 
 DEPENDENCIES:
   - CocoaLumberjack (~> 1.8.1)
+  - HockeySDK (~> 3.5)
   - Kiwi/XCTest (~> 2.2.3)
   - PBWebViewController (~> 0.1)
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
+  HockeySDK: 4f7f7e15c1f594e8ca1e16a09f04e7418289de7a
   Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
   PBWebViewController: 8a84b04caf635691335e3b449034dc0e9c1967c8
 

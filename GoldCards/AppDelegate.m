@@ -3,8 +3,10 @@
 #import "NSURL+ZORNKitAdditions.h"
 #import "GCCoreDataManager.h"
 #import "GCMainMenuViewController.h"
+#import "ZORNLogFormatter.h"
 
 @interface AppDelegate ()
+@property (strong, nonatomic) DDFileLogger *fileLogger;
 @property (strong) ZORNCoreDataStack *coreDataStack;
 @end
 
@@ -12,6 +14,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self initializeHockeyAppAndLogging];
     [self setupCoreDataStack];
     
     UINavigationController *navVC = (UINavigationController *)self.window.rootViewController;
@@ -25,14 +28,14 @@
 
 - (void)initializeHockeyAppAndLogging
 {
-    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"3c24726e4e479157401bc241ee91e367" delegate:self];
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"76db44cfa545e1e1fd8905a5749b8587" delegate:self];
     
 #ifndef CONFIGURATION_DEBUG
     // initialize before HockeySDK, so the delegate can access the file logger
     self.fileLogger = [[DDFileLogger alloc] init];
     self.fileLogger.maximumFileSize = (1024 * 512); // 512 KByte
     self.fileLogger.logFileManager.maximumNumberOfLogFiles = 1;
-    self.fileLogger.logFormatter = [[TDLogFormatter alloc] init];
+    self.fileLogger.logFormatter = [[ZORNLogFormatter alloc] init];
     [self.fileLogger rollLogFileWithCompletionBlock:nil];
     [DDLog addLogger:self.fileLogger];
     
@@ -42,13 +45,13 @@
     [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
     
     DDASLLogger *aslLogger = [DDASLLogger sharedInstance];
-    aslLogger.logFormatter = [[TDLogFormatter alloc] init];
+    aslLogger.logFormatter = [[ZORNLogFormatter alloc] init];
     [DDLog addLogger:aslLogger];
 #else
     [[BITHockeyManager sharedHockeyManager] setDisableCrashManager:YES];
     [[BITHockeyManager sharedHockeyManager] startManager];
     DDTTYLogger *ttyLogger = [DDTTYLogger sharedInstance];
-    ttyLogger.logFormatter = [[TDLogFormatter alloc] init];
+    ttyLogger.logFormatter = [[ZORNLogFormatter alloc] init];
     [DDLog addLogger:ttyLogger];
 #endif
 }

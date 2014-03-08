@@ -24,6 +24,12 @@
 #define COCOAPODS_VERSION_MINOR_CocoaLumberjack_Extensions 8
 #define COCOAPODS_VERSION_PATCH_CocoaLumberjack_Extensions 1
 
+// HockeySDK
+#define COCOAPODS_POD_AVAILABLE_HockeySDK
+#define COCOAPODS_VERSION_MAJOR_HockeySDK 3
+#define COCOAPODS_VERSION_MINOR_HockeySDK 5
+#define COCOAPODS_VERSION_PATCH_HockeySDK 4
+
 // PBWebViewController
 #define COCOAPODS_POD_AVAILABLE_PBWebViewController
 #define COCOAPODS_VERSION_MAJOR_PBWebViewController 0

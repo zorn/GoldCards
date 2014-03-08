@@ -6,7 +6,7 @@
 
 #ifdef DEBUG
 // If you are debugging, feel free to change this to LOG_LEVEL_VERBOSE though please don't commit the change.
-static const int ddLogLevel = LOG_LEVEL_WARN;
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 #else
 static const int ddLogLevel = LOG_LEVEL_WARN;
 #endif
