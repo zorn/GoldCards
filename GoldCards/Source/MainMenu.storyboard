@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="KW6-eo-fgS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="KW6-eo-fgS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Main Menu View Controller - Gold Cards-->
@@ -156,7 +156,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="xWm-kO-hPz" kind="push" identifier="reviewFeedback" id="mGh-wP-zLG"/>
+                                            <segue destination="LRx-a2-ZLd" kind="push" id="BfB-la-ykG"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="ETl-cK-Pqz" style="IBUITableViewCellStyleDefault" id="gqB-zN-cOj">
@@ -201,84 +201,86 @@
             <point key="canvasLocation" x="1013" y="4353"/>
         </scene>
         <!--Review Feedback Prompt View Controller - Review / Feedback-->
-        <scene sceneID="xe2-xU-ahm">
+        <scene sceneID="ma6-2l-Bfc">
             <objects>
-                <tableViewController id="xWm-kO-hPz" customClass="ReviewFeedbackPromptViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="962-p6-t34">
+                <viewController id="LRx-a2-ZLd" customClass="ReviewFeedbackPromptViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CNV-fx-Y0k"/>
+                        <viewControllerLayoutGuide type="bottom" id="BcL-GI-3ir"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fXt-OX-YNq">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection headerTitle="Let others know what you think" footerTitle=" " id="YBx-yK-z6K">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="4ZN-ye-zso" style="IBUITableViewCellStyleDefault" id="g5y-wE-Yl6">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g5y-wE-Yl6" id="Uor-Cg-AAS">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Post a Review" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4ZN-ye-zso">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Talk to the developer" footerTitle=" " id="Yhx-kS-y36">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="YeF-0V-Z81" style="IBUITableViewCellStyleDefault" id="1Sp-cw-gMw">
-                                        <rect key="frame" x="0.0" y="110" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Sp-cw-gMw" id="2eP-Pq-ZMh">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Submit Feedback via Web" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YeF-0V-Z81">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="PxO-pq-CmG" style="IBUITableViewCellStyleDefault" id="gXP-os-XAZ">
-                                        <rect key="frame" x="0.0" y="154" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gXP-os-XAZ" id="ktJ-2Y-F4T">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Submit Feedback via Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PxO-pq-CmG">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="xWm-kO-hPz" id="FSy-bC-3QD"/>
-                            <outlet property="delegate" destination="xWm-kO-hPz" id="kcY-sl-YZz"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Review / Feedback" id="ExE-WK-581"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yra-kr-AbR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let others know what you think" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtk-6o-p5c">
+                                <rect key="frame" x="20" y="58" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5A-zM-uge">
+                                <rect key="frame" x="20" y="87" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Post a Review">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postAReviewAction:" destination="LRx-a2-ZLd" eventType="touchUpInside" id="AZc-oN-KlO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talk to the developer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prR-sY-Sk7">
+                                <rect key="frame" x="20" y="147" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3F-OB-GuS">
+                                <rect key="frame" x="20" y="176" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit Feedback via Web">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="feedbackViaWeb:" destination="LRx-a2-ZLd" eventType="touchUpInside" id="u9C-K8-hDE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enK-4r-eAb">
+                                <rect key="frame" x="20" y="214" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit Feedback via Email">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="feedbackViaEmail:" destination="LRx-a2-ZLd" eventType="touchUpInside" id="Fo6-C7-Y1D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vtk-6o-p5c" firstAttribute="leading" secondItem="fXt-OX-YNq" secondAttribute="leading" constant="20" id="0qs-HK-YQf"/>
+                            <constraint firstItem="prR-sY-Sk7" firstAttribute="centerX" secondItem="M5A-zM-uge" secondAttribute="centerX" id="239-nt-qz4"/>
+                            <constraint firstItem="prR-sY-Sk7" firstAttribute="top" secondItem="M5A-zM-uge" secondAttribute="bottom" constant="30" id="BeH-B1-Lbj"/>
+                            <constraint firstItem="prR-sY-Sk7" firstAttribute="width" secondItem="M5A-zM-uge" secondAttribute="width" id="ENb-Kq-6En"/>
+                            <constraint firstItem="M5A-zM-uge" firstAttribute="top" secondItem="Vtk-6o-p5c" secondAttribute="bottom" constant="8" id="GWp-7a-fAr"/>
+                            <constraint firstItem="Vtk-6o-p5c" firstAttribute="top" secondItem="CNV-fx-Y0k" secondAttribute="bottom" constant="58" id="KVZ-TW-OeG"/>
+                            <constraint firstItem="a3F-OB-GuS" firstAttribute="top" secondItem="prR-sY-Sk7" secondAttribute="bottom" constant="8" id="Pqb-2k-qo1"/>
+                            <constraint firstAttribute="trailing" secondItem="Vtk-6o-p5c" secondAttribute="trailing" constant="20" id="PsQ-0s-URv"/>
+                            <constraint firstItem="a3F-OB-GuS" firstAttribute="centerX" secondItem="enK-4r-eAb" secondAttribute="centerX" id="R5v-3x-R3D"/>
+                            <constraint firstItem="a3F-OB-GuS" firstAttribute="width" secondItem="prR-sY-Sk7" secondAttribute="width" id="VEA-yD-FVw"/>
+                            <constraint firstItem="M5A-zM-uge" firstAttribute="centerX" secondItem="Vtk-6o-p5c" secondAttribute="centerX" id="YyQ-Ls-6Z9"/>
+                            <constraint firstItem="a3F-OB-GuS" firstAttribute="width" secondItem="enK-4r-eAb" secondAttribute="width" id="ZzV-gD-HOD"/>
+                            <constraint firstItem="a3F-OB-GuS" firstAttribute="centerX" secondItem="prR-sY-Sk7" secondAttribute="centerX" id="gbl-OX-MkA"/>
+                            <constraint firstItem="enK-4r-eAb" firstAttribute="top" secondItem="a3F-OB-GuS" secondAttribute="bottom" constant="8" id="uVj-8I-8nO"/>
+                            <constraint firstItem="M5A-zM-uge" firstAttribute="width" secondItem="Vtk-6o-p5c" secondAttribute="width" id="uii-Zy-qeS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Review / Feedback" id="gTn-Vf-gOK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xhp-Lw-W5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1018" y="3653"/>
+            <point key="canvasLocation" x="1013" y="3653"/>
         </scene>
         <!--Heroes List View Controller - Heroes-->
         <scene sceneID="siw-Mh-Iks">
