@@ -294,34 +294,71 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QAA-lf-oBX">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QAA-lf-oBX">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeroCell" textLabel="3XV-pF-S6k" detailTextLabel="Hmv-zP-gVt" style="IBUITableViewCellStyleSubtitle" id="RFr-ej-4tv">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeroCell" rowHeight="55" id="RFr-ej-4tv" customClass="GCHeroListTableViewCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RFr-ej-4tv" id="oUF-SB-s0P">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3XV-pF-S6k">
-                                                    <rect key="frame" x="15" y="3" width="48" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uf9-fx-zfC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aY3-y1-dEN">
+                                                    <rect key="frame" x="15" y="11" width="45" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="1" height="1"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Hero Class" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hmv-zP-gVt">
-                                                    <rect key="frame" x="15" y="25" width="62" height="15"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hero Class" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFk-mP-HOf">
+                                                    <rect key="frame" x="15" y="27" width="63" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="1" height="1"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hero-chevron.png" translatesAutoresizingMaskIntoConstraints="NO" id="2G1-Io-gPz">
+                                                    <rect key="frame" x="275" y="5" width="45" height="45"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="uf9-fx-zfC" secondAttribute="bottom" id="3ac-au-rrV"/>
+                                                <constraint firstItem="uf9-fx-zfC" firstAttribute="top" secondItem="oUF-SB-s0P" secondAttribute="top" id="5w6-mL-V7V"/>
+                                                <constraint firstItem="uf9-fx-zfC" firstAttribute="leading" secondItem="oUF-SB-s0P" secondAttribute="leading" id="8Mx-4T-1Sd"/>
+                                                <constraint firstAttribute="bottom" secondItem="uf9-fx-zfC" secondAttribute="bottom" id="BPb-G1-sLv"/>
+                                                <constraint firstAttribute="trailing" secondItem="uf9-fx-zfC" secondAttribute="trailing" id="Ccx-i7-jTJ"/>
+                                                <constraint firstItem="KFk-mP-HOf" firstAttribute="top" secondItem="aY3-y1-dEN" secondAttribute="bottom" constant="-5" id="TZi-3g-A1D"/>
+                                                <constraint firstItem="uf9-fx-zfC" firstAttribute="leading" secondItem="oUF-SB-s0P" secondAttribute="leading" id="Umj-gl-tKX"/>
+                                                <constraint firstItem="aY3-y1-dEN" firstAttribute="leading" secondItem="oUF-SB-s0P" secondAttribute="leading" constant="15" id="Xcf-a9-Hbg"/>
+                                                <constraint firstAttribute="trailing" secondItem="2G1-Io-gPz" secondAttribute="trailing" id="aVZ-G6-Pvc"/>
+                                                <constraint firstAttribute="centerY" secondItem="2G1-Io-gPz" secondAttribute="centerY" id="bLZ-Bo-SMa"/>
+                                                <constraint firstItem="KFk-mP-HOf" firstAttribute="leading" secondItem="aY3-y1-dEN" secondAttribute="leading" id="mAd-3K-wkj"/>
+                                                <constraint firstAttribute="trailing" secondItem="uf9-fx-zfC" secondAttribute="trailing" id="nFk-Jy-yux"/>
+                                                <constraint firstAttribute="centerY" secondItem="aY3-y1-dEN" secondAttribute="centerY" constant="5.5" id="tYK-qd-YjX"/>
+                                                <constraint firstItem="uf9-fx-zfC" firstAttribute="top" secondItem="oUF-SB-s0P" secondAttribute="top" id="upg-xa-SAQ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="heroBackgroundImageView" destination="uf9-fx-zfC" id="jaq-Q7-KcB"/>
+                                            <outlet property="heroClassLabel" destination="KFk-mP-HOf" id="u7a-ax-ZX8"/>
+                                            <outlet property="nameLabel" destination="aY3-y1-dEN" id="xPz-Sn-n3e"/>
+                                            <segue destination="bam-2R-Nga" kind="push" id="KhP-uH-RQ2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -330,7 +367,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="egh-OH-cOg" firstAttribute="top" secondItem="QAA-lf-oBX" secondAttribute="bottom" id="B0K-Os-BqF"/>
                             <constraint firstItem="QAA-lf-oBX" firstAttribute="top" secondItem="3s5-EC-Gu2" secondAttribute="bottom" id="FmC-S5-38U"/>
@@ -346,6 +383,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="she-Ys-RE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1013" y="161"/>
+        </scene>
+        <!--View Controller - Hero Name-->
+        <scene sceneID="ykn-22-Uc9">
+            <objects>
+                <viewController id="bam-2R-Nga" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GjR-Mb-nsN"/>
+                        <viewControllerLayoutGuide type="bottom" id="0nU-OQ-MrM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0nQ-6y-wox">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hero Name" id="tPo-v0-ROb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VjK-hm-PHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1444" y="161"/>
         </scene>
         <!--Card List View Controller - Cards-->
         <scene sceneID="jeN-WU-zmW">
@@ -714,7 +770,10 @@
                 <navigationController definesPresentationContext="YES" id="KW6-eo-fgS" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="TYf-Fd-Sds">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.99712467193603516" green="0.85547381639480591" blue="0.24512165784835815" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.25698846578598022" green="0.25697186589241028" blue="0.25698155164718628" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="b2G-ao-Ue2" kind="relationship" relationship="rootViewController" id="5In-ck-Z55"/>
@@ -725,6 +784,9 @@
             <point key="canvasLocation" x="6" y="2256"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hero-chevron.png" width="45" height="45"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

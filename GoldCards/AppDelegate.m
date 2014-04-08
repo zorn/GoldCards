@@ -17,6 +17,8 @@
     [self initializeHockeyAppAndLogging];
     [self setupCoreDataStack];
     
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     UINavigationController *navVC = (UINavigationController *)self.window.rootViewController;
     UIViewController *vc = [navVC topViewController];
     [(GCMainMenuViewController *)vc setManagedObjectContext:self.coreDataStack.managedObjectContext];
