@@ -297,7 +297,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QAA-lf-oBX">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HeroCellSubtitle" textLabel="tBb-Y7-6yq" detailTextLabel="Utz-BW-Kwz" style="IBUITableViewCellStyleSubtitle" id="qAo-2P-M7g">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
@@ -323,7 +322,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="bam-2R-Nga" kind="push" id="ABP-c5-nnt"/>
+                                            <segue destination="bam-2R-Nga" kind="push" identifier="heroDetail" id="ABP-c5-nnt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -350,10 +349,10 @@
             </objects>
             <point key="canvasLocation" x="1013" y="161"/>
         </scene>
-        <!--View Controller - Hero Name-->
+        <!--Hero Detail View Controller - Hero Name-->
         <scene sceneID="ykn-22-Uc9">
             <objects>
-                <viewController id="bam-2R-Nga" sceneMemberID="viewController">
+                <viewController id="bam-2R-Nga" customClass="GCHeroDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GjR-Mb-nsN"/>
                         <viewControllerLayoutGuide type="bottom" id="0nU-OQ-MrM"/>
@@ -361,9 +360,83 @@
                     <view key="view" contentMode="scaleToFill" id="0nQ-6y-wox">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QP3-OA-2gC">
+                                <rect key="frame" x="0.0" y="133" width="320" height="371"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Basic" textLabel="dUY-G6-OzI" style="IBUITableViewCellStyleDefault" id="GZL-QQ-tCI">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GZL-QQ-tCI" id="q6O-BK-qpK">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Cards" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dUY-G6-OzI">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bam-2R-Nga" id="eoo-zT-4RL"/>
+                                    <outlet property="delegate" destination="bam-2R-Nga" id="LnQ-mc-w6o"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hero-detail-background-3.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Qi-YG-e6h">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="Mtg-1w-LP6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hero Class" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G18-Qf-s1C">
+                                <rect key="frame" x="15" y="106" width="77" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARa-lS-CWd">
+                                <rect key="frame" x="15" y="83" width="53" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0nU-OQ-MrM" firstAttribute="top" secondItem="QP3-OA-2gC" secondAttribute="bottom" id="5ZX-11-0hQ"/>
+                            <constraint firstItem="G18-Qf-s1C" firstAttribute="top" secondItem="ARa-lS-CWd" secondAttribute="bottom" constant="-1" id="8Pr-d2-Fdu"/>
+                            <constraint firstItem="QP3-OA-2gC" firstAttribute="leading" secondItem="0nQ-6y-wox" secondAttribute="leading" id="EK4-YN-a3J"/>
+                            <constraint firstItem="G18-Qf-s1C" firstAttribute="leading" secondItem="ARa-lS-CWd" secondAttribute="leading" id="H5N-ST-ETQ"/>
+                            <constraint firstItem="QP3-OA-2gC" firstAttribute="top" secondItem="5Qi-YG-e6h" secondAttribute="bottom" id="YKd-SX-sh7"/>
+                            <constraint firstItem="5Qi-YG-e6h" firstAttribute="top" secondItem="GjR-Mb-nsN" secondAttribute="bottom" id="gmR-Bs-zco"/>
+                            <constraint firstItem="5Qi-YG-e6h" firstAttribute="leading" secondItem="0nQ-6y-wox" secondAttribute="leading" id="gnb-DD-o58"/>
+                            <constraint firstAttribute="trailing" secondItem="5Qi-YG-e6h" secondAttribute="trailing" id="ipP-Tf-UQW"/>
+                            <constraint firstAttribute="trailing" secondItem="QP3-OA-2gC" secondAttribute="trailing" id="o22-2P-ydj"/>
+                            <constraint firstItem="QP3-OA-2gC" firstAttribute="top" secondItem="G18-Qf-s1C" secondAttribute="bottom" constant="8" id="vFR-Ae-cF1"/>
+                            <constraint firstItem="G18-Qf-s1C" firstAttribute="leading" secondItem="0nQ-6y-wox" secondAttribute="leading" constant="15" id="xMr-7x-Stp"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Hero Name" id="tPo-v0-ROb"/>
+                    <connections>
+                        <outlet property="classNameLabel" destination="G18-Qf-s1C" id="ugr-rV-x0g"/>
+                        <outlet property="headerBackgroundImageView" destination="5Qi-YG-e6h" id="4bS-2m-CON"/>
+                        <outlet property="nameLabel" destination="ARa-lS-CWd" id="EKt-QV-UbI"/>
+                        <outlet property="tableView" destination="QP3-OA-2gC" id="lSK-Ff-yu9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VjK-hm-PHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -750,6 +823,9 @@
             <point key="canvasLocation" x="6" y="2256"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hero-detail-background-3.png" width="320" height="150"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

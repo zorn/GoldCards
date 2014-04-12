@@ -1,5 +1,6 @@
 #import "GCHeroesListViewController.h"
 #import "GCModels.h"
+#import "GCHeroDetailViewController.h"
 
 @interface GCHeroesListViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -11,6 +12,18 @@
 {
     [super viewDidAppear:animated];
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+}
+
+#pragma mark - Storyboards
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"heroDetail"]) {
+        GCHeroDetailViewController *vc = (GCHeroDetailViewController *)[segue destinationViewController];
+        NSAssert([vc isKindOfClass:[GCHeroDetailViewController class]], @"???");
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        vc.hero = [self.heroes objectAtIndex:indexPath.row];
+    }
 }
 
 #pragma mark - UITableViewDataSource

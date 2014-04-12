@@ -3,6 +3,11 @@
 
 @implementation GCHero
 
+- (NSString *)heroDetailBackgroundImageName
+{
+    return [NSString stringWithFormat:@"hero-detail-background-%@", self.remoteID];
+}
+
 + (NSArray *)orderedHeroesInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
 {
     NSArray *unorderdHeroes = [GCHero zorncds_findAllInManagedObjectContext:managedObjectContext];
