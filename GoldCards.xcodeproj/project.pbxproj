@@ -1865,6 +1865,7 @@
 				1A1A7F3E18BEDF9E00EE0388 /* Products */,
 				1099356D53B44F11B87581AA /* Pods.xcconfig */,
 				0477237BD8214C118BF1FEA0 /* Pods-GoldCardsTests.xcconfig */,
+				1A1EFD7618BEEC88007A1634 /* Submodules */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1903,7 +1904,6 @@
 				1A1EFD0E18BEE212007A1634 /* Models */,
 				1A1EFD1218BEE713007A1634 /* Resources */,
 				1A1A7F4718BEDF9E00EE0388 /* Supporting Files */,
-				1A1EFD7618BEEC88007A1634 /* Submodules */,
 				1AD4C5D518C438BE00C870D2 /* Vendor */,
 			);
 			path = GoldCards;
@@ -2000,6 +2000,7 @@
 				1A1EFD7718BEEC95007A1634 /* ZORNKit */,
 			);
 			name = Submodules;
+			path = GoldCards;
 			sourceTree = "<group>";
 		};
 		1A1EFD7718BEEC95007A1634 /* ZORNKit */ = {

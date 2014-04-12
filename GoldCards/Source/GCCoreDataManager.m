@@ -70,7 +70,7 @@
 
 - (BOOL)isStoreEmpty
 {
-    return ([GCHero td_countOfEntitiesInManagedObjectContext:self.coreDataStack.managedObjectContext] <= 0);
+    return ([GCHero zorncds_countOfEntitiesInManagedObjectContext:self.coreDataStack.managedObjectContext] <= 0);
 }
 
 #pragma mark - Private

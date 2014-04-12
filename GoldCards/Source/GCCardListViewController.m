@@ -33,6 +33,11 @@
     return [GCCard entityName];
 }
 
+- (NSString *)sectionNameKeyPath
+{
+    return @"zorncds_uppercaseFirstLetterOfName";
+}
+
 - (NSArray *)sortDescriptors
 {
     NSSortDescriptor *sortByName = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
@@ -55,6 +60,11 @@
     GCCard *card = (GCCard *)[frc objectAtIndexPath:indexPath];
     NSAssert([card isKindOfClass:[GCCard class]], @"???");
     cell.textLabel.text = card.name;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return [[[[self fetchedResultsControllerForTableView:tableView] sections] objectAtIndex:section] name];
 }
 
 @end
