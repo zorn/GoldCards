@@ -504,7 +504,7 @@
         <!--Card List View Controller - Cards-->
         <scene sceneID="jeN-WU-zmW">
             <objects>
-                <viewController id="KTu-Is-oE9" customClass="GCCardListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GCCardListViewController" id="KTu-Is-oE9" customClass="GCCardListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nzg-Wn-Wg5"/>
                         <viewControllerLayoutGuide type="bottom" id="9gq-jl-Un2"/>

@@ -7,6 +7,13 @@
 
 #pragma mark - UIViewController
 
+- (void)viewDidLoad
+{
+    if (self.hero) {
+        self.fetchedResultsControllerPredicate = [NSPredicate predicateWithFormat:@"hero == %@", self.hero];
+    }
+}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"cardDetail"]) {
@@ -24,7 +31,6 @@
         [(GCCardDetailViewController *)vc setCard:selectedCard];
     }
 }
-
 
 #pragma mark - ZORNCoreDataTableViewController
 
