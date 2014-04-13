@@ -2115,6 +2115,13 @@
 			path = "hero-detail-backgrounds";
 			sourceTree = "<group>";
 		};
+		1A218E0218F9FB3D00B8A0E1 /* SHARED */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SHARED;
+			sourceTree = "<group>";
+		};
 		1A5AD6EB18C9754A007394DA /* about */ = {
 			isa = PBXGroup;
 			children = (
@@ -2602,6 +2609,7 @@
 		1AE19C4C18C3E5A700D2475A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1A218E0218F9FB3D00B8A0E1 /* SHARED */,
 				1A5C3F2C18C82BA900A346B8 /* Review / Feedback */,
 				1AE19C5318C3E97800D2475A /* Main Menu */,
 				1AE19C5218C3E97000D2475A /* Hero List */,

@@ -52,6 +52,8 @@
     }
 }
 
+#pragma mark - About Page URL
+
 - (void)setAboutPageURL:(NSURL *)aboutPageURL
 {
     _aboutPageURL = aboutPageURL;
