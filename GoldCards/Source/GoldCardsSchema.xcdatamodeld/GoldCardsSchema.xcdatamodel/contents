@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="version10" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="GCAchievement" representedClassName="GCAchievement" syncable="YES">
         <attribute name="achievementType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -19,11 +19,11 @@
         <attribute name="imageFilename" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="isCollectable" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
         <attribute name="isElite" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="qualityAsNumber" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="remoteID" attributeType="Integer 64" syncable="YES"/>
         <attribute name="setAsNumber" attributeType="Integer 16" syncable="YES"/>
-        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
         <relationship name="hero" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GCHero" inverseName="cards" inverseEntity="GCHero" syncable="YES"/>
         <relationship name="mechanics" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GCMechanic" inverseName="cards" inverseEntity="GCMechanic" syncable="YES"/>
     </entity>
@@ -52,8 +52,8 @@
     </entity>
     <elements>
         <element name="GCAchievement" positionX="207" positionY="-34" width="128" height="43"/>
-        <element name="GCCard" positionX="16" positionY="173" width="128" height="283"/>
-        <element name="GCEmote" positionX="-45" positionY="20" width="128" height="43"/>
+        <element name="GCCard" positionX="16" positionY="173" width="128" height="285"/>
+        <element name="GCEmote" positionX="-45" positionY="20" width="128" height="45"/>
         <element name="GCHero" positionX="-198" positionY="225" width="128" height="103"/>
         <element name="GCMechanic" positionX="234" positionY="279" width="128" height="118"/>
         <element name="GCQuest" positionX="243" positionY="108" width="128" height="43"/>
