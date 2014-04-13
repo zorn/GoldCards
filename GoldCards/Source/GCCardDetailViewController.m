@@ -16,15 +16,28 @@ NS_ENUM(NSUInteger, CardDetailSectionDescriptionRows) {
 
 @interface GCCardDetailViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIImageView *cardImageView;
-
-
-
+@property (strong, nonatomic) UIImageView *cardImageView;
+@property (assign, nonatomic) CGRect cachedCardImageViewSize;
 @end
+
+#define CARD_VERTICAL_ADJUUSTMENT -70.0f
 
 @implementation GCCardDetailViewController
 
 #pragma mark - UIViewController
+
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.cardImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, CARD_VERTICAL_ADJUUSTMENT, 320, 150)];
+    self.cardImageView.contentMode = UIViewContentModeTop;
+    self.cardImageView.clipsToBounds = YES;
+    self.cardImageView.backgroundColor = [UIColor blackColor];
+    self.cachedCardImageViewSize = self.cardImageView.frame;
+    [self.tableView addSubview:self.cardImageView];
+    [self.tableView sendSubviewToBack:self.cardImageView];
+    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
+}
 
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -72,6 +85,38 @@ NS_ENUM(NSUInteger, CardDetailSectionDescriptionRows) {
         return [self statCellForIndexPath:indexPath];
     }
     return nil;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    switch (section) {
+        case CardDetailSectionDescription:
+            return @"Description";
+        case CardDetailSectionStats:
+            return @"Stats";
+    }
+    return nil;
+}
+
+#pragma mark - UIScrollView
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat y = -scrollView.contentOffset.y;
+    if (y > 0) {
+        self.cardImageView.frame = CGRectMake(0, CARD_VERTICAL_ADJUUSTMENT + scrollView.contentOffset.y, self.cachedCardImageViewSize.size.width+y, self.cachedCardImageViewSize.size.height+y);
+        self.cardImageView.center = CGPointMake(self.view.center.x, self.cardImageView.center.y);
+    }
+}
+
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
+{
+    CGFloat y = -scrollView.contentOffset.y;
+    if (y > 60) {
+        NSLog(@"open");
+    } else {
+        NSLog(@"no need to open");
+    }
 }
 
 #pragma mark - Private

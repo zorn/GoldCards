@@ -719,27 +719,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="wH3-EG-Nnr">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="378"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hY8-pv-djF">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="378"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <color key="backgroundColor" red="0.1058823529" green="0.08235294118" blue="0.094117647060000004" alpha="1" colorSpace="deviceRGB"/>
-                                        </imageView>
-                                    </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstItem="hY8-pv-djF" firstAttribute="leading" secondItem="wH3-EG-Nnr" secondAttribute="leading" id="D5M-UL-jyJ"/>
-                                        <constraint firstAttribute="trailing" secondItem="hY8-pv-djF" secondAttribute="trailing" id="Gfx-NP-bEB"/>
-                                        <constraint firstItem="hY8-pv-djF" firstAttribute="top" secondItem="wH3-EG-Nnr" secondAttribute="top" id="r8a-JA-eC6"/>
-                                        <constraint firstAttribute="bottom" secondItem="hY8-pv-djF" secondAttribute="bottom" id="rQn-qv-pVa"/>
-                                    </constraints>
-                                </view>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="summaryCell" textLabel="e5v-4R-csh" style="IBUITableViewCellStyleDefault" id="6zy-ia-VXg">
-                                        <rect key="frame" x="0.0" y="433" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="55" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6zy-ia-VXg" id="Zgx-fL-JhD">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -756,7 +738,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="statCell" textLabel="mAF-Rz-3a4" detailTextLabel="J85-Wu-KgH" style="IBUITableViewCellStyleValue1" id="zTY-L5-Yj4">
-                                        <rect key="frame" x="0.0" y="477" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zTY-L5-Yj4" id="8aJ-ma-7A3">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -796,7 +778,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Card Name" id="eIS-6e-FBH"/>
                     <connections>
-                        <outlet property="cardImageView" destination="hY8-pv-djF" id="4W6-7D-Fuh"/>
                         <outlet property="tableView" destination="VyH-MH-dEm" id="zc4-DW-cmy"/>
                     </connections>
                 </viewController>
