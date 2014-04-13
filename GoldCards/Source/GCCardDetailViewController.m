@@ -3,6 +3,7 @@
 #import "UIImage+animatedGIF.h"
 #import "GCAudioPlayer.h"
 #import "GGFullscreenImageViewController.h"
+#import "GCCardDetailTableViewCell.h"
 
 NS_ENUM(NSUInteger, CardDetailSections) {
     CardDetailSectionDescription = 0,
@@ -96,12 +97,48 @@ NS_ENUM(NSUInteger, CardDetailSectionDescriptionRows) {
 {
     switch (section) {
         case CardDetailSectionDescription:
-            return @"Description";
+            return @"Info";
         case CardDetailSectionStats:
             return @"Stats";
     }
     return nil;
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == CardDetailSectionDescription) {
+        GCCardDetailTableViewCell *cell = (GCCardDetailTableViewCell *)[self summaryCellForIndexPath:indexPath];
+        
+        // Set the width of the cell to match the width of the table view. This is important so that we'll get the
+        // correct height for different table view widths, since our cell's height depends on its width due to
+        // the multi-line UILabel word wrapping. Don't need to do this above in -[tableView:cellForRowAtIndexPath]
+        // because it happens automatically when the cell is used in the table view.
+        cell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(cell.bounds));
+        
+        // Do the layout pass on the cell, which will calculate the frames for all the views based on the constraints
+        // (Note that the preferredMaxLayoutWidth is set on multi-line UILabels inside the -[layoutSubviews] method
+        // in the UITableViewCell subclass
+        [cell setNeedsLayout];
+        [cell layoutIfNeeded];
+        
+        // Get the actual height required for the cell
+        CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+        
+        // Add an extra point to the height to account for internal rounding errors that are occasionally observed in
+        // the Auto Layout engine, which cause the returned height to be slightly too small in some cases.
+        height += 1;
+        
+        return height;
+    } else {
+        return 44.0;
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 150.0f;
+}
+
 
 #pragma mark - UIScrollView
 
@@ -142,10 +179,11 @@ NS_ENUM(NSUInteger, CardDetailSectionDescriptionRows) {
     return total;
 }
 
-- (UITableViewCell *)summaryCellForIndexPath:(NSIndexPath *)indexPath
+- (GCCardDetailTableViewCell *)summaryCellForIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"summaryCell"];
-    cell.textLabel.text = self.card.summary;
+    GCCardDetailTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"summaryCell"];
+    NSAssert([cell isKindOfClass:[GCCardDetailTableViewCell class]], @"???");
+    cell.cardDetailTextLabel.text = self.card.summary;
     return cell;
 }
 
