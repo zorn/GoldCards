@@ -71,7 +71,7 @@
     
     NSError *error = nil;
     if (![self.coreDataStack buildStackWithError:&error]) {
-        NSLog(@"error building core data stack: %@", error);
+        DDLogError(@"error building core data stack: %@", error);
         abort();
     }
     
@@ -91,7 +91,7 @@
 {
     NSError *error = nil;
     if (![self.coreDataStack tearDownStackWithError:&error]) {
-        NSLog(@"error tearing down core data stack: %@", error);
+        DDLogError(@"error tearing down core data stack: %@", error);
         abort();
     }
     self.coreDataStack = nil;
