@@ -25,11 +25,6 @@
     return @"QuestCell";
 }
 
-- (NSPredicate *)searchPredicateForSearchString:(NSString *)searchString
-{
-    return [NSPredicate predicateWithFormat:@"name contains[cd] %@", searchString];
-}
-
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath forTableView:(UITableView *)tableView
 {
     NSFetchedResultsController *frc = [self fetchedResultsControllerForTableView:tableView];
