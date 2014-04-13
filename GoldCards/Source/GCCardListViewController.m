@@ -9,6 +9,8 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+
     if (self.hero) {
         self.fetchedResultsControllerPredicate = [NSPredicate predicateWithFormat:@"hero == %@", self.hero];
     }
@@ -57,7 +59,7 @@
 
 - (NSPredicate *)searchPredicateForSearchString:(NSString *)searchString
 {
-    return [NSPredicate predicateWithFormat:@"name contains[cd] %@", searchString];
+    return [NSPredicate predicateWithFormat:@"name contains[cd] %@ OR summary contains[cd] %@", searchString, searchString];
 }
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath forTableView:(UITableView *)tableView
@@ -66,6 +68,7 @@
     GCCard *card = (GCCard *)[frc objectAtIndexPath:indexPath];
     NSAssert([card isKindOfClass:[GCCard class]], @"???");
     cell.textLabel.text = card.name;
+    cell.detailTextLabel.text = card.summary;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
