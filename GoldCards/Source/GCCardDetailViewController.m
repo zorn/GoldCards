@@ -53,7 +53,7 @@ NS_ENUM(NSUInteger, CardDetailSectionDescriptionRows) {
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    if (!self.didPlaySoundEffect) {
+    if (!self.didPlaySoundEffect && [[NSUserDefaults standardUserDefaults] boolForKey:GCAudioPlayerShouldPlayActivateEffectOnCardBrowse]) {
         [[GCAudioPlayer sharedInstance] playActivateEffectForCard:self.card];
         self.didPlaySoundEffect = YES;
     }    

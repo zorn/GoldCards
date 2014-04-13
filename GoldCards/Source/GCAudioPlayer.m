@@ -2,11 +2,19 @@
 #import <AVFoundation/AVFoundation.h>
 #import "GCModels.h"
 
+NSString * const GCAudioPlayerShouldPlayActivateEffectOnCardBrowse = @"GCAudioPlayerShouldPlayActivateEffectOnCardBrowse";
+
 @interface GCAudioPlayer () <AVAudioPlayerDelegate>
 @property (strong) AVAudioPlayer *player;
 @end
 
 @implementation GCAudioPlayer
+
++ (void)initialize
+{
+    NSDictionary *defaults = @{GCAudioPlayerShouldPlayActivateEffectOnCardBrowse : @(NO)};
+    [[NSUserDefaults standardUserDefaults] registerDefaults:defaults];
+}
 
 + (GCAudioPlayer *) sharedInstance
 {

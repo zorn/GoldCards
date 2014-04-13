@@ -175,6 +175,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="uld-2y-UDd" kind="push" id="7DG-i8-Qdz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -188,7 +191,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CkU-ak-eAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="461" y="3653"/>
+            <point key="canvasLocation" x="410" y="4337"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="XqT-ry-wJy">
@@ -199,6 +202,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPP-Dm-fRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1013" y="4353"/>
+        </scene>
+        <!--Settings View Controller - Settings-->
+        <scene sceneID="lDO-oS-SOn">
+            <objects>
+                <tableViewController id="uld-2y-UDd" customClass="GCSettingsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Rfg-OW-TOc">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Sounds" id="mXp-0T-XC7">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="S8N-l9-pSg">
+                                        <rect key="frame" x="0.0" y="55" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S8N-l9-pSg" id="2ln-ov-bLd">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Card Entrance Sound" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GES-0U-24h">
+                                                    <rect key="frame" x="15" y="11" width="203" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aA7-Ot-c4M">
+                                                    <rect key="frame" x="256" y="6" width="51" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="switchAction:" destination="uld-2y-UDd" eventType="valueChanged" id="VQq-Iv-vFL"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="aA7-Ot-c4M" secondAttribute="centerY" id="RM2-eP-5Uy"/>
+                                                <constraint firstAttribute="trailing" secondItem="aA7-Ot-c4M" secondAttribute="trailing" constant="15" id="haz-cV-SVl"/>
+                                                <constraint firstAttribute="centerY" secondItem="GES-0U-24h" secondAttribute="centerY" id="mf8-WO-qH6"/>
+                                                <constraint firstItem="GES-0U-24h" firstAttribute="leading" secondItem="2ln-ov-bLd" secondAttribute="leading" constant="15" id="p6I-e1-quy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="uld-2y-UDd" id="3su-Rg-I3z"/>
+                            <outlet property="delegate" destination="uld-2y-UDd" id="Wdx-e1-M2b"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="MTl-tB-Y7G"/>
+                    <connections>
+                        <outlet property="cardEntranceSoundSwitch" destination="aA7-Ot-c4M" id="t2k-4n-BGE"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="34Z-af-0m2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="5060"/>
         </scene>
         <!--Review Feedback Prompt View Controller - Review / Feedback-->
         <scene sceneID="ma6-2l-Bfc">

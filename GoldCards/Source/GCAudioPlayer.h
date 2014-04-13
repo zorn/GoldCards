@@ -1,5 +1,7 @@
 #import <Foundation/Foundation.h>
 
+extern NSString * const GCAudioPlayerShouldPlayActivateEffectOnCardBrowse;
+
 @class GCCard;
 
 @interface GCAudioPlayer : NSObject
