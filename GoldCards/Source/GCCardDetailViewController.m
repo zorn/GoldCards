@@ -2,6 +2,7 @@
 #import "GCModels.h"
 #import "UIImage+animatedGIF.h"
 #import "GCAudioPlayer.h"
+#import "GGFullscreenImageViewController.h"
 
 NS_ENUM(NSUInteger, CardDetailSections) {
     CardDetailSectionDescription = 0,
@@ -113,9 +114,10 @@ NS_ENUM(NSUInteger, CardDetailSectionDescriptionRows) {
 {
     CGFloat y = -scrollView.contentOffset.y;
     if (y > 60) {
-        NSLog(@"open");
-    } else {
-        NSLog(@"no need to open");
+        GGFullscreenImageViewController *vc = [[GGFullscreenImageViewController alloc] init];
+        vc.liftedImageView = self.cardImageView;
+        //vc.liftedImageView.contentMode = UIViewContentModeScaleAspectFit;
+        [self presentViewController:vc animated:YES completion:nil];
     }
 }
 
