@@ -39,7 +39,7 @@
     [self.fileLogger rollLogFileWithCompletionBlock:nil];
     [DDLog addLogger:self.fileLogger];
     
-    [[BITHockeyManager sharedHockeyManager].authenticator setAuthenticationSecret:@"24e2d2d3f536ae839e2d15e50c0b1e90"];
+    [[BITHockeyManager sharedHockeyManager].authenticator setAuthenticationSecret:@"aefb425ade17eed606e8a372f0e959a7"];
     [[BITHockeyManager sharedHockeyManager].authenticator setIdentificationType:BITAuthenticatorIdentificationTypeHockeyAppEmail];
     [[BITHockeyManager sharedHockeyManager] startManager];
     [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
