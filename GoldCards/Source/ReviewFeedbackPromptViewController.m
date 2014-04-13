@@ -55,4 +55,19 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+#pragma mark - UITableViewDelegate
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        [self postAReviewAction:self];
+    } else {
+        if (indexPath.row == 0) {
+            [self feedbackViaWeb:self];
+        } else {
+            [self feedbackViaEmail:self];
+        }
+    }
+}
+
 @end

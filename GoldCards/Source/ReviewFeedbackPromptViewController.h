@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
 
-@interface ReviewFeedbackPromptViewController : UIViewController
+@interface ReviewFeedbackPromptViewController : UITableViewController
 
 @end
