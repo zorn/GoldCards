@@ -63,14 +63,16 @@
 {
 	if (!_aboutPageURL) {
 		// create a dynamic about page showing the current version
-		NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+		NSString *buildNumber = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+        NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+        NSString *versionAndBuildNumber = [NSString stringWithFormat:@"%@ (%@)", version, buildNumber];
         
 		// original source
 		NSString *path = [[NSBundle mainBundle] pathForResource:@"about" ofType:@"html"];
 		NSMutableString *aboutPageSource = [[NSMutableString alloc] initWithString:[NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil]];
 		
 		// swap version
-		[aboutPageSource replaceOccurrencesOfString:@"{{appVersion}}" withString:version options:NSCaseInsensitiveSearch range:NSMakeRange(0, [aboutPageSource length])];
+		[aboutPageSource replaceOccurrencesOfString:@"{{appVersion}}" withString:versionAndBuildNumber options:NSCaseInsensitiveSearch range:NSMakeRange(0, [aboutPageSource length])];
 		
 		// set the URL to the logo image
 		NSString *pathToAboutImage = [[NSBundle mainBundle] pathForResource:@"iTunesArtwork" ofType:@"png"];
