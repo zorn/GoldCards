@@ -19,6 +19,7 @@ NS_ENUM(NSUInteger, CardDetailSectionDescriptionRows) {
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) UIImageView *cardImageView;
 @property (assign, nonatomic) CGRect cachedCardImageViewSize;
+@property (assign) BOOL didPlaySoundEffect;
 @end
 
 #define CARD_VERTICAL_ADJUUSTMENT -70.0f
@@ -51,13 +52,16 @@ NS_ENUM(NSUInteger, CardDetailSectionDescriptionRows) {
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [[GCAudioPlayer sharedInstance] playActivateEffectForCard:self.card];
+    if (!self.didPlaySoundEffect) {
+        [[GCAudioPlayer sharedInstance] playActivateEffectForCard:self.card];
+        self.didPlaySoundEffect = YES;
+    }    
 }
 
 -(void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    [[GCAudioPlayer sharedInstance] stop];
+    //[[GCAudioPlayer sharedInstance] stop];
 }
 
 #pragma mark - UITableViewDataSource

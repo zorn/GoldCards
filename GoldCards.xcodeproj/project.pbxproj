@@ -67,6 +67,7 @@
 		1A218DFF18F9F3ED00B8A0E1 /* hero-detail-background-9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A218DEF18F9F3ED00B8A0E1 /* hero-detail-background-9@2x.png */; };
 		1A218E0018F9F3ED00B8A0E1 /* hero-detail-background-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A218DF018F9F3ED00B8A0E1 /* hero-detail-background-11.png */; };
 		1A218E0118F9F3ED00B8A0E1 /* hero-detail-background-11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A218DF118F9F3ED00B8A0E1 /* hero-detail-background-11@2x.png */; };
+		1A2F1C1818FA256600D97861 /* GGFullScreenImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F1C1718FA256600D97861 /* GGFullScreenImageViewController.m */; };
 		1A5AD6ED18C9754A007394DA /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 1A5AD6EC18C9754A007394DA /* about.html */; };
 		1A5AD6F018C975AA007394DA /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5AD6EE18C975AA007394DA /* iTunesArtwork.png */; };
 		1A5AD6F118C975AA007394DA /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5AD6EF18C975AA007394DA /* iTunesArtwork@2x.png */; };
@@ -979,6 +980,8 @@
 		1A218DEF18F9F3ED00B8A0E1 /* hero-detail-background-9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero-detail-background-9@2x.png"; sourceTree = "<group>"; };
 		1A218DF018F9F3ED00B8A0E1 /* hero-detail-background-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero-detail-background-11.png"; sourceTree = "<group>"; };
 		1A218DF118F9F3ED00B8A0E1 /* hero-detail-background-11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero-detail-background-11@2x.png"; sourceTree = "<group>"; };
+		1A2F1C1618FA256600D97861 /* GGFullScreenImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGFullScreenImageViewController.h; path = Vendor/GGFullscreenImageViewController/GGFullscreenImageViewController/GGFullScreenImageViewController.h; sourceTree = SOURCE_ROOT; };
+		1A2F1C1718FA256600D97861 /* GGFullScreenImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GGFullScreenImageViewController.m; path = Vendor/GGFullscreenImageViewController/GGFullscreenImageViewController/GGFullScreenImageViewController.m; sourceTree = SOURCE_ROOT; };
 		1A5AD6EC18C9754A007394DA /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		1A5AD6EE18C975AA007394DA /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = "app-icon/iTunesArtwork.png"; sourceTree = "<group>"; };
 		1A5AD6EF18C975AA007394DA /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "app-icon/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
@@ -1865,6 +1868,7 @@
 				1A1A7F3E18BEDF9E00EE0388 /* Products */,
 				1099356D53B44F11B87581AA /* Pods.xcconfig */,
 				0477237BD8214C118BF1FEA0 /* Pods-GoldCardsTests.xcconfig */,
+				1AD4C5D518C438BE00C870D2 /* Vendor */,
 				1A1EFD7618BEEC88007A1634 /* Submodules */,
 			);
 			sourceTree = "<group>";
@@ -1904,7 +1908,6 @@
 				1A1EFD0E18BEE212007A1634 /* Models */,
 				1A1EFD1218BEE713007A1634 /* Resources */,
 				1A1A7F4718BEDF9E00EE0388 /* Supporting Files */,
-				1AD4C5D518C438BE00C870D2 /* Vendor */,
 			);
 			path = GoldCards;
 			sourceTree = "<group>";
@@ -2122,6 +2125,15 @@
 			name = SHARED;
 			sourceTree = "<group>";
 		};
+		1A2F1C1518FA255200D97861 /* GGFullScreenImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1A2F1C1618FA256600D97861 /* GGFullScreenImageViewController.h */,
+				1A2F1C1718FA256600D97861 /* GGFullScreenImageViewController.m */,
+			);
+			name = GGFullScreenImageViewController;
+			sourceTree = "<group>";
+		};
 		1A5AD6EB18C9754A007394DA /* about */ = {
 			isa = PBXGroup;
 			children = (
@@ -2180,10 +2192,12 @@
 		1AD4C5D518C438BE00C870D2 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				1A2F1C1518FA255200D97861 /* GGFullScreenImageViewController */,
 				1AD595D418C832C2008E2701 /* PBSafariActivity */,
 				1AD4C5D618C438C700C870D2 /* Animated GIF */,
 			);
 			name = Vendor;
+			path = GoldCards;
 			sourceTree = "<group>";
 		};
 		1AD4C5D618C438C700C870D2 /* Animated GIF */ = {
@@ -4075,6 +4089,7 @@
 				1AD4C5CB18C4179300C870D2 /* GCCardListViewController.m in Sources */,
 				1A1EFD8418BEECD2007A1634 /* NSManagedObjectContext+ZORNCoreDataStackAdditions.m in Sources */,
 				1A1EFD8718BEECD2007A1634 /* ZORNCoreDataStackErrors.m in Sources */,
+				1A2F1C1818FA256600D97861 /* GGFullScreenImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
