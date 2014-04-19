@@ -3,7 +3,4 @@
 #endif
 
 #import "Pods-GoldCardsTests-environment.h"
-
-
 #import <XCTest/XCTest.h>
-

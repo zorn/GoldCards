@@ -4,6 +4,7 @@
 #import "GCCoreDataManager.h"
 #import "GCMainMenuViewController.h"
 #import "ZORNLogFormatter.h"
+#import "Flurry.h"
 
 @interface AppDelegate ()
 @property (strong, nonatomic) DDFileLogger *fileLogger;
@@ -61,6 +62,10 @@
     [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
 #endif
     
+#ifndef CONFIGURATION_DEBUG
+    [Flurry setCrashReportingEnabled:NO];
+    [Flurry startSession:@"5R78TK5CKVS2F4RMMBWB"];
+#endif
 }
 
 - (void)setupCoreDataStack

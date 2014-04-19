@@ -4,6 +4,9 @@ PODS:
   - CocoaLumberjack/Core (1.8.1)
   - CocoaLumberjack/Extensions (1.8.1):
     - CocoaLumberjack/Core
+  - FlurrySDK (4.4.0):
+    - FlurrySDK/FlurrySDK
+  - FlurrySDK/FlurrySDK (4.4.0)
   - HockeySDK (3.5.4)
   - Kiwi/ARC (2.2.3)
   - Kiwi/NonARC (2.2.3)
@@ -14,14 +17,16 @@ PODS:
 
 DEPENDENCIES:
   - CocoaLumberjack (~> 1.8.1)
+  - FlurrySDK (~> 4.4)
   - HockeySDK (~> 3.5)
   - Kiwi/XCTest (~> 2.2.3)
   - PBWebViewController (~> 0.1)
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
-  HockeySDK: 4f7f7e15c1f594e8ca1e16a09f04e7418289de7a
+  FlurrySDK: 2cd8f2ce2383ca152c5d96fa34cb9ef29706feda
+  HockeySDK: aa28abb106de7804d31acf515f2c9aa4e6481fd0
   Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
   PBWebViewController: 8a84b04caf635691335e3b449034dc0e9c1967c8
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.32.1
