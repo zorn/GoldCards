@@ -12,7 +12,7 @@
 
 - (IBAction)postAReviewAction:(id)sender
 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/app/id784797900"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/app/id866641126"]];
 }
 
 - (IBAction)feedbackViaWeb:(id)sender
