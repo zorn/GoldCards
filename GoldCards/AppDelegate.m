@@ -28,9 +28,8 @@
 
 - (void)initializeHockeyAppAndLogging
 {
-    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"76db44cfa545e1e1fd8905a5749b8587" delegate:self];
+    [[BITHockeyManager sharedHockeyManager] configureWithBetaIdentifier:@"76db44cfa545e1e1fd8905a5749b8587" liveIdentifier:@"263979824111552f902a443f02e3c087" delegate:self];
     
-#ifndef CONFIGURATION_DEBUG
     // initialize before HockeySDK, so the delegate can access the file logger
     self.fileLogger = [[DDFileLogger alloc] init];
     self.fileLogger.maximumFileSize = (1024 * 512); // 512 KByte
@@ -38,22 +37,30 @@
     self.fileLogger.logFormatter = [[ZORNLogFormatter alloc] init];
     [self.fileLogger rollLogFileWithCompletionBlock:nil];
     [DDLog addLogger:self.fileLogger];
+    DDASLLogger *aslLogger = [DDASLLogger sharedInstance];
+    aslLogger.logFormatter = [[ZORNLogFormatter alloc] init];
+    [DDLog addLogger:aslLogger];
     
+#ifdef CONFIGURATION_DEBUG
+    DDTTYLogger *ttyLogger = [DDTTYLogger sharedInstance];
+    ttyLogger.logFormatter = [[ZORNLogFormatter alloc] init];
+    [DDLog addLogger:ttyLogger];
+    
+    [[BITHockeyManager sharedHockeyManager] setDisableCrashManager:YES];
+    [[BITHockeyManager sharedHockeyManager] startManager];
+#endif
+    
+#ifdef CONFIGURATION_RELEASE
+    [[BITHockeyManager sharedHockeyManager] startManager];
+#endif
+
+#ifdef CONFIGURATION_ADHOC
     [[BITHockeyManager sharedHockeyManager].authenticator setAuthenticationSecret:@"aefb425ade17eed606e8a372f0e959a7"];
     [[BITHockeyManager sharedHockeyManager].authenticator setIdentificationType:BITAuthenticatorIdentificationTypeHockeyAppEmail];
     [[BITHockeyManager sharedHockeyManager] startManager];
     [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
-    
-    DDASLLogger *aslLogger = [DDASLLogger sharedInstance];
-    aslLogger.logFormatter = [[ZORNLogFormatter alloc] init];
-    [DDLog addLogger:aslLogger];
-#else
-    [[BITHockeyManager sharedHockeyManager] setDisableCrashManager:YES];
-    [[BITHockeyManager sharedHockeyManager] startManager];
-    DDTTYLogger *ttyLogger = [DDTTYLogger sharedInstance];
-    ttyLogger.logFormatter = [[ZORNLogFormatter alloc] init];
-    [DDLog addLogger:ttyLogger];
 #endif
+    
 }
 
 - (void)setupCoreDataStack
