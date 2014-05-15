@@ -75,7 +75,7 @@
     }
     
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"GoldCardsSchema" withExtension:@"momd"];
-    NSURL *persistentStoreURL = [[NSURL zorn_applicationDocumentsDirectory] URLByAppendingPathComponent:@"GoldCards.sqlite"];
+    NSURL *persistentStoreURL = [[NSURL zorn_applicationDocumentsDirectory] URLByAppendingPathComponent:@"GoldCards_v2.sqlite"];
     
     self.coreDataStack = [[ZORNCoreDataStack alloc] init];
     self.coreDataStack.managedObjectModelURL = modelURL;

@@ -1208,7 +1208,7 @@
   {
     "classs": 3, 
     "collectible": 1, 
-    "cost": 2, 
+    "cost": 3, 
     "description": "For each enemy minion, summon a 1/1 Hound with Charge.", 
     "icon": "inv_misc_ticket_tarot_elemental02", 
     "id": 1243, 
