@@ -34,5 +34,9 @@
     cell.detailTextLabel.text =  achievement.summary;
 }
 
+-(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
+}
 
 @end

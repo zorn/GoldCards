@@ -139,6 +139,10 @@ NS_ENUM(NSUInteger, CardDetailSectionDescriptionRows) {
     return 150.0f;
 }
 
+-(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
+}
 
 #pragma mark - UIScrollView
 

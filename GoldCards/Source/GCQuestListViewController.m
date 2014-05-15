@@ -34,4 +34,9 @@
     cell.detailTextLabel.text =  quest.summary;
 }
 
+-(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
+}
+
 @end
