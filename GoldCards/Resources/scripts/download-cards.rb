@@ -32,17 +32,17 @@ parsed.each do |shop|
   #    }
   #   puts "Downloaded: " + url
   # }
-  
+
   # http://wowimg.zamimg.com/hearthhead/sounds/VO_EX1_067_Play_01.mp3
-  # Net::HTTP.start("wowimg.zamimg.com") { |http|
-  #   filename = "VO_"+shop["image"]+"_Play_01.mp3";
-  #   url = "/hearthhead/sounds/"+filename
-  #   resp = http.get(url)
-  #   open('../sounds/'+filename, "wb") { |file|
-  #     file.write(resp.body)
-  #    }
-  #   puts "Downloaded: " + url
-  # }
+  Net::HTTP.start("wowimg.zamimg.com") { |http|
+    filename = "VO_"+shop["image"]+"_Play_01.mp3";
+    url = "/hearthhead/sounds/"+filename
+    resp = http.get(url)
+    open('../sounds/'+filename, "wb") { |file|
+      file.write(resp.body)
+     }
+    puts "Downloaded: " + url
+  }
   
   # http://wowimg.zamimg.com/hearthhead/sounds/VO_EX1_067_Attack_02.mp3
   Net::HTTP.start("wowimg.zamimg.com") { |http|
